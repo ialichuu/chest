@@ -485,41 +485,11 @@ img {
     justify-content: space-between;
 }
 
-/*.art-square {
-    display: flex;
-    margin: auto;
-    margin: 0;
-}
-
-.art-content {
-    position: absolute;
-    display: flex;
-}
-
-.square-crop {
-    width: 300px;
-    height: 300px;
+/*.rs {
+    width: 150px;
+    height: 150px;
     object-fit: cover;
 }*/
-
-.row {
-    margin: 0 5% 0 5%;
-    padding: 0;
-    justify-content: center;
-}
-
-/*.row::after {
-    content: "";
-    clear: both;
-    display: table;*/
-}
-
-.rs {
-    width: auto;
-    height: auto;
-    max-height: 90%;
-    max-width: 100%;
-}
 
 .col-md-4 {
     /*    float: none;*/
