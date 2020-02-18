@@ -396,9 +396,9 @@ header {
 }
 
 .portfolio-boxes {
-    justify-content: center;
     margin: 5% 0 5% 0;
-    display: flex;
+    width: 100%;
+    flex-grow: 1;
 }
 
 /* h4 exception */
