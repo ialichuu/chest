@@ -177,11 +177,39 @@ section {
 
 /************************* basic html *************************/
 
+h1 {
+    font-family: "Montserrat";
+    font-size: 42px;
+    margin: 0;
+    text-align: center;
+    margin: 2% 0 2% 0;
+}
+
 h2 {
     font-family: "Montserrat";
     text-transform: uppercase;
-    font-size: 48px;
+    font-size: 34px;
     text-align: center;
+    margin: 2% 0 2% 0;
+}
+
+h3 {
+    font-family: "Montserrat";
+    font-size: 28px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 2% 0 2% 0;
+}
+
+h4 {
+    font-family: "Montserrat";
+    font-size: 26px;
+    margin: 2% 0 2% 0;
+}
+
+p {
+    font-family: "Roboto";
+    font-size: 16px;
 }
 
 a {
@@ -196,6 +224,13 @@ a:active {
 
 hr {
     width: 40%;
+}
+
+ul,
+ol {
+    font-family: "Roboto";
+    font-size: 16px;
+    padding-left: 50px;
 }
 
 /************************* navigation bar *************************/
@@ -356,15 +391,12 @@ header {
 }
 
 .hero-text h1 {
-    font-family: "Montserrat";
     font-size: 64px;
     margin-bottom: 2%;
 }
 
 .hero-text p {
-    font-family: "Roboto";
-    font-size: 16px;
-    margin-top: 8px;
+    margin-top: 2%;
 }
 
 .home-text {
@@ -372,14 +404,10 @@ header {
 }
 
 .home-text h1 {
-    font-family: "Montserrat";
-    font-size: 64px;
     margin-bottom: 4%;
 }
 
 .home-text p {
-    font-family: "Roboto";
-    font-size: 16px;
     width: 100%;
 }
 
@@ -404,12 +432,11 @@ header {
 /* h4 exception */
 .portfolio h4 {
     font-size: 18px;
-    margin: 2% 0 2% 0;
 }
 
 .portfolio-title {
     font-family: "Montserrat";
-    font-size: 40px;
+    font-size: 34px;
 }
 
 .center {
@@ -432,7 +459,7 @@ header {
 
 figure {
     width: 300px;
-    margin: 5% 0 5% 0;
+    margin: 3% 0 3% 0;
 }
 
 .rectangle-button button {
@@ -493,13 +520,13 @@ img {
 
 .col-md-4 {
     /*    float: none;*/
-    margin-top: 5%;
+    margin-top: 3%;
     width: 33.33%;
-    padding: 5px;
+    padding: 20px;
 }
 
 .col-md-4 p {
-    margin: 0 5% 0 5%;
+    margin: 3%;
 }
 
 /************************* home about *************************/
@@ -507,7 +534,7 @@ img {
 .about {
     background-color: white;
     padding: 5%;
-    margin: 2% 5% 0 5%;
+    margin: 2% 3% 0 3%;
     justify-content: center;
 }
 
@@ -531,43 +558,24 @@ img {
 
 li a {}
 
-/*
-.summary {
-    margin: 4%;
-}
-*/
-
 figcaption {
     padding-top: 10px;
     text-align: center;
     font-family: "Montserrat";
     font-weight: 300;
     font-size: 14px;
-    margin-bottom: 5%;
+    margin-bottom: 3%;
 }
 
 .large_section {
-    margin: 5% 0 5% 0;
-}
-
-h3 {
-    font-family: "Montserrat";
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 36px;
-}
-
-h1 {
-    font-size: 64px;
-    margin: 0;
-    text-align: center;
+    margin: 3% 0 3% 0;
 }
 
 /************************* project content *************************/
 
 .case-content {
-    width: 80%;
-    margin: auto;
+    padding-bottom: 5%;
+    margin: 0 3% 0 3%;
 }
 
 .logo-image {
@@ -580,33 +588,22 @@ h1 {
 
 /* main title */
 .content-heading h1 {
-    text-align: center;
     padding-top: 50px;
-    margin-top: 0;
-    font-family: "Montserrat";
-    font-size: 44px;
     text-transform: uppercase;
+    margin-bottom: 0;
 }
 
 /* sub-title exception */
 .content-heading h4 {
-    font-family: "Roboto";
-    margin-top: 1%;
-    font-size: 18px;
+    font-size: 16px;
     text-align: center;
+    margin-top: 1%;
 }
 
 .overview p {
-    font-family: "Roboto";
-    font-size: 16px;
     line-height: 30px;
     width: 75%;
     margin: 3% auto;
-}
-
-.overview h2 {
-    margin: 3%;
-    font-size: 48px;
 }
 
 .overview-title {
@@ -614,21 +611,14 @@ h1 {
     text-decoration: underline;
 }
 
-.content-process h2 {
-    font-size: 48px;
-}
+.content-process {}
 
 .content-process img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 10px;
-}
-
-/* main text for content */
-.content-process p {
-    font-family: "Roboto";
-    font-size: 16px;
+    margin-bottom: 3%;
+    max-width: 80%;
 }
 
 .heading-section p {
@@ -637,7 +627,7 @@ h1 {
 
 /************************* sections *************************/
 .section {
-    width: 75%;
+    width: 80%;
     margin: auto;
     margin-bottom: 1%;
 }
@@ -647,30 +637,14 @@ h1 {
     margin-bottom: 1%;
 }
 
-.section h2 {
-    font-family: "montserrat";
-    font-size: 48px;
-    margin: 2% 0 2% 0;
-}
-
-.section h3 {
-    font-family: "montserrat";
-    font-size: 36px;
-    margin: 2% 0 2% 0;
-}
-
 .section h4 {
-    font-family: "montserrat";
-    font-size: 24px;
-    margin: 2% 0 5% 0;
     text-align: center;
 }
 
 .section p {
     font-family: "Roboto";
-    font-size: 16px;
     line-height: 30px;
-    margin-bottom: 2%;
+    margin: 2% 0 2% 0;
 }
 
 .slide-img1,
@@ -683,7 +657,7 @@ h1 {
 /************************* user id *************************/
 
 .user-id {
-    width: 75%;
+    width: 80%;
     margin: auto;
     margin-bottom: 1%;
 }
@@ -694,25 +668,12 @@ h1 {
     margin: 2% 0 2% 0;
 }
 
-.list1 ol,
-.list1 ul {
-    font-family: "Roboto";
-    font-size: 16px;
-    margin-left: 25px;
-}
-
-.list2 ul {
-    font-family: "Roboto";
-    font-size: 16px;
-    margin-left: 30px;
-}
-
 .user-id p {
     font-family: "Roboto";
     font-size: 16px;
     padding: 0;
     display: inline;
-    margin-bottom: 5%;
+    margin-bottom: 3%;
     line-height: 30px;
     margin: 3% auto;
 }
