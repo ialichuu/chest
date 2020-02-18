@@ -1,0 +1,908 @@
+@-ms-viewport {
+    width: device-width;
+}
+
+/*
+@mixin object($width, $height, $bg) {
+    width: $width;
+    height: $height;
+    background: $bg;
+}
+
+@mixin transPos($top, $right, $bottom, $left, $transX, $transY) {
+    position: absolute;
+    top: $top;
+    left: $left;
+    right: $right;
+    bottom: $bottom;
+    transform: translate($transX, $transY);
+}*/
+
+body {
+    -ms-overflow-style: scrollbar;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body,
+html {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+em,
+img,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+table,
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+/************************* basic html *************************/
+
+h2 {
+    font-family: "Montserrat";
+    text-transform: uppercase;
+    font-size: 48px;
+    text-align: center;
+}
+
+a {
+    color: #fc7978;
+    font-weight: bold;
+}
+
+a:active {
+    color: #fc7978;
+    text-decoration: underline;
+}
+
+hr {
+    width: 40%;
+}
+
+/************************* navigation bar *************************/
+
+header {
+    height: 10%;
+    background-color: white;
+    width: 100%;
+    position: relative;
+    display: flex;
+    top: 0px;
+    z-index: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    width: 300px;
+    height: auto;
+}
+
+@media only screen and (min-width: 601px) {
+
+    nav {
+        height: 5%;
+        background-color: white;
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+        margin-bottom: 0px;
+        display: flex;
+        top: 0px;
+        z-index: 2;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+
+    nav li,
+    nav a {
+        display: inline;
+        padding: 10px;
+        text-decoration: none;
+        font-family: "Montserrat";
+        color: black;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        font-weight: bold;
+    }
+
+    nav a:hover {
+        color: #fc7978;
+    }
+
+    html:not([data-scroll='0']) nav {
+        position: sticky;
+        top: 0px;
+        border: none;
+        border-radius: 0;
+        box-shadow: 0px 10px 8px -8px rgba(211, 218, 227, 100);
+        outline: none;
+    }
+}
+
+.mynav .icon {
+    display: none;
+    width: 20px;
+    margin-top: 20px;
+    margin-right: 10px;
+    background-color: white;
+}
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media only screen and (max-width: 600px) {
+
+    .mynav {
+        overflow: hidden;
+        background-color: white;
+    }
+
+    .mynav li,
+    .mynav a {
+        display: block;
+        text-decoration: none;
+        font-family: "Montserrat";
+        color: black;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin-left: 20px;
+        margin-top: 10px;
+    }
+
+    .mynav a,
+    .mynav li:not(:first-child) {
+        display: none;
+    }
+
+    .mynav a.icon,
+    .mynav li.icon {
+        float: right;
+        display: block;
+    }
+
+    html:not([data-scroll='0']) .mynav {
+        position: fixed;
+        top: 0px;
+        border: none;
+        border-radius: 0;
+        right: 0px;
+        z-index: 1;
+        box-shadow: 0px 10px 8px -8px rgba(211, 218, 227, 100);
+    }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media only screen and (max-width: 600px) {
+    .mynav.responsive {
+        position: relative;
+        width: 100%;
+    }
+
+    .mynav.responsive a.icon,
+    .mynav.responsive li.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .mynav.responsive li,
+    .mynav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+
+/************************* home hero *************************/
+
+
+.hero-image {
+    background-color: white;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+
+.hero-text {
+    color: black;
+    text-align: left;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hero-text h1 {
+    font-family: "Montserrat";
+    font-size: 64px;
+    margin-bottom: 2%;
+}
+
+.hero-text p {
+    font-family: "Roboto";
+    font-size: 16px;
+    margin-top: 8px;
+}
+
+.home-text {
+    color: black;
+}
+
+.home-text h1 {
+    font-family: "Montserrat";
+    font-size: 64px;
+    margin-bottom: 4%;
+}
+
+.home-text p {
+    font-family: "Roboto";
+    font-size: 16px;
+    width: 100%;
+}
+
+/************************* home portfolio *************************/
+
+.portfolio {
+    padding: 3%;
+    margin: 5%;
+    justify-content: center;
+    background-color: white;
+    background-position: center;
+    background-repeat: repeat;
+    position: relative;
+}
+
+.portfolio-boxes {
+    margin: 5% 0 5% 0;
+    display: flex;
+}
+
+/* h4 exception */
+.portfolio h4 {
+    font-size: 18px;
+    margin: 2% 0 2% 0;
+}
+
+.portfolio-title {
+    font-family: "Montserrat";
+    font-size: 40px;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container-max-width {
+    max-width: 80%;
+}
+
+.container {
+    height: 100%;
+}
+
+.mywork {
+    text-align: center;
+    margin: 5%;
+}
+
+figure {
+    width: 300px;
+    margin: 5% 0 10% 0;
+}
+
+.rectangle-button button {
+    border-radius: 10px;
+    box-shadow: 0 2px 5px 0 rgba(211, 218, 227, 100);
+}
+
+.button {
+    margin: 2% 0 0 0;
+    width: 150px;
+    font-size: 20px;
+    padding: 7%;
+    color: white;
+    background-color: #fc7978;
+    border: none;
+    border-radius: 0;
+    box-shadow: inset 0 -3px #d16463;
+    outline: none;
+    border-bottom: 2px solid #d16463;
+}
+
+img {
+    max-width: 100%;
+}
+
+.parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.col-md-6 parent {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+/************************* home art *************************/
+.art {
+    background-color: white;
+    padding: 2%;
+    margin: 2%;
+}
+
+.art-container {
+    background-color: white;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*.art-square {
+    display: flex;
+    margin: auto;
+    margin: 0;
+}
+
+.art-content {
+    position: absolute;
+    display: flex;
+}
+
+.square-crop {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}*/
+
+.row {
+    margin: 0 5% 0 5%;
+    padding: 0;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.rs {
+    width: auto;
+    height: auto;
+    max-height: 90%;
+    max-width: 100%;
+}
+
+.col-md-4 {
+    /*    float: none;*/
+    margin-top: 5%;
+    width: 33.33%;
+    padding: 5px;
+}
+
+.col-md-4 p {
+    margin: 0 5% 0 5%;
+}
+
+/************************* home about *************************/
+
+.about {
+    background-color: white;
+    padding: 5%;
+    margin: 2% 5% 0 5%;
+    justify-content: center;
+}
+
+.about p {
+    padding: 7px;
+}
+
+.about-img {
+    display: block;
+    float: left;
+    margin-right: 30px;
+    max-width: 30%;
+    border-radius: 50%;
+    margin-bottom: 30px;
+}
+
+.list1 a {
+    color: #fc7978;
+    font-weight: bold;
+}
+
+li a {}
+
+/*
+.summary {
+    margin: 4%;
+}
+*/
+
+figcaption {
+    padding-top: 10px;
+    text-align: center;
+    font-family: "Montserrat";
+    font-weight: 300;
+    font-size: 14px;
+    margin-bottom: 5%;
+}
+
+.large_section {
+    margin: 5% 0 5% 0;
+}
+
+h3 {
+    font-family: "Montserrat";
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 36px;
+}
+
+h1 {
+    font-size: 64px;
+    margin: 0;
+    text-align: center;
+}
+
+/************************* project content *************************/
+
+.case-content {
+    width: 80%;
+    margin: auto;
+}
+
+.logo-image {
+    margin-top: 25px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+}
+
+/* main title */
+.content-heading h1 {
+    text-align: center;
+    padding-top: 50px;
+    margin-top: 0;
+    font-family: "Montserrat";
+    font-size: 44px;
+    text-transform: uppercase;
+}
+
+/* sub-title exception */
+.content-heading h4 {
+    font-family: "Roboto";
+    margin-top: 1%;
+    font-size: 18px;
+    text-align: center;
+}
+
+.overview p {
+    font-family: "Roboto";
+    font-size: 16px;
+    line-height: 30px;
+    width: 75%;
+    margin: 3% auto;
+}
+
+.overview h2 {
+    margin: 3%;
+    font-size: 48px;
+}
+
+.overview-title {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.content-process h2 {
+    font-size: 48px;
+}
+
+.content-process img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+
+/* main text for content */
+.content-process p {
+    font-family: "Roboto";
+    font-size: 16px;
+}
+
+.heading-section p {
+    text-align: center;
+}
+
+/************************* sections *************************/
+.section {
+    width: 75%;
+    margin: auto;
+    margin-bottom: 1%;
+}
+
+.section img {
+    margin: auto;
+    margin-bottom: 1%;
+}
+
+.section h2 {
+    font-family: "montserrat";
+    font-size: 48px;
+    margin: 2% 0 2% 0;
+}
+
+.section h3 {
+    font-family: "montserrat";
+    font-size: 36px;
+    margin: 2% 0 2% 0;
+}
+
+.section h4 {
+    font-family: "montserrat";
+    font-size: 24px;
+    margin: 2% 0 5% 0;
+    text-align: center;
+}
+
+.section p {
+    font-family: "Roboto";
+    font-size: 16px;
+    line-height: 30px;
+    margin-bottom: 2%;
+}
+
+.slide-img1,
+.slide-img2,
+.slide-img3,
+.slide-img4 {
+    height: 200px;
+}
+
+/************************* user id *************************/
+
+.user-id {
+    width: 75%;
+    margin: auto;
+    margin-bottom: 1%;
+}
+
+.user-id h3 {
+    font-family: "montserrat";
+    font-size: 36px;
+    margin: 2% 0 2% 0;
+}
+
+.list1 ol,
+.list1 ul {
+    font-family: "Roboto";
+    font-size: 16px;
+    margin-left: 25px;
+}
+
+.list2 ul {
+    font-family: "Roboto";
+    font-size: 16px;
+    margin-left: 30px;
+}
+
+.user-id p {
+    font-family: "Roboto";
+    font-size: 16px;
+    padding: 0;
+    display: inline;
+    margin-bottom: 5%;
+    line-height: 30px;
+    margin: 3% auto;
+}
+
+.image {
+    padding: 10px;
+}
+
+.row p {
+    font-family: "Roboto";
+}
+
+.row li {
+    font-family: "Roboto";
+}
+
+.lists li {
+    margin: 2%;
+}
+
+/************************* footer *************************/
+
+footer {
+    position: relative;
+    background-color: white;
+    color: black;
+    text-align: center;
+    position: 0;
+}
+
+.footer-text {
+    margin-top: 20px;
+    text-align: center;
+    font-family: "Montserrat";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    font-size: 14px;
+}
+
+.lonk {
+    text-decoration: underline;
+    color: #fc7978;
+}
+
+.socialmedia {
+    width: 30px;
+    margin: 3px;
+}
+
+/************************* slideshow *************************/
+* {
+    box-sizing: border-box
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    margin: 0
+}
+
+.my-slides1,
+.my-slides2 {
+    display: none;
+    margin: auto;
+}
+
+img {
+    vertical-align: middle;
+}
+
+/* slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+/* next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* on hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* dots */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+/* fading animation */
+.fade1,
+.fade2 {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/* on smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+
+    .prev,
+    .next,
+    .text {
+        font-size: 11px
+    }
+}

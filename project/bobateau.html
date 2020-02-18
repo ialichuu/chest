@@ -1,0 +1,205 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <title>Alexandria Lo</title>
+    <meta name="description" content="My process of creating a WordPress website for UT Dallas students to find boba tea shops near the campus in Richardson, TX.">
+
+    <link rel="icon" href="images/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Montserrat:300,400" rel="stylesheet">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-148686804-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-148686804-1');
+
+    </script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- smooth scroll -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- BootstrapCDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <!-- animation on scroll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- hamburger menu -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../stylesheet.css">
+</head>
+
+<body>
+    <header>
+        <a href="../index.html" id="home"><img class="logo center" src="../images/name.png"></a>
+    </header>
+    <nav class="mynav" id="nav">
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../index.html#portfolio">Portfolio</a></li>
+            <li><a href="../index.html#art">Artwork</a></li>
+            <li><a href="../index.html#about">About</a></li>
+        </ul>
+        <!-- hamburger-kun -->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+    </nav>
+    <div class="case-content">
+        <div class="content-heading">
+            <h1>BobaTeaU</h1>
+            <h4>A WordPress website for UT Dallas students to find boba tea shops near the campus</h4>
+        </div>
+        <div class="logo-image">
+            <img src="../bobateau/bobateau-logo-black.png">
+        </div>
+
+        <div class="large_section content-process">
+            <h2>Overview</h2>
+            <div class="summary container-fluid container-max-width">
+                <p><strong>BobaTeaU</strong> is a directory website for students at the University of Texas at Dallas to search for boba tea shops and drink options around the Richardson area in one place. My goal is to help boba addicts, like me, at UTD to find the perfect boba tea drink and connect with people who are interested in boba tea.</p>
+                <p>With BobaTeaU, users can create an account, look up boba tea places near them, view menus, and leave reviews of the place and drink options. In addition, they can recommend drinks they like to others, customize what they usually get (amount of ice, amount of sugar, etc.), what type of boba person they are, and more. Google Maps integration will make it easy for users to quickly find the location relative to theirs.</p>
+                <p>In this day and age, boba tea places have been booming in the U.S. There are many boba drinks available: the most common concoction includes a tea base combined with milk or fruit, usually prepared over a bed of sweet boba pearls. Menu options can be extensive, and drinks generally go from $3, up to even $6.</p>
+                <div class="row">
+                    <div class="col-md-4 col-bordered border-right">
+                        <center><span class="overview-title">
+                                <p>The Challenge</p>
+                            </span></center>
+                        <p>How can a college student with limited income save money by choosing the drink perfectly catered for them?</p>
+                    </div>
+                    <div class="col-md-4 col-bordered border-right">
+                        <center><span class="overview-title">
+                                <p>My Role</p>
+                            </span></center>
+                        <p>This project was done for my Internet Studio course at UTD. I used HTML, CSS, domain registration, web hosting, and more to design a functional, user-friendly website. My professor, Ken Starzer, provided feedback along the way.</p>
+                    </div>
+                    <div class="col-md-4 col-bordered">
+                        <center><span class="overview-title">
+                                <p>Methods/Tools Used</p>
+                            </span></center>
+                        <p>WordPress | Plugins | Google Analytics | Competitor Research | SEO | Wireframing | Lo/Mid-Fi Design | Prototyping | HTML | CSS | Adobe XD </p>
+                    </div>
+                </div>
+            </div>
+            <hr>
+        </div>
+        <div class="content-process">
+            <div class="user-id">
+                <h3>User Identification</h3>
+                <h4>Target Audience</h4>
+                <ul>
+                    <li>High school and college students</li>
+                    <li>13 - 25 years old</li>
+                    <li>Has a part-time job paying $7 - $15 an hour</li>
+                    <li>Studying is important to them</li>
+                    <li>Wants a comfortable environment to study in with minimal to moderate levels of noise</li>
+                    <li>Likes to watch Netflix, hang out with friends, and play video games during their free time</li>
+                    <li>Difficult to find time to exercise while keeping up with school assignments, or they're just lazy</li>
+                    <li>Time management is key to surviving</li>
+                    <li>Never gets enough hydration</li>
+                </ul>
+                <h4>Sample Persona</h4>
+                <img src="../bobateau/bobateau-persona.png">
+
+                <h3>Competitor Research</h3>
+                <ul class="list1">
+                    <li><a href="https://www.yelp.com/nearme/boba" target="_blank">Yelp:</a> The closest desktop-based competitor. A business directory website and crowd-sourced review forum that integrates Google Maps. Users can find a variety of businesses and services, price points, waitlist, amenities, Q&A section, photo reviews, business hours, suggested businesses, and more.
+                    <li><a href="https://www.google.com/maps/search/boba/" target="_blank">Google Maps:</a> The largest directory platform. Its main focus is the full-page map. Has satellite imagery, aerial photography, street maps, 360° panoramic views of streets, real-time traffic conditions, and route planning. </li>
+                    <li><a href="https://www.tripadvisor.com/" target="_blank">Trip Advisor:</a> Travel-focused directory platform. Essentially contains the same information and has a similar concept as Yelp.</li>
+                    <li><a href="https://play.google.com/store/apps/details?id=com.DennisaurCo.BobaNow&hl=en_US" target="_blank">Boba Now! (App):</a> Contains information such as business hours, sort by, distance, tea flavor options, and Yelp reviews are shown. Uses Google Maps and Yelp reviews integration.</li>
+                    <li><a href="https://play.google.com/store/apps/details?id=com.projectfurball.teaaddict.android&hl=en_US" target="_blank">Tea Addict (App):</a> Enables users to find boba and bubble tea nearby at home or overseas with Google Maps integration. Users can submit edits, new, and missing stores in-app. Information such as store business hours, distance, user ratings, and user shares are shown.</li>
+                </ul>
+            </div>
+            <div class="section">
+                <h2>Six Thinking Hats Methodology</h2>
+                <p>As defined by The de Bono Group, the <a href="http://www.debonogroup.com/six_thinking_hats.php" target="_blank">six thinking hats methodology</a> is a simple, yet effective parallel thinking process that helps people be more productive, focused, and mindfully involved. This methodology separates thinking into six clear functions and roles. I summarized and split each hat into sections under the two hats I thought correlated most with each other.</p>
+                <h3>White hat & Blue hat</h3>
+                <p>With BobaTeaU, users can look up boba tea places to see where they're located, directions on how to get there, along with reviews about the location itself and reviews about individual drinks. Users can keep track of drink flavors and customization options they like and don't like via their reviews that other users can see. Its primary audience is for high school and college students who like going to places off-campus, like boba tea shops, and who tend to study and hang out with their friends. The boba tea industry is currently booming with shops constantly opening all over UTD; therefore, having this website will be perfect for boba tea lovers. The success of this website will be measured by the amount of people who sign up and use BobaTeaU.</p>
+                <h3>Black hat & Green hat</h3>
+                <p>The most difficult part about getting this website to come together is the aggregation of data. For example, how would I accumulate all the information about the different drink options if each store menu varies? And, how much user input and menu data can I store on my web hosting server? This should be solved by keeping the initial implementation small and focused around the UTD area. There are also concerns about what counts as a "boba tea shop" as many places, like <a href="https://www.yelp.com/biz/taiwan-cafe-plano">Taiwan Cafe</a>, offer food and boba tea. I will solve this issue by only including shops that primarily market themselves as "boba tea shops."</p>
+                <h3>Red hat & Yellow hat</h3>
+                <p>This website's competitors are Yelp and Google. However, its niche is boba-focused. The main attraction is the diary option and ratings for individual drinks, as Yelp and Google don't offer those specific options. There's no need to ask for recommendations from people who don't share similar tastes with you. You can see what people customize their drinks with -- sweetness, ice level, and other adjustments -- with similar tastes. In addition, getting boba is already a social thing that many people, especially high school and college students, enjoy. With BobaTeaU, it'll grow even more as people can connect and share their opinions, find more information, and match their favorite drinks with others online.</p>
+            </div>
+            <h2>Website Design & Implementation</h2>
+            <h3>Sitemap Visualization</h3>
+            <img src="../bobateau/bobateau-sitemap.png" width="80%">
+            <figcaption>This is my initial sitemap design for my website.</figcaption>
+            <h3>Sketched Low-Fidelity Wireframes</h3>
+            <figcaption>I designed this low-fi wireframe of the website using pen and paper.</figcaption>
+            <h3>Mid-Fidelity Wireframes</h3>
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="../bobateau/bobateau-wireframe-page-home.png">
+                    <img src="../bobateau/bobateau-wireframe-page-results.png"></div>
+                <div class="col-md-6">
+                    <img src="../bobateau/bobateau-wireframe-page-location.png">
+                    <img src="../bobateau/bobateau-wireframe-page-review.png"></div>
+            </div>
+            <figcaption>These mid-fi wireframes were designed in Adobe XD.</figcaption>
+            <h3>Visual Design</h3>
+            <img src="../bobateau/bobateau-visual-scheme.png">
+            <figcaption>I incorporated a “black milk tea” color scheme onto my website. On the right are some of my initial logo designs before I settled on a white logo. I used the “U” part of the logo for the website’s favicon.</figcaption>
+            <h3>Live On WordPress</h3>
+            <img src="../bobateau/bobateau-preview.png">
+            <figcaption>This was originally done in WordPress. However, I have since taken the site down after December 2019. You may view the prototype I have done on Adobe XD.</figcaption>
+            <p align=center class="lonk"><a href="https://xd.adobe.com/view/ebec66b7-472b-43e8-6e1d-d2ca46abfa92-9ddd/" target="_blank">View The Prototype.</a></p>
+            <p>I used a <a href="https://wordpress.org/themes/illdy/">custom theme called Illdy</a> to implement my design onto WordPress. I chose this theme because of the simplicity it offered and because it looked most like my wireframes. I also used several plugins to create a contact form, implement directory pages, and integrate Google Maps to each location page.</p>
+            <p>I was unable to find a way to implement the search bar above the fold on the homepage with this WordPress theme. Therefore, I decided to remove the search page and allow users to see popular drink options via the “Find Your Perfect Drink” button. This page would ideally lead to another page that gathered the most popular items from user reviews.</p>
+            <p>Since it was difficult to implement the diary page using the plugins I could find, I decided to remove this option and designed BobaTeaU solely as a boba tea shop directory and review site. Ideally, users can post reviews onto the respective shop’s page with suggestions like “Tell your boba buddies how you customize your drink!” as a placeholder in the review box. A site admin will take quality reviews of the most popular drinks, put them into the testimonial section or “Find Your Perfect Drink” page where new or curious users can find the backlink to the shop it came from to decide whether they would like to order that for the day.</p>
+            <h2>Takeaways</h2>
+            <p>Although I have used WordPress in the past, this was a challenging project because I was designing my own product. Because of this, I had to research which plugins would work with my website idea and what the limitations of implementing and hosting a webpage WordPress were. Research played a crucial part in my design process and set the foundations for my ideas.</p>
+            <p>If time constraints were not an issue and if I had more knowledge on how to manipulate a WordPress design from the backend, I would have liked to implement the diary option so users could easily track their favorite boba tea customization options and other users could use those as references. In addition, I would have also liked to implement the “Top 3 Drinks” idea I had on my wireframe on a locations page.</p>
+        </div>
+    </div>
+    <!-- animate on scroll -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+
+    </script>
+</body>
+<!-- find horizontal scroll -->
+<script>
+    var docWidth = document.documentElement.offsetWidth;
+
+    [].forEach.call(
+        document.querySelectorAll('*'),
+        function(el) {
+            if (el.offsetWidth > docWidth) {
+                console.log(el);
+            }
+        }
+    );
+
+</script>
+
+<!-- responsive nav -->
+<script>
+    function myFunction() {
+        var x = document.getElementById("nav");
+        if (x.className === "mynav") {
+            x.className += " responsive";
+        } else {
+            x.className = "mynav";
+        }
+    }
+
+</script>
+<footer class="footer">
+    <div class="footer-text">
+        <center>Website designed and coded &copy 2020 Alexandria Lo</center>
+        <p><a href="mailto:thanksalox@gmail.com"><img class="socialmedia" src="../images/gmail.png"></a>
+            <a href="https://www.linkedin.com/in/alexandrialo/" target="_blank"><img class="socialmedia" src="../images/linkedin.png"></a>
+            <a href="https://www.instagram.com/aaaliku" target="_blank"><img class="socialmedia" src="../images/instagram.png"></a></p>
+    </div>
+
+</footer>
+
+</html>
