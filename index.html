@@ -50,7 +50,7 @@
             <li><a href="#about">About</a></li>
         </ul>
         <!-- hamburger-kun -->
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()"><img src="images/hamburger.png"></a>
     </nav>
     <div class="hero-image parallax-bg">
         <div class="hero-text typed">
@@ -194,7 +194,12 @@
     <!-- animate on scroll -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        AOS.init();
+        AOS.init({
+            disable: function() {
+                var maxWidth = 600;
+                return window.innerWidth < maxWidth;
+            }
+        });
 
     </script>
 </body>
