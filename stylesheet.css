@@ -293,7 +293,7 @@ header {
     .mynav {
         overflow: hidden;
         background-color: white;
-        width: 10%;
+        width: 15%;
     }
 
     .mynav li,
@@ -314,7 +314,7 @@ header {
 
     .mynav a.icon,
     .mynav li.icon {
-        width: 25px;
+        width: 45px;
         display: block;
     }
 
@@ -326,6 +326,14 @@ header {
         left: 0px;
         z-index: 1;
         box-shadow: 0px 10px 8px -8px rgba(211, 218, 227, 100);
+    }
+
+    figure {
+        max-width: 100%;
+    }
+
+    .col-md-4 col-bordered {
+        display: none;
     }
 }
 
