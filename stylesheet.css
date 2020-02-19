@@ -583,8 +583,9 @@ figcaption {
 }
 
 .logo-image {
-    margin-top: 25px;
-    width: 80%;
+    margin: 25px auto;
+    width: 300px;
+    display: block;
 }
 
 /* main title */
