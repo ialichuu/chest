@@ -160,7 +160,6 @@ section {
 }
 
 /************************* basic html *************************/
-
 h1 {
     font-family: "Montserrat";
     font-size: 42px;
@@ -194,6 +193,7 @@ h4 {
 p {
     font-family: "Roboto";
     font-size: 16px;
+    padding: 2%;
 }
 
 a {
@@ -218,7 +218,6 @@ ol {
 }
 
 /************************* navigation bar *************************/
-
 header {
     height: 10%;
     background-color: white;
@@ -236,6 +235,7 @@ header {
     height: auto;
 }
 
+/************************* desktop config *************************/
 @media only screen and (min-width: 601px) {
 
     nav {
@@ -287,13 +287,23 @@ header {
     background-color: white;
 }
 
-/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+/************************* mobile config *************************/
 @media only screen and (max-width: 600px) {
+
+    h1 {
+        margin-bottom: 5%;
+    }
+
+    h2,
+    h3,
+    h4 {
+        margin: 5% 0 5% 0;
+    }
 
     .mynav {
         overflow: hidden;
         background-color: white;
-        width: 15%;
+        width: 18%;
     }
 
     .mynav li,
@@ -307,11 +317,13 @@ header {
         margin: 10px;
     }
 
+    /* hide all links except for first (home) */
     .mynav a,
     .mynav li:not(:first-child) {
         display: none;
     }
 
+    /* show links in topnav (.icon) */
     .mynav a.icon,
     .mynav li.icon {
         width: 45px;
@@ -325,20 +337,32 @@ header {
         border-radius: 0;
         left: 0px;
         z-index: 1;
-        box-shadow: 0px 10px 8px -8px rgba(211, 218, 227, 100);
+        box-shadow: 0px 10px 5px -5px rgba(211, 218, 227, 100);
     }
 
     figure {
         max-width: 100%;
     }
 
-    .col-md-4 col-bordered {
-        display: none;
+    .content-process,
+    .about {
+        margin-bottom: 10%;
+    }
+
+    .col-md-4.col-bordered {
+        padding: 0 10px 0 10px;
+        width: 100%;
+    }
+
+    .border-right {
+        border-right: 1px solid white !important;
     }
 }
 
-/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+/************************* mobile responsive config *************************/
 @media only screen and (max-width: 600px) {
+
+    /* for topnav with JS when clicking the icon */
     .mynav.responsive {
         position: relative;
         width: 50%;
@@ -351,6 +375,7 @@ header {
         top: 0;
     }
 
+    /* displays links vertically for mobile */
     .mynav.responsive li,
     .mynav.responsive a {
         float: none;
@@ -360,8 +385,6 @@ header {
 }
 
 /************************* home hero *************************/
-
-
 .hero-image {
     background-color: white;
     height: 100vh;
@@ -404,7 +427,6 @@ header {
 }
 
 /************************* home portfolio *************************/
-
 .portfolio {
     padding: 3%;
     margin: 5%;
@@ -454,6 +476,20 @@ figure {
     margin: 3% 0 3% 0;
 }
 
+.parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.col-md-6 parent {
+    position: relative;
+    min-height: 1px;
+    padding: 0;
+    margin-bottom: 3%;
+}
+
 .rectangle-button button {
     border-radius: 10px;
     box-shadow: 0 2px 5px 0 rgba(211, 218, 227, 100);
@@ -475,19 +511,7 @@ figure {
 
 img {
     max-width: 100%;
-}
-
-.parent {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.col-md-6 parent {
-    position: relative;
-    min-height: 1px;
-    padding: 0;
+    margin-bottom: 3%;
 }
 
 /************************* home art *************************/
@@ -504,14 +528,9 @@ img {
     justify-content: space-between;
 }
 
-/*.rs {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-}*/
+.rs {}
 
 .col-md-4 {
-    /*    float: none;*/
     margin-top: 3%;
     width: 33.33%;
     padding: 20px;
@@ -522,7 +541,6 @@ img {
 }
 
 /************************* home about *************************/
-
 .about {
     background-color: white;
     padding: 5%;
@@ -530,17 +548,12 @@ img {
     justify-content: center;
 }
 
-.about p {
-    padding: 7px;
-}
-
 .about-img {
     display: block;
     float: left;
-    margin-right: 30px;
-    max-width: 30%;
+    margin: 0 5% 2% 0;
+    max-width: 35%;
     border-radius: 50%;
-    margin-bottom: 30px;
 }
 
 .list1 a {
@@ -564,7 +577,6 @@ figcaption {
 }
 
 /************************* project content *************************/
-
 .case-content {
     padding-bottom: 5%;
     margin: 0 3% 0 3%;
@@ -575,7 +587,7 @@ figcaption {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 70%;
+    width: 80%;
 }
 
 /* main title */
@@ -590,12 +602,6 @@ figcaption {
     font-size: 16px;
     text-align: center;
     margin-top: 1%;
-}
-
-.overview p {
-    line-height: 30px;
-    width: 75%;
-    margin: 3% auto;
 }
 
 .overview-title {
@@ -634,24 +640,22 @@ figcaption {
 }
 
 .section p {
-    font-family: "Roboto";
-    line-height: 30px;
     margin: 2% 0 2% 0;
 }
 
 .large-img {
     max-width: 80%;
+    margin-bottom: 3%;
 }
 
 .slide-img1,
 .slide-img2,
 .slide-img3,
 .slide-img4 {
-    width: 50%;
+    width: 80%;
 }
 
 /************************* user id *************************/
-
 .user-id {
     width: 80%;
     margin: auto;
@@ -670,7 +674,6 @@ figcaption {
     padding: 0;
     display: inline;
     margin-bottom: 3%;
-    line-height: 30px;
     margin: 3% auto;
 }
 
@@ -678,20 +681,11 @@ figcaption {
     padding: 10px;
 }
 
-.row p {
-    font-family: "Roboto";
-}
-
-.row li {
-    font-family: "Roboto";
-}
-
 .lists li {
     margin: 2%;
 }
 
 /************************* footer *************************/
-
 footer {
     position: relative;
     background-color: white;
@@ -825,12 +819,4 @@ img {
     }
 }
 
-/* on smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-
-    .prev,
-    .next,
-    .text {
-        font-size: 11px
-    }
 }
