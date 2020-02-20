@@ -303,7 +303,11 @@ header {
     .mynav {
         overflow: hidden;
         background-color: white;
-        width: 18%;
+        width: 100%;
+    }
+
+    .mynav ul {
+        padding: 0;
     }
 
     .mynav li,
@@ -326,8 +330,9 @@ header {
     /* show links in topnav (.icon) */
     .mynav a.icon,
     .mynav li.icon {
-        width: 45px;
+        width: 40px;
         display: block;
+        margin: 10px auto;
     }
 
     html:not([data-scroll='0']) .mynav {
@@ -335,7 +340,6 @@ header {
         top: 0px;
         border: none;
         border-radius: 0;
-        left: 0px;
         z-index: 1;
         box-shadow: 0px 10px 5px -5px rgba(211, 218, 227, 100);
     }
@@ -358,24 +362,24 @@ header {
 @media only screen and (max-width: 600px) {
 
     /* for topnav with JS when clicking the icon */
-    .mynav.responsive {
-        position: relative;
-        width: 50%;
-    }
+    .mynav.responsive {}
 
     .mynav.responsive a.icon,
     .mynav.responsive li.icon {
-        position: absolute;
-        left: 0;
-        top: 0;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        bottom: 0;
     }
 
     /* displays links vertically for mobile */
+    .mynav.responsive ul {}
+
     .mynav.responsive li,
     .mynav.responsive a {
         float: none;
         display: block;
-        text-align: right;
+        text-align: center;
     }
 }
 
