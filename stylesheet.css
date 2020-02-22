@@ -386,6 +386,7 @@ header {
 /************************* home hero *************************/
 .hero-image {
     background-color: white;
+    background: url(images/cloudstars-bg.svg);
     height: 100vh;
     background-size: cover;
     background-position: center;
