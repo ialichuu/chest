@@ -386,14 +386,19 @@ header {
 /************************* home hero *************************/
 .hero-image {
     background-color: white;
-    background: url(images/cloudstars-bg.svg);
-    height: 100vh;
+    /*background: url(images/cloudstars-bg.svg);*/
+    /*height: 100vh;*/
+    height: 60vh;
     background-size: cover;
+    background-attachment: fixed;
+    background-blend-mode: overlay;
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
     padding: 0;
     margin: 0;
+    min-width: 100%;
+    overflow: hidden;
 }
 
 .hero-text {
