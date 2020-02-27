@@ -161,7 +161,8 @@ section {
 
 /************************* basic html *************************/
 h1 {
-    font-family: "Montserrat";
+    font-family: "Montserrat", sans-serif;
+    font-display: swap;
     font-size: 42px;
     margin: 0;
     text-align: center;
@@ -169,7 +170,8 @@ h1 {
 }
 
 h2 {
-    font-family: "Montserrat";
+    font-family: "Montserrat", sans-serif;
+    font-display: swap;
     text-transform: uppercase;
     font-size: 34px;
     text-align: center;
@@ -177,7 +179,8 @@ h2 {
 }
 
 h3 {
-    font-family: "Montserrat";
+    font-family: "Montserrat", sans-serif;
+    font-display: swap;
     font-size: 28px;
     text-transform: uppercase;
     text-align: center;
@@ -185,13 +188,15 @@ h3 {
 }
 
 h4 {
-    font-family: "Montserrat";
+    font-family: "Montserrat", sans-serif;
+    font-display: swap;
     font-size: 26px;
     margin: 2% 0 2% 0;
 }
 
 p {
-    font-family: "Roboto";
+    font-family: "Roboto", sans-serif;
+    font-display: swap;
     font-size: 16px;
     padding: 1%;
 }
@@ -212,7 +217,8 @@ hr {
 
 ul,
 ol {
-    font-family: "Roboto";
+    font-family: "Roboto", sans-serif;
+    font-display: swap;
     font-size: 16px;
     padding-left: 50px;
 }
@@ -258,7 +264,8 @@ header {
         display: inline;
         padding: 10px;
         text-decoration: none;
-        font-family: "Montserrat";
+        font-family: "Montserrat", sans-serif;
+        font-display: swap;
         color: black;
         text-transform: uppercase;
         letter-spacing: 3px;
@@ -277,6 +284,10 @@ header {
         box-shadow: 0px 10px 8px -8px rgba(211, 218, 227, 100);
         outline: none;
     }
+
+    .rectangle-button {
+        margin-top: 5%;
+    }
 }
 
 .mynav .icon {
@@ -285,6 +296,7 @@ header {
     margin-top: 20px;
     margin-right: 10px;
     background-color: white;
+
 }
 
 /************************* mobile config *************************/
@@ -314,11 +326,12 @@ header {
     .mynav a {
         display: block;
         text-decoration: none;
-        font-family: "Montserrat";
+        font-family: "Montserrat", sans-serif;
         color: black;
         text-transform: uppercase;
         font-weight: bold;
         margin: 10px;
+        font-display: swap;
     }
 
     /* hide all links except for first (home) */
@@ -355,6 +368,10 @@ header {
 
     .border-right {
         border-right: 1px solid white !important;
+    }
+
+    .rectangle-button {
+        margin: 0 0 12% 0;
     }
 }
 
@@ -454,8 +471,9 @@ header {
 }
 
 .portfolio-title {
-    font-family: "Montserrat";
+    font-family: "Montserrat", sans-serif;
     font-size: 34px;
+    font-display: swap;
 }
 
 .center {
@@ -571,7 +589,8 @@ li a {}
 figcaption {
     padding-top: 10px;
     text-align: center;
-    font-family: "Montserrat";
+    font-family: "Montserrat", sans-serif;
+    font-display: swap;
     font-weight: 300;
     font-size: 14px;
     margin-bottom: 3%;
@@ -668,13 +687,15 @@ figcaption {
 }
 
 .user-id h3 {
-    font-family: "montserrat";
+    font-family: "Montserrat", sans-serif;
+    font-display: swap;
     font-size: 36px;
     margin: 2% 0 2% 0;
 }
 
 .user-id p {
-    font-family: "Roboto";
+    font-family: "Roboto", sans-serif;
+    font-display: swap;
     font-size: 16px;
     padding: 0;
     display: inline;
@@ -702,7 +723,8 @@ footer {
 .footer-text {
     margin-top: 20px;
     text-align: center;
-    font-family: "Montserrat";
+    font-family: "Montserrat", sans-serif;
+    font-display: swap;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -728,7 +750,8 @@ footer {
 }
 
 body {
-    font-family: Roboto, sans-serif;
+    font-family: "Roboto", sans-serif;
+    font-display: swap;
     margin: 0
 }
 
