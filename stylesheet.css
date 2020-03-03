@@ -119,7 +119,7 @@ thead,
 tr,
 th,
 td,
-article,
+icle,
 aside,
 canvas,
 details,
@@ -212,6 +212,7 @@ a:active {
 }
 
 hr {
+    margin: auto;
     width: 40%;
 }
 
@@ -373,6 +374,11 @@ header {
     .rectangle-button {
         margin: 0 0 12% 0;
     }
+
+    .footer {
+        margin-top: 10%;
+    }
+
 }
 
 /************************* mobile responsive config *************************/
@@ -451,7 +457,7 @@ header {
 /************************* home portfolio *************************/
 .portfolio {
     padding: 3%;
-    margin: 5%;
+    margin: 3%;
     justify-content: center;
     background-color: white;
     background-position: center;
@@ -467,6 +473,7 @@ header {
 
 /* h4 exception */
 .portfolio h4 {
+    margin-left: 7%;
     font-size: 18px;
 }
 
@@ -513,23 +520,41 @@ figure {
     margin-bottom: 3%;
 }
 
+
 .rectangle-button button {
     border-radius: 10px;
     box-shadow: 0 2px 5px 0 rgba(211, 218, 227, 100);
 }
 
+.rectangle-button.center {
+    margin: 2% auto;
+    width: 150px;
+}
+
 .button {
-    margin: 2% 0 0 0;
+    margin: 2% auto;
     width: 150px;
     font-size: 20px;
     padding: 7%;
     color: white;
     background-color: #fc7978;
     border: none;
-    border-radius: 0;
     box-shadow: inset 0 -3px #d16463;
     outline: none;
     border-bottom: 2px solid #d16463;
+}
+
+.comingsoon-button {
+    margin: 2% auto;
+    width: 150px;
+    font-size: 20px;
+    padding: 7%;
+    color: white;
+    background-color: #808080;
+    border: none;
+    box-shadow: inset 0 -3px #202020;
+    outline: none;
+    border-bottom: 2px solid #202020;
 }
 
 img {
@@ -553,10 +578,14 @@ img {
 
 .rs {}
 
+.row {
+    padding: 0 5%;
+}
+
 .col-md-4 {
-    margin-top: 3%;
+    margin: 1% auto;
     width: 33.33%;
-    padding: 20px;
+    padding: 0 5px;
 }
 
 .col-md-4 p {
@@ -566,7 +595,7 @@ img {
 /************************* home about *************************/
 .about {
     background-color: white;
-    padding: 5%;
+    padding: 2%;
     margin: 2%;
     justify-content: center;
 }
@@ -574,7 +603,7 @@ img {
 .about-img {
     display: block;
     float: left;
-    margin: 0 5% 2% 0;
+    margin: 0 2%;
     max-width: 30%;
     border-radius: 50%;
 }
@@ -717,11 +746,10 @@ footer {
     background-color: white;
     color: black;
     text-align: center;
-    position: 0;
 }
 
 .footer-text {
-    margin-top: 20px;
+    margin-top: 10px;
     text-align: center;
     font-family: "Montserrat", sans-serif;
     font-display: swap;

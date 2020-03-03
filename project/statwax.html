@@ -75,7 +75,7 @@
     <div class="case-content">
         <div class="content-heading">
             <h1>Statwax</h1>
-            <h4>Designing the logo for the Dallas regional headquarters</h4>
+            <h4>A design of the logo for the Dallas regional headquarters</h4>
         </div>
         <div class="logo-image">
             <img src="../statwax/statwax-logo.png" data-aos="fade-down" data-aos-duration="1000">
@@ -183,36 +183,35 @@
         });
 
     </script>
-</body>
-<!-- Slideshow -->
-<script>
-    var slideIndex = [1, 1];
-    var slideId = ["my-slides1", "my-slides2"]
-    showSlides(1, 0);
-    showSlides(1, 1);
+    <!-- Slideshow -->
+    <script>
+        var slideIndex = [1, 1];
+        var slideId = ["my-slides1", "my-slides2"]
+        showSlides(1, 0);
+        showSlides(1, 1);
 
-    function plusSlides(n, no) {
-        showSlides(slideIndex[no] += n, no);
-    }
+        function plusSlides(n, no) {
+            showSlides(slideIndex[no] += n, no);
+        }
 
-    function showSlides(n, no) {
-        var i;
-        var x = document.getElementsByClassName(slideId[no]);
-        if (n > x.length) {
-            slideIndex[no] = 1
+        function showSlides(n, no) {
+            var i;
+            var x = document.getElementsByClassName(slideId[no]);
+            if (n > x.length) {
+                slideIndex[no] = 1
+            }
+            if (n < 1) {
+                slideIndex[no] = x.length
+            }
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            x[slideIndex[no] - 1].style.display = "block";
         }
-        if (n < 1) {
-            slideIndex[no] = x.length
-        }
-        for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";
-        }
-        x[slideIndex[no] - 1].style.display = "block";
-    }
 
-</script>
-<!-- find horizontal scroll -->
-<!--<script>
+    </script>
+    <!-- find horizontal scroll -->
+    <!--<script>
     var docWidth = document.documentElement.offsetWidth;
 
     [].forEach.call(
@@ -225,26 +224,26 @@
     );
 </script>-->
 
-<!-- responsive nav -->
-<script>
-    function myFunction() {
-        var x = document.getElementById("nav");
-        if (x.className === "mynav") {
-            x.className += " responsive";
-        } else {
-            x.className = "mynav";
+    <!-- responsive nav -->
+    <script>
+        function myFunction() {
+            var x = document.getElementById("nav");
+            if (x.className === "mynav") {
+                x.className += " responsive";
+            } else {
+                x.className = "mynav";
+            }
         }
-    }
 
-</script>
-<footer class="footer">
-    <div class="footer-text">
-        <center>Website designed and coded &copy 2020 Alexandria Lo</center>
-        <p><a href="mailto:thanksalox@gmail.com"><img class="socialmedia" src="../images/gmail.jpg"></a>
-            <a href="https://www.linkedin.com/in/alexandrialo/" target="_blank" rel="noopener noreferrer"><img class="socialmedia" src="../images/linkedin.jpg"></a>
-            <a href="https://www.instagram.com/aaaliku" target="_blank" rel="noopener noreferrer"><img class="socialmedia" src="../images/instagram.jpg"></a></p>
-    </div>
-
-</footer>
+    </script>
+    <footer class="footer">
+        <div class="footer-text">
+            <center>Website designed and coded &copy 2020 Alexandria Lo</center>
+            <p><a href="mailto:thanksalox@gmail.com"><img class="socialmedia" src="../images/gmail.jpg"></a>
+                <a href="https://www.linkedin.com/in/alexandrialo/" target="_blank" rel="noopener noreferrer"><img class="socialmedia" src="../images/linkedin.jpg"></a>
+                <a href="https://www.instagram.com/aaaliku" target="_blank" rel="noopener noreferrer"><img class="socialmedia" src="../images/instagram.jpg"></a></p>
+        </div>
+    </footer>
+</body>
 
 </html>
