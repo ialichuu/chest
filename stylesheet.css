@@ -580,6 +580,12 @@ img {
 
 .row {
     padding: 0 5%;
+    display: flex;
+}
+
+.column {
+    flex: 33.33%;
+    padding: 5px;
 }
 
 .col-md-4 {
@@ -669,7 +675,6 @@ figcaption {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 3%;
-    max-width: 80%;
 }
 
 .heading-section p {
@@ -706,6 +711,11 @@ figcaption {
 .slide-img3,
 .slide-img4 {
     width: 80%;
+}
+
+.wireframe {
+    object-fit: cover;
+    max-height: 400px;
 }
 
 /************************* user id *************************/
