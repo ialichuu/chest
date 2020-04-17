@@ -362,6 +362,10 @@ header {
         max-width: 100%;
     }
 
+    img {
+        max-width: 100%;
+    }
+
     .col-md-4.col-bordered {
         padding: 0 10px 0 10px;
         width: 100%;
@@ -631,7 +635,7 @@ figcaption {
     margin-bottom: 3%;
 }
 
-.large_section {
+.large-section {
     margin: 3% 0 3% 0;
 }
 
@@ -683,7 +687,6 @@ figcaption {
 
 /************************* sections *************************/
 .section {
-    width: 80%;
     margin: auto;
     margin-bottom: 1%;
 }
@@ -703,7 +706,7 @@ figcaption {
 
 .large-img {
     max-width: 80%;
-    margin-bottom: 3%;
+    margin-bottom: auto;
 }
 
 .slide-img1,
@@ -714,15 +717,12 @@ figcaption {
 }
 
 .wireframe {
-    object-fit: cover;
-    max-height: 400px;
+    margin: auto;
 }
 
 /************************* user id *************************/
 .user-id {
-    width: 80%;
     margin: auto;
-    margin-bottom: 1%;
 }
 
 .user-id h3 {
