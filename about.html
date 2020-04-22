@@ -57,19 +57,20 @@
     </nav>
     <div class="about container">
         <div class="home-text row">
+            <div class="about-img-div col-md-5">
+                <img class="about-img" src="images/alexandria-san-francisco.jpeg">
+            </div>
             <div class="col-md-7">
                 <h3>Hi there! Thank you for stopping by!</h3>
                 <p>I graduated at The University of Texas at Dallas in 2019 with a B.S. in Cognitive Science (Cognitive-Neuroscience concentration) and a minor in Business Administration.</p>
                 <p>Through my journey of self-discovery, going from the healthcare field to digital marketing, I developed an interest in people and their unique stories which influenced my dedication to avidly engage and understand new perspectives.</p>
                 <p>As we move more toward a technology-focused society, it’s crucial we make it easy for all sorts of people to be able to use the apps and products made by innovators. For me, UX is the perfect mix of design and technology. It encompasses both my passion for creating products that everyone can enjoy and my desire to make a meaningful yet positive impact in this world.</p>
                 <p>Outside of my interest in UX Design, I'm an avid consumer of boba tea. If you have any drink recommendations, please let me know. Please. I also like to draw and listen to tech and daily news podcasts!</p>
-            </div>
-            <div class="about-img-div col-md-5">
-                <img class="about-img" src="images/alexandria-san-francisco.jpeg">
+                <a href="images/alo-resume-s20.pdf"><button class="button center">VIEW MY RESUME</button></a>
             </div>
         </div>
-        <a href=""><button class="button button1 center">VIEW MY RESUME</button></a>
     </div>
+
 
     <!-- animate on scroll -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -79,34 +80,6 @@
                 var maxWidth = 600;
                 return window.innerWidth < maxWidth;
             }
-        });
-
-    </script>
-    <!-- smooth scrolling -->
-    <script>
-        $(document).ready(function() {
-            // Add smooth scrolling to all links
-            $("a").on('click', function(event) {
-
-                // Make sure this.hash has a value before overriding default behavior
-                if (this.hash !== "") {
-                    // Prevent default anchor click behavior
-                    event.preventDefault();
-
-                    // Store hash
-                    var hash = this.hash;
-
-                    // jQuery's animate() method to add smooth page scroll
-                    // 888 milliseconds to scroll to the specified area
-                    $('html, body').animate({
-                        scrollTop: $(hash).offset().top
-                    }, 888, function() {
-
-                        // Add hash (#) to URL when done scrolling (default click behavior)
-                        window.location.hash = hash;
-                    });
-                } // End if
-            });
         });
 
     </script>
