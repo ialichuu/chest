@@ -28,25 +28,6 @@
 
     </script>
 
-    <!-- Hotjar Tracking Code for alexandrialo.com -->
-    <script>
-        (function(h, o, t, j, a, r) {
-            h.hj = h.hj || function() {
-                (h.hj.q = h.hj.q || []).push(arguments)
-            };
-            h._hjSettings = {
-                hjid: 1706459,
-                hjsv: 6
-            };
-            a = o.getElementsByTagName('head')[0];
-            r = o.createElement('script');
-            r.async = 1;
-            r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
-            a.appendChild(r);
-        })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
-
-    </script>
-
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- BootstrapCDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -64,75 +45,121 @@
     </header>
     <nav class="mynav" id="nav">
         <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="../index.html#portfolio">Portfolio</a></li>
-            <li><a href="../index.html#about">About</a></li>
-            <li><a href="../index.html#art">Artwork</a></li>
+            <li id="o"><a href="../index.html">Home</a></li>
+            <li id="o"><a href="../index.html#portfolio">Portfolio</a></li>
+            <li id="o"><a href="../about.html">About</a></li>
         </ul>
         <!-- hamburger-kun -->
         <a href="javascript:void(0);" class="icon" onclick="myFunction()"><img src="../images/arrow.jpg"></a>
     </nav>
     <div class="case-content">
-        <div class="content-heading">
-            <h1>CSA At UTD</h1>
-            <h4>A redesign of the website for the Chemistry Student Association at UT Dallas</h4>
+        <div class="background csa">
+            <div class="content-heading">
+                <h1>CSA At UTD</h1>
+                <h3>Making an outdated website easier to navigate.</h3>
+            </div>
         </div>
-        <div class="logo-image">
-            <img src="../csaatutd/acs-logo.png" data-aos="fade-down" data-aos-duration="1000">
-        </div>
-
-        <div class="large-section content-process">
-            <h2>Overview</h2>
-            <div class="summary container-fluid container-max-width">
-                <p>The Chemistry Student Association (CSA) is a club at The University of Texas at Dallas. They hosted their original website on Wix which has been outdated since 2017. </p>
-                <div class="row">
-                    <div class="col-md-4 col-bordered border-right">
-                        <center><span class="overview-title">
-                                <p>The Challenge</p>
-                            </span></center>
-                        <p>How do we create a streamlined experience for UTD students interested in joining CSA at UTD?</p>
+        <div class="content-process">
+            <div class="section overview container">
+                <div class="summary row">
+                    <div class="problem col-sm-8">
+                        <h2>Problem</h2>
+                        <p>It's the start of the school semester. Students are wandering around the Student Organization Fair, looking for a new student organization to join with their friends. Interested students head to designated booths to learn more about a particular organization.</p>
+                        <p>The Chemistry Student Association (CSA) is a club at The University of Texas at Dallas. The purpose of their website is to showcase their club to new and interested members. However, their website has been outdated since 2017 and is a mess to navigate through.</p>
+                        <div class="csa goal">
+                            <h3>Goal</h3>
+                            <p>Create a streamlined experience for UTD students interested in joining CSA in order to increase member acquisition rates for this club.</p>
+                        </div>
                     </div>
-                    <div class="col-md-4 col-bordered border-right">
-                        <center><span class="overview-title">
-                                <p>My Role</p>
-                            </span></center>
-                        <p>This project was done for CSA at UTD. I am not affiliated with this club. This project was done on weekends from November 2019 - April 2020.</p>
-                    </div>
-                    <div class="col-md-4 col-bordered">
-                        <center><span class="overview-title">
-                                <p>Methods/Tools Used</p>
-                            </span></center>
-                        <p>Adobe XD | Wireframing | Interviewing | Low/Mid-Fidelity Design | Hi-Fidelity Prototyping</p>
+                    <div class="snippet col-sm-4">
+                        <h4 class="overview-title csa-font">Role</h4>
+                        <p>UI/UX Designer</p>
+                        <h4 class="overview-title csa-font">Team</h4>
+                        <p>Alexandria Lo</p>
+                        <p>Melody Chuang</p>
+                        <h4 class="overview-title csa-font">Timeline</h4>
+                        <p>Nov 2019 - Apr 2020</p>
+                        <h4 class="overview-title csa-font">Skills</h4>
+                        <p>User Interviewing, Wireframing, Usability Testing, Prototyping</p>
+                        <h4 class="overview-title csa-font">Tools</h4>
+                        <p>Adobe XD, Adobe Illustrator, Adobe Photoshop, Keynote</p>
                     </div>
                 </div>
             </div>
-            <hr>
-        </div>
-        <div class="content-process">
             <div class="section">
-                <h2>Officer Interviews</h2>
-                <p>To determine what could be improved with the current website, I asked the officers what their main concerns for the redesign were. I was able to come up with three main ones:</p>
+                <h2>Research</h2>
+                <h3 class="csa-font">Officer Interviews</h3>
+                <p>To scope out what the pain points were for the website, I conducted stakeholder interviews with the 8 officers for the year of 2019 - 2020. Among the questions were...</p>
                 <ul>
-                    <li>Current CSA members view the Facebook page to keep up to date with events. The website is tailored for students who want to become members.</li>
-                    <li>CSA sells lab equipment like goggles and carbon copy notebooks during the beginning of the year at a booth. However, students don't know that CSA still sells materials throughout the year and would like to indicate that on their site.</li>
-                    <li>Events are generally posted on Google Calendars. </li>
+                    <li>What do you think of the website?</li>
+                    <li>What is missing from the website that you would like to promote for the organization?</li>
+                    <li>When you were a student interested in joining the Chemistry Student Association, would you have found the current site helpful? Why or why not?</li>
+                </ul>
+                <p>I put together the <span class="csa-font">three main concerns</span> that the officers had:</p>
+                <ul>
+                    <li>Current CSA members view the Facebook page to keep up to date with events. The website is tailored for students who want to become members and are looking for more information about the club.</li>
+                    <li>CSA sells lab equipment like goggles and carbon copy notebooks during the beginning of the year at a booth. However, students don't know that CSA still sells materials throughout the year and the officers would like to indicate that on their site.</li>
+                    <li>Events are generally posted on Google Calendars then duplicated onto the Facebook page. Officers find it redunant to add another set of event information onto their website.</li>
                 </ul>
                 <p>Overall, the team wanted to create a pleasant experience for UTD students who are interested in the Chemistry Student Association at The University of Texas at Dallas to go onto the page to learn more about the benefits for the club as well as upcoming events.</p>
+                <h3 class="csa-font">User Personas</h3>
+                <p>Using the data gathered from the interviews, there are <span class="csa-font">two types of users</span> who would want to use the site:</p>
+                <h4 style="text-align:center">Students interested in joining CSA at UTD (Primary)</h4>
+                <img src="../csaatutd/persona-student.png">
+                <h4 style="text-align:center">Students looking to purchase lab equipment for a specific course (Primary)</h4>
+                <img src="../csaatutd/persona-supplies.png">
             </div>
-            <h2>Current Website</h2>
-            <img src="../csaatutd/csa-original.jpg">
-            <figcaption>The website layout as of November 2019.</figcaption>
-            <h2>Heuristic Evaluation</h2>
+            <!--
+        <div class="section">
+            <h3 class="csa-font">Current Design Analysis</h3>
             <img src="../csaatutd/csa-heuristics.jpg">
-            <figcaption>My heuristic evaluation.</figcaption>
-            <p>I conducted a heuristic evaluation on the current layout using Nielsen Heuristics. I focued more on the layout of the website, rather than the colors, thus I made everything grayscale.</p>
-            <h2>Website Design & Implementation</h2>
-            <h3>Current Sitemap Visualization</h3>
-            <img src="../csaatutd/current-sitemap.png" class="large-img">
-            <figcaption>The current sitemap had everything on the top level of the website.</figcaption>
-            <h3>New Sitemap Visualization</h3>
-            <img src="../csaatutd/new-sitemap.png" class="large-img">
-            <figcaption>The redesigned sitemap still has all the pages sitting on the top level of the website. However, the amount of pages has condensed to what CSA needs to feature on their site.</figcaption>
+            <p>I decided to pick the task of finding quick information about the student organization and focus on a few primary screens: Home, one of the Events page, and the About Us page. I used Nielsen's Usability Heuristics and focused on five heuristics. This is how I would identify opportunities for change.</p>
+            <div class="row">
+                <div class="column">
+                    <p>1. Match between system and the real world</p>
+                    <ul>
+                        <li></li>
+                    </ul>
+                    <p>2. Consistency and standards</p>
+                    <ul>
+                        <li></li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <p>2. Consistency and standards</p>
+                    <ul>
+                        <li></li>
+                    </ul>
+                    <p>2. Consistency and standards</p>
+                    <ul>
+                        <li></li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <p>2. Consistency and standards</p>
+                    <ul>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <h2>Website Design</h2>
+            <h3 class="csa-font">User Flow</h3>
+            <p>Current user flow...</p>
+            <h3 class="csa-font">Sitemap Visualization</h3>
+            <p>Once the experience was mapped out, I constructed a site map to outline all the necessary screens.</p>
+            <row>
+                <div class="column">
+                    <img src="../csaatutd/current-sitemap.png" class="large-img">
+
+                </div>
+                <p>For reference, this was the current site map. It's cluttered with unnecessary pages and everything sits in the top-level of the website.</p>
+                <div class="column">
+                    <img src="../csaatutd/new-sitemap.png" class="large-img">
+                    <p>The redesigned sitemap still has all the pages sitting in the top-level of the website. However, the amount of pages has condensed to what CSA needs to feature on their site.</p>
+                </div>
+            </row>
             <h3>Sketched Low-Fidelity Wireframes</h3>
             <div class="row">
                 <div class="column">
@@ -161,11 +188,22 @@
             <img src="../csaatutd/csa-preview.jpg" class="large-img">
             <img src="../csaatutd/hi-fi-compilation.jpg">
             <figcaption>The final set of wireframes was designed in Adobe XD. Feel free to view my prototype. P.S. The "Subscribe" and "Submit" buttons work.</figcaption>
+            <p align=center class="lonk"><a href="https://xd.adobe.com/view/549bd965-5483-43a8-4d74-46e284481ecb-22aa/?fullscreen" target="_blank">View My Prototype.</a></p>
         </div>
-        <p align=center class="lonk"><a href="https://xd.adobe.com/view/549bd965-5483-43a8-4d74-46e284481ecb-22aa/?fullscreen" target="_blank">View My Prototype.</a></p>
-        <h2>Takeaways + Next Steps</h2>
-        <p>I loved getting the opportunity to work with one of the student organizations at UTD. I’m pleased with the outcome of the new website design. I primarily worked with the Webmaster for the majority of the project. We established the initial wireframe and design together, and she gave me plenty of feedback during the design process along with her officers. After presenting the final product, the team was happy with the design.</p>
-        <p>Unfortunately, I couldn't find many related images for me to work with. Therefore, some of the hero images are out of focus. Nonetheless, the next step is to implement this design on WordPress. If I were to continue working with CSA, I would like to do user testing for interested students who want to join the Chemistry Student Association and conduct surveys to see how they like interacting with the website.</p>
+        <div class="section">
+            <h2>Takeaways + Next Steps</h2>
+            <p>I loved getting the opportunity to work with one of the student organizations at UTD. I’m pleased with the outcome of the new website design. I primarily worked with the Webmaster for the majority of the project. We established the initial wireframe and design together, and she gave me plenty of feedback during the design process along with her officers. After presenting the final product, the team was happy with the design.</p>
+            <p>Unfortunately, I couldn't find many related images for me to work with. Therefore, some of the hero images are out of focus. Nonetheless, the next step is to implement this design on WordPress. If I were to continue working with CSA, I would like to do user testing for interested students who want to join the Chemistry Student Association and conduct surveys to see how they like interacting with the website.... work with the webmaster to implement high quality photos</p>
+        </div>
+-->
+            <div class="section">
+                <div class="in-progress">
+                    <h3>This project is still <span style="color:#ed595c">in progress</span>! Please <span style="color:#ed595c">contact me to find more details</span> or come back when it's complete.</h3>
+                    <h3 span style="text-align:right">Thank you for your patience!</h3>
+                    <h3 span style="text-align:right">- Alexandria</h3>
+                </div>
+            </div>
+        </div>
     </div>
     <!-- animate on scroll -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

@@ -3,27 +3,32 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
     <url>
         <loc>https://alexandrialo.com/</loc>
-        <lastmod>2020-03-03T02:54:21+00:00</lastmod>
+        <lastmod>2020-04-22T02:54:21+00:00</lastmod>
         <priority>1.00</priority>
     </url>
     <url>
-        <loc>https://alexandrialo.com/project/statwax.html</loc>
-        <lastmod>2020-03-03T02:54:21+00:00</lastmod>
+        <loc>https://alexandrialo.com/about</loc>
+        <lastmod>2020-04-22T02:54:21+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>https://alexandrialo.com/project/aliexpress.html</loc>
-        <lastmod>2020-03-03T02:54:21+00:00</lastmod>
+        <loc>https://alexandrialo.com/project/statwax</loc>
+        <lastmod>2020-04-22T02:54:21+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>https://alexandrialo.com/project/bobateau.html</loc>
-        <lastmod>2020-03-03T02:54:21+00:00</lastmod>
+        <loc>https://alexandrialo.com/project/aliexpress</loc>
+        <lastmod>2020-04-22T02:54:21+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>https://alexandrialo.com/project/csaatutd.html</loc>
-        <lastmod>2020-04-01T02:54:21+00:00</lastmod>
+        <loc>https://alexandrialo.com/project/bobateau</loc>
+        <lastmod>2020-04-22T02:54:21+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://alexandrialo.com/project/csaatutd</loc>
+        <lastmod>2020-04-22T02:54:21+00:00</lastmod>
         <priority>0.80</priority>
     </url>
 </urlset>

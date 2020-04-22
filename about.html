@@ -1,0 +1,152 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+
+    <title>About Me | Alexandria Lo</title>
+    <meta name="description" content="Learn more about me and my journey to becoming a UX Designer.">
+
+    <link rel="canonical" href="https://alexandrialo.com/" />
+    <!-- Jquery for Bootstrap -->
+    <script async src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <link rel="icon" href="images/favicon.ico">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Montserrat:300,400" rel="stylesheet">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script src="https://www.googletagmanager.com/gtag/js?id=UA-148686804-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-148686804-1');
+
+    </script>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- BootstrapCDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script async src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <!-- animation on scroll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- hamburger menu -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+
+<body>
+    <header>
+        <a href="index.html" id="home"><img class="logo center" src="images/name.jpg"></a>
+    </header>
+    <nav class="mynav" id="nav">
+        <ul>
+            <li id="o"><a href="index.html">Home</a></li>
+            <li id="o"><a href="index.html#portfolio">Portfolio</a></li>
+            <li id="o"><a href="about.html">About</a></li>
+        </ul>
+        <!-- hamburger-kun -->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()"><img src="images/arrow.jpg"></a>
+    </nav>
+    <div class="about container">
+        <div class="home-text row">
+            <div class="col-md-7">
+                <h3>Hi there! Thank you for stopping by!</h3>
+                <p>I graduated at The University of Texas at Dallas in 2019 with a B.S. in Cognitive Science (Cognitive-Neuroscience concentration) and a minor in Business Administration.</p>
+                <p>Through my journey of self-discovery, going from the healthcare field to digital marketing, I developed an interest in people and their unique stories which influenced my dedication to avidly engage and understand new perspectives.</p>
+                <p>As we move more toward a technology-focused society, it’s crucial we make it easy for all sorts of people to be able to use the apps and products made by innovators. For me, UX is the perfect mix of design and technology. It encompasses both my passion for creating products that everyone can enjoy and my desire to make a meaningful yet positive impact in this world.</p>
+                <p>Outside of my interest in UX Design, I'm an avid consumer of boba tea. If you have any drink recommendations, please let me know. Please. I also like to draw and listen to tech and daily news podcasts!</p>
+            </div>
+            <div class="about-img-div col-md-5">
+                <img class="about-img" src="images/alexandria-san-francisco.jpeg">
+            </div>
+        </div>
+        <a href=""><button class="button button1 center">VIEW MY RESUME</button></a>
+    </div>
+
+    <!-- animate on scroll -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            disable: function() {
+                var maxWidth = 600;
+                return window.innerWidth < maxWidth;
+            }
+        });
+
+    </script>
+    <!-- smooth scrolling -->
+    <script>
+        $(document).ready(function() {
+            // Add smooth scrolling to all links
+            $("a").on('click', function(event) {
+
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+
+                    // Store hash
+                    var hash = this.hash;
+
+                    // jQuery's animate() method to add smooth page scroll
+                    // 888 milliseconds to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 888, function() {
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
+        });
+
+    </script>
+
+    <!-- find horizontal scroll -->
+    <script>
+        var docWidth = document.documentElement.offsetWidth;
+
+        [].forEach.call(
+            document.querySelectorAll('*'),
+            function(el) {
+                if (el.offsetWidth > docWidth) {
+                    console.log(el);
+                }
+            }
+        );
+
+    </script>
+
+    <!-- responsive nav -->
+    <script>
+        function myFunction() {
+            var x = document.getElementById("nav");
+            if (x.className === "mynav") {
+                x.className += " responsive";
+            } else {
+                x.className = "mynav";
+            }
+        }
+
+    </script>
+
+    <footer class="footer">
+        <div class="footer-text">
+            <center>Website designed and coded &copy 2020 Alexandria Lo</center>
+            <p><a href="mailto:thanksalox@gmail.com"><img class="socialmedia" src="images/gmail.jpg"></a>
+                <a href="https://www.linkedin.com/in/alexandrialo/" target="_blank" rel="noopener noreferrer"><img class="socialmedia" src="images/linkedin.jpg"></a>
+                <a href="https://www.instagram.com/aaaliku" target="_blank" rel="noopener noreferrer"><img class="socialmedia" src="images/instagram.jpg"></a></p>
+        </div>
+    </footer>
+</body>
+
+</html>
