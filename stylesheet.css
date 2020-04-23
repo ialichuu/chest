@@ -591,9 +591,8 @@ img {
 }
 
 .row {
-    margin: auto;
-    padding: 0 5%;
-    display: flex;
+    margin: 0;
+    padding: 0;
     width: 100%;
 }
 
