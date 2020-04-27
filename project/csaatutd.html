@@ -32,8 +32,6 @@
     <!-- BootstrapCDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script async src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <!-- animation on scroll -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- hamburger menu -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../stylesheet.css">
@@ -46,32 +44,34 @@
     <nav class="mynav" id="nav">
         <ul>
             <li id="o"><a href="../index.html">Home</a></li>
-            <li id="o"><a href="../index.html#portfolio">Portfolio</a></li>
+            <li id="o"><a href="../index.html#work">Work</a></li>
             <li id="o"><a href="../about.html">About</a></li>
         </ul>
         <!-- hamburger-kun -->
         <a href="javascript:void(0);" class="icon" onclick="myFunction()"><img src="../images/arrow.jpg"></a>
     </nav>
+
+    <div class="background">
+        <img src="../csaatutd/csa-bg.png">
+    </div>
     <div class="case-content">
-        <div class="background csa">
-            <div class="content-heading">
-                <h1>CSA At UTD</h1>
-                <h3>Making an outdated website easier to navigate.</h3>
-            </div>
+        <div class="content-heading">
+            <h1>CSA At UTD</h1>
+            <p class="subtitle">Improving the user experience for the Chemistry Student Association website to increase membership and promote lab equipment sales</p>
         </div>
         <div class="content-process">
             <div class="section overview container">
                 <div class="summary row">
-                    <div class="problem col-sm-8">
+                    <div class="problem col-md-8">
                         <h2>Problem</h2>
                         <p>It's the start of the school semester. Students are wandering around the Student Organization Fair, looking for a new student organization to join with their friends. Interested students head to designated booths to learn more about a particular organization.</p>
-                        <p>The Chemistry Student Association (CSA) is a club at The University of Texas at Dallas. The purpose of their website is to showcase their club to new and interested members. However, their website has been outdated since 2016 and is a mess for students to navigate through.</p>
+                        <p>The Chemistry Student Association (CSA) is a club at The University of Texas at Dallas. They use their website to showcase their club to new and interested members. However, their website has been outdated since 2016 and is a mess for students to navigate through.</p>
                         <div class="csa goal">
                             <h3>Goal</h3>
                             <p>Create a streamlined experience for UTD students interested in joining CSA in order to increase member acquisition rates for this club.</p>
                         </div>
                     </div>
-                    <div class="snippet col-sm-4">
+                    <div class="snippet col-md-4">
                         <h4 class="overview-title csa-font">Role</h4>
                         <p>UI/UX Designer</p>
                         <h4 class="overview-title csa-font">Team</h4>
@@ -85,7 +85,9 @@
                         <p>Adobe XD, Adobe Illustrator, Adobe Photoshop, Keynote, Optimal Workshop</p>
                     </div>
                 </div>
+                <a class="button center" href="https://xd.adobe.com/view/549bd965-5483-43a8-4d74-46e284481ecb-22aa/?fullscreen" role="button">VIEW MY PROTOTYPE</a>
             </div>
+
             <div class="section">
                 <h2>Research</h2>
                 <h3 class="csa-font">Officer Interviews</h3>
@@ -95,47 +97,42 @@
                     <li>What is missing from the website that you would like to promote for the organization?</li>
                     <li>When you were a student interested in joining the Chemistry Student Association, would you have found the current site helpful? Why or why not?</li>
                 </ul>
-                <p>I put together the <span class="csa-font">three main concerns</span> that the officers had:</p>
+                <p>I put together the three main concerns that the officers had:</p>
                 <ul>
                     <li>Current CSA members view the Facebook page to keep up to date with events. The website is tailored for students who want to become members and are looking for more information about the club.</li>
-                    <li>CSA sells lab equipment like goggles and carbon copy notebooks during the beginning of the year at a booth. However, students don't know that CSA still sells materials throughout the year and the officers would like to indicate that on their site.</li>
+                    <li>CSA sells lab equipment like goggles and carbon copy notebooks during the beginning of the year for two weeks at a booth. Flyers are hung around campus to advertise that. However, the officers would like to indicate that they still sell materials on their site throughout the semester.</li>
                     <li>Events are generally posted on Google Calendars then duplicated onto the Facebook page. Officers find it redunant to add another set of event information onto their website.</li>
                 </ul>
                 <p>Overall, the team wanted to create a pleasant experience for UTD students who are interested in the Chemistry Student Association at The University of Texas at Dallas to go onto the page to learn more about the benefits for the club as well as upcoming events.</p>
+                <h3 class="csa-font">Student Surveys</h3>
+                <p>To understand the pain points that users have when searching for a student organization and their resources, I conducted an interview to gain insight on potential members. I wanted to learn more about interviewees':</p>
+                <ol>
+                    <li>General experience with student organizations</li>
+                    <li>Motivations to join the organization</li>
+                    <li>Concerns the students had to joining</li>
+                </ol>
+                <p>After interviewing 5 individuals, these were some of the main quotes I pulled:</p>
+                <img src="../csaatutd/csa-user-interviews.png" style="max-width: 700px">
+                <p>Surveys to 15 participants were also gathered regarding if students knew the Chemistry Student Association sold lab equipment and the results showed:</p>
+                <ul>
+                    <li>93.33% of participants were enrolled in classes that required lab equipment to be purchased</li>
+                    <li>50% of participants knew that the Chemistry Student Association sold lab equipment</li>
+                    <li>66.67% of participants bought their equipment via an online store (e.g. Amazon)</li>
+                    <li>93.33% of participants didn't know that the organization had supplies still in stock after the two-week period</li>
+                </ul>
+                <div class="csa">
+                    <h3>Key Takeaways</h3>
+                    <ul>
+                        <li>The Chemistry Student Association website is aimed toward students are interested and who want to learn more about the organization</li>
+                        <li>Most students don't realize CSA sells equipment throughout the whole semester</li>
+                    </ul>
+                </div>
                 <h3 class="csa-font">User Personas</h3>
-                <p>Using the data gathered from the interviews, there are <span class="csa-font">two types of users</span> who would want to use the site:</p>
+                <p>Using the data gathered from the interviews and surveys, there are two types of users who would use the site:</p>
                 <h4 style="text-align:center">Students interested in joining CSA at UTD (Primary)</h4>
                 <img src="../csaatutd/persona-student.png">
                 <h4 style="text-align:center">Students looking to purchase lab equipment for a specific course (Primary)</h4>
                 <img src="../csaatutd/persona-supplies.png">
-                <h3 class="csa-font">Card Sorting</h3>
-                <p>To establish a better information architecture for the current website layout, I decided to do an open cart sort, meaning that participants were given cards showing site content with no pre-established groupings. They were asked to sort cards into groups that they felt were appropriate then describe each group. Then, strong card pairings and potential groupings were identified through a similarity matrix.</p>
-                <p>I wrote the major sections of the original website on several notecards. Then, I sought out a mix of current members and students who were not in the club to sort the cards into categories for me. The goal of this part was to classify all the sections into smaller more relevant sections to present the information on the website in a way that it meets a user's expectations.</p>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xl-5">
-                            <h3 class="csa-font">Results</h3>
-                            <p>Ten participants completed the study:</p>
-                            <ul>
-                                <li>3 were members; 7 were not</li>
-                                <li>7 female; 3 male</li>
-                                <li>Ages ranged from 18 - 21</li>
-                            </ul>
-                            <p>The participants named the groups similarly to what CSA originally had, but there were some differences:</p>
-                            <ul>
-                                <li>100% agreed that items relating to purchasing should be in a separate section</li>
-                                <li>The American Chemistry Society link and mailing list form were sorted into 5 different categories</li>
-                                <li>60% agreed on an Events section but 40% agreed on a Meetings section</li>
-                                <li>The American Chemistry Society link had the most synergy between the Facebook page and mailing list form</li>
-                            </ul>
-                        </div>
-                        <div class="col-xl-7">
-                            <img src="../csaatutd/csa-card-sorting.jpg">
-                        </div>
-                    </div>
-                </div>
-                <h3 class="csa-font">Initial Research Takeaways</h3>
-                <p>A total of 18 cards were used to complete the study. I shared these findings with the student organization officers. After thorough discussion, we determined it'd be best to do away with the events section because of the main issue they were dealing with: duplication of information across platforms. Therefore, we determined that integrating a Google Calendars with the events on the page would be better. Users could then find more information via their Facebook page or by clicking on the calendar day. These changes were established to align with the main purpose of this page. </p>
             </div>
             <div class="section">
                 <div class="in-progress">
@@ -184,24 +181,13 @@
                 <a class="button center" href="https://xd.adobe.com/view/549bd965-5483-43a8-4d74-46e284481ecb-22aa/?fullscreen" role="button">VIEW MY PROTOTYPE</a>
             </div>
             <div class="section">
-                <h2>Takeaways + Next Steps</h2>
+                <h2>Reflection + Next Steps</h2>
                 <p>I loved getting the opportunity to work with one of the student organizations at UTD. I’m pleased with the outcome of the new website design. I primarily worked with the Webmaster for the majority of the project. We established the initial wireframe and design together, and she gave me plenty of feedback during the design process along with her officers. After presenting the final product, the team was happy with the design.</p>
                 <p>Unfortunately, I couldn't find many related images for me to work with. Therefore, some of the hero images are out of focus. Nonetheless, the next step is to implement this design on WordPress. If I were to continue working with CSA, I would like to do user testing for interested students who want to join the Chemistry Student Association and conduct surveys to see how they like interacting with the website.... work with the webmaster to implement high quality photos</p>
             </div>
--->
+            -->
         </div>
     </div>
-    <!-- animate on scroll -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init({
-            disable: function() {
-                var maxWidth = 600;
-                return window.innerWidth < maxWidth;
-            }
-        });
-
-    </script>
 
     <!-- responsive nav -->
     <script>

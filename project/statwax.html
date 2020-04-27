@@ -32,8 +32,6 @@
     <!-- BootstrapCDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script async src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <!-- animation on scroll -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- hamburger menu -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../stylesheet.css">
@@ -46,18 +44,20 @@
     <nav class="mynav" id="nav">
         <ul>
             <li id="o"><a href="../index.html">Home</a></li>
-            <li id="o"><a href="../index.html#portfolio">Portfolio</a></li>
+            <li id="o"><a href="../index.html#work">Work</a></li>
             <li id="o"><a href="../about.html">About</a></li>
         </ul>
         <!-- hamburger-kun -->
         <a href="javascript:void(0);" class="icon" onclick="myFunction()"><img src="../images/arrow.jpg"></a>
     </nav>
+
+    <div class="background">
+        <img src=" ../statwax/statwax-bg.png">
+    </div>
     <div class="case-content">
-        <div class="background statwax">
-            <div class="content-heading">
-                <h1>Statwax</h1>
-                <h3>Designing the regional company logo.</h3>
-            </div>
+        <div class="content-heading">
+            <h1>Statwax</h1>
+            <p class="subtitle">Designing the regional company logo</p>
         </div>
         <div class="content-process">
             <div class="section overview container">
@@ -89,30 +89,30 @@
                 <p>My first task was to come up with what made Dallas unique before I started doing the first few designs. Was it the food? The people? The landmarks? I created a survey to find out what locals and non-locals thought. The goal of this survey was to determine what came to mind when people thought of the city Dallas, as well as their overall background.</p>
                 <p>My survey consisted of 3 questions: two multiple choice and one free response. I made this survey short and simple because rather than a making complete overhaul of the original logo, I wanted to append it. Before users began the survey, I made sure to define "Dallas" as the "Dallas–Fort Worth metroplex" area consisting of the surrounding suburbs.</p>
                 <img src="../statwax/statwax-dallas-survey.jpg">
-                <p> A <span class="statwax-font">total of 12 individuals</span> took this survey. Most of them lived in Dallas and/or have visited it before. <span class="statwax-font">8 out of 12 said the Dallas city skyline or the Reunion Tower</span> were the images that came to mind when hearing the word "Dallas." Therefore, I incorporated that into my design.</p>
-                <p>The survey was only distributed to my coworkers and Facebook friends at the time. In addition, the data pool is quite small. Therefore, there may be <span class="statwax-font">a bias limiting the authenticity</span> of my data.</p>
+                <p> A total of 12 individuals took this survey. Most of them lived in Dallas and/or have visited it before. 8 out of 12 said the Dallas city skyline or the Reunion Tower were the images that came to mind when hearing the word "Dallas." Therefore, I incorporated that into my design.</p>
+                <p>The survey was only distributed to my coworkers and Facebook friends at the time. In addition, the data pool is quite small. Therefore, there may be a bias limiting the authenticity of my data.</p>
             </div>
             <div class="section">
                 <h2>Designing</h2>
                 <h3 class="statwax-font">Sketches</h3>
                 <p>After deciding that the Dallas city skyline was the best representation of native and non-native Dallasites <a href="https://www.barrypopik.com/index.php/texas/entry/dallasite_inhabitant_of_dallas/" target="_blank" rel="noopener noreferrer">(yep, I didn't believe it either)</a>, I created several versions of the design, leaving the logo itself untouched. The first few designs were simple additions that included “Dallas” as part of the name. I chose sans serif fonts to match the original design of the logo.</p>
-                <img src="../statwax/statwax-sketches.jpg" style="width: 500px;">
-                <h3 class="statwax-font">Digital Iterations</h3>
+                <img src="../statwax/statwax-sketches.jpg" style="max-width:600px">
+                <h3 class=" statwax-font">Digital Iterations</h3>
                 <p>During my digital design process, I looked through a variety of images of the Dallas skyline on Google. I picked a design I liked best, making sure to keep the notable Reunion Tower in the mix. I used a different shade of blue for each iteration to test out what they'd look like and to keep the identity of Statwax. These were some of the designs I came up with.</p>
                 <div class="slideshow-container">
 
                     <!-- Full-width images with number and caption text -->
                     <div class="mySlides">
-                        <img src="../statwax/statwax-logo-trial-3.png" style="width:70%">
+                        <img src="../statwax/statwax-logo-trial-3.png" style="max-width:600px">
                     </div>
                     <div class="mySlides">
-                        <img src="../statwax/statwax-logo-trial-4.png" style="width:70%">
+                        <img src="../statwax/statwax-logo-trial-4.png" style="max-width:600px">
                     </div>
                     <div class="mySlides">
-                        <img src="../statwax/statwax-logo-trial-5.png" style="width:70%">
+                        <img src="../statwax/statwax-logo-trial-5.png" style="max-width:600px">
                     </div>
                     <div class="mySlides">
-                        <img src="../statwax/statwax-logo-trial-6.png" style="width:70%">
+                        <img src="../statwax/statwax-logo-trial-6.png" style="max-width:600px">
                     </div>
 
                     <!-- Next and previous buttons -->
@@ -133,25 +133,15 @@
             <p>I then <span class="statwax-font">surveyed six people within one of our company Slack channels</span> to determine which logo design looked the best suited for our division. <span class="statwax-font">Four of the individuals liked the skyline in the bottom right corner </span>with "Dallas" in front of it. In addition, two of the members liked the circle W that was in one of our designer's iterations. The idea was passed around the same six people, and they all agreed that it would be a nice touch. Therefore, I opted to incorporate it. Following the results, I asked the second Digital Designer in our company to provide high-quality vectorized images to me in order to make the final design.</p>
             <h2>Final Design</h2>
             <p>This is the result of the compromized logo between the second Digital Designer and me. It includes the skyline, "Dallas," and the The Executive Vice President had the last word in choosing the color of the skyline when I showed her the colors that I intended to use. It incorporates the original Statwax logo along with a touch of Dallas as intended.</p>
-            <img src="../statwax/statwax-logo.gif" class="center" style="width:70%; margin:auto;">
+            <img src="../statwax/statwax-logo.gif" class="center" style="max-width:600px; margin:auto;">
         </div>
         <div class="section">
             <h2>Reflection</h2>
             <p>Overall, this project was a pleasant learning experience for me, as it was my first logo design project for a company. I was able to work alongside my coworkers and get opinions from them and people outside of the company. If I were to do this project again, I would have done the designs in Adobe Illustrator instead of Adobe Photoshop to make it fully vectorized. I should have also focused on solidifying the design first then go in with the colors rather than playing around the colors while I was creating different variations of it. Nonetheless, this is my design on the entrance to our office. As of March 2020, we have moved to a new office location.</p>
-            <img src="../statwax/statwax-dallas-office-plaque.jpeg" class="center" style="width:70%; margin:auto;">
+            <img src="../statwax/statwax-dallas-office-plaque.jpeg" class="center" style="max-width:600px; margin:auto;">
         </div>
     </div>
-    <!-- animate on scroll -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init({
-            disable: function() {
-                var maxWidth = 600;
-                return window.innerWidth < maxWidth;
-            }
-        });
 
-    </script>
     <!-- Slideshow -->
     <script>
         var slideIndex = [1];
