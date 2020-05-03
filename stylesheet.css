@@ -732,15 +732,26 @@ h5 {
 .bobateau {
     background-color: #E2AA87;
     color: white;
+    padding: 16px;
 }
 
 .bobateau-font {
     color: #E2AA87;
 }
 
+.bobateau-v2 {
+    background-color: #7EBDB4;
+    color: white;
+}
+
+.bobateau-v2-font {
+    color: #7EBDB4;
+}
+
 .aliexpress {
     background-color: #A42116;
     color: white;
+    padding: 16px;
 }
 
 .aliexpress-font {
@@ -750,6 +761,7 @@ h5 {
 .stitcher {
     background-color: #522d5b;
     color: white;
+    padding: 16px;
 }
 
 .stitcher-font {
@@ -759,6 +771,7 @@ h5 {
 .statwax {
     background-color: #00b1aa;
     color: white;
+    padding: 16px;
 }
 
 .statwax-font {

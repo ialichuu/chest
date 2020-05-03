@@ -64,20 +64,17 @@
                 <div class="summary row">
                     <div class="problem col-sm-8">
                         <h2>Problem</h2>
-                        <p>It's finals season.</p>
-                        <p>You know what that means.</p>
-                        <p>It's time to hone in on your testing skills and find the perfect place to study with your best-tea (or your bo-bae).</p>
-                        <p>Now all puns aside, if you go to The University of Texas at Dallas or have ever been in the Dallas area, you've probably seen at least one or two boba tea shops. From Kung Fu Tea, bobaLand, Boba Latte, and many, many others, the boba tea business is booming around here. </p>
-                        <p>I, a self-proclaimed boba connoisseur, and many other of my fellow boba connoisseurs, cannot try out all of these shops while remembering what drinks I like at all of them.</p>
+                        <p>In this day and age, boba tea places have been booming in the U.S. There is a copious variety of boba drinks available -- the most common concoction includes a tea base combined with milk or fruit, usually prepared over a bed of sweet boba pearls.</p>
+                        <p>Menu options can be extensive, and drinks generally go from $3 up to even $6, so how is a student supposed to choose the perfect drink without wasting their hard-earned money?</p>
                         <p>This project was done for my Internet Studio course at UTD. My professor, Ken Starzer, provided feedback along the way.</p>
                         <div class="bobateau goal">
-                            <h3>Goal</h3>
-                            <p>Help students save money by finding their favorite drinks and perhaps even a soul-boba-tea-mate.</p>
+                            <h3>Solution</h3>
+                            <p>Create a platform where users can create an account, look up boba tea places near them, view menus, and leave reviews of the place and drink options. In addition, they can recommend drinks they like to others, customize what they usually get (amount of ice, amount of sugar, etc.), what type of boba person they are, and more. It will integrate Google Maps to guide the user to the boba place since most people are already familiar with the site.</p>
                         </div>
                     </div>
                     <div class="snippet col-sm-4">
                         <h4 class="overview-title bobateau-font">Role</h4>
-                        <p>UX Designer & Web Developer</p>
+                        <p>Web Developer</p>
                         <h4 class="overview-title bobateau-font">Timeline</h4>
                         <p>Sept 2019 - Dec 2019</p>
                         <h4 class="overview-title bobateau-font">Skills</h4>
@@ -88,89 +85,131 @@
                 </div>
             </div>
             <a class="button center" href="https://xd.adobe.com/view/ebec66b7-472b-43e8-6e1d-d2ca46abfa92-9ddd/?fullscreen" role="button">VIEW MY SCREENSHOTS</a>
-        </div>
-
-        <div class="section">
-            <div class="in-progress">
-                <h3>This project is still <span style="color:#ed595c">in progress</span>! Please <span style="color:#ed595c">contact me to find more details</span> or come back when it's complete.</h3>
-                <h3 span style="text-align:right">Thank you for your patience!</h3>
-                <h3 span style="text-align:right">- Alexandria</h3>
+            <p class="subtitle">Note: This is only the screenshots of the first implementation of the WordPress website I took down in December 2019. It does not highlight all the concepts I wanted to implement on the website due to complications with my original idea.</p>
+            <div class="section">
+                <h2>Research & Ideation</h2>
+                <h3 class="bobateau-font">User Persona</h3>
+                <p>I surveyed my target audience, high school through college students, and began by creating a primary user persona that would use this website:</p>
+                <img src="../bobateau/bobateau-persona.jpg">
+                <h4 class="bobateau-font">Competitive Analysis</h4>
+                <p>The second goal I needed was to see what was already on the market, since it was extremely hard to believe that no one had ever considered creating a solution to address my problem.</p>
+                <p>Two websites immediately came to my mind: Yelp and Google Maps. Although these didn't contain the niche concept I had in mind, they were review aggregators that featured a variety of local businesses. Parsing through the Google Play store, I found that this concept has already been explored before as an app:</p>
+                <ul>
+                    <li><a href="https://www.yelp.com/nearme/boba" target="_blank" rel="noopener noreferrer">Yelp:</a> The closest desktop-based competitor. Key features:
+                        <ul>
+                            <li>Crowd-sourced information</li>
+                            <li>Contains businesses and services, price points, waitlist, amenities, Q&A section, photo reviews, business hours, suggested businesses, and more</li>
+                            <li>Google Maps integration</li>
+                        </ul>
+                    </li>
+                    <li><a href="https://www.google.com/maps/search/boba/" target="_blank" rel="noopener noreferrer">Google Maps:</a> The largest directory platform. Key features:
+                        <ul>
+                            <li>A full-paged map</li>
+                            <li>Crowd-sourced information</li>
+                            <li>Contains satellite imagery, aerial photography, street maps, 360° panoramic views of streets, real-time traffic conditions, and route planning</li>
+                        </ul>
+                    </li>
+                    <li><a href="https://www.tripadvisor.com/" target="_blank" rel="noopener noreferrer">Trip Advisor:</a> Travel-focused directory platform. Key features:
+                        <ul>
+                            <li>Similar concept as Yelp</li>
+                            <li>Google Maps integration</li>
+                        </ul>
+                    </li>
+                    <li><a href="https://play.google.com/store/apps/details?id=com.DennisaurCo.BobaNow&hl=en_US" target="_blank" rel="noopener noreferrer">Boba Now! (App):</a> Quick and easy boba tea finder app. Open the app, pick a location, and go. Key features:
+                        <ul>
+                            <li> Contains information such as business hours, sort by, distance, tea flavor options</li>
+                            <li>Yelp integration to show reviews</li>
+                            <li>Google Maps integration</li>
+                        </ul>
+                    </li>
+                    <li><a href="https://play.google.com/store/apps/details?id=com.projectfurball.teaaddict.android&hl=en_US" target="_blank" rel="noopener noreferrer">Tea Addict (App):</a> Find boba tea nearby -- at home or overseas. Key features:
+                        <ul>
+                            <li>Crowd-sourced informaiton</li>
+                            <li>Contains store business hours, distance, user ratings, and user shares</li>
+                            <li>Google Maps integration</li>
+                        </ul>
+                    </li>
+                </ul>
+                <p>Two apps had similar ideas. These apps were also created for specific areas, similar to how I wanted mine to be. However, the takeaway was that I had two main goals to differentiate my website from these competitors:</p>
+                <ul>
+                    <li>Get students to find the perfect boba for their picky tastes</li>
+                    <li>Allow students to discover what other flavors of boba tea drinks they could fall in love with</li>
+                </ul>
+                <p>My main selling point was to have an area I called the "boba diary" where users could record all of their drink customizations in one place. In addition, users who didn't know any drinks at a certain location could choose from the top three popular drinks selected from the diary and how other users reviewed them.</p>
+                <h3 class="bobateau-font">The Six Thinking Hats Methodology</h3>
+                <p>Next, I analyzed and further refined my idea using the six thinking hats methodology. As defined by The de Bono Group, the <a href="http://www.debonogroup.com/six_thinking_hats.php" target="_blank" rel="noopener noreferrer">six thinking hats methodology</a> is a simple, yet effective parallel thinking process that helps people be more productive, focused, and mindfully involved. This methodology separates thinking into six clear functions and roles. I summarized and split each hat into sections under the two hats I thought correlated most with each other.</p>
+                <h4>Blue hat (thinking process) & White hat (known information)</h4>
+                <img src="../bobateau/blue-hat.png" style="max-width: 100px; float:left; padding: 10px">
+                <p>With BobaTeaU, users can look up boba tea places to see where they're located, directions on how to get there, along with reviews about the location itself and reviews about individual drinks. Users can keep track of drink flavors and customization options they like and don't like via their reviews that other users can see. Its primary audience is for students who like going to places off-campus, like boba tea shops, and who tend to study and hang out with their friends.</p>
+                <img src="../bobateau/white-hat.png" style="max-width: 100px; float:right; padding: 10px">
+                <p>The boba tea industry is currently booming with shops constantly opening all over UTD; therefore, having this website will be perfect for boba tea lovers. The success of this website will be measured by the amount of people who sign up and use BobaTeaU.</p>
+                <h4>Black hat (difficulties and obstacles) & Green hat (possibilities)</h4>
+                <img src="../bobateau/black-hat.png" style="max-width: 100px; float:left; padding: 10px">
+                <p>The most difficult part about getting this website to come together is the aggregation of data. For example, how would I accumulate all the information about the different drink options if each store menu varies? And, how much user input and menu data can I store on my web hosting server?</p> <img src="../bobateau/green-hat.png" style="max-width: 100px; float:right; padding: 10px">
+                <p>This should be solved by keeping the initial implementation small and focused around the UTD area. There are also concerns about what counts as a "boba tea shop" as many places, like <a href="https://www.yelp.com/biz/taiwan-cafe-plano" target="_blank" rel="noopener noreferrer">Taiwan Cafe</a>, offer food and boba tea. I will solve this issue by only including shops that primarily market themselves as "boba tea shops."</p>
+                <h4>Red hat (feelings and intuition) & Yellow hat (benefits)</h4>
+                <img src="../bobateau/red-hat.png" style="max-width: 100px; float:left; padding: 10px">
+                <p>This website's competitors are Yelp and Google. However, its niche is boba. The main attraction is the diary option and ratings for individual drinks, as Yelp and Google don't offer those specific options. There's no need to ask for recommendations from people who don't share similar tastes with you.</p>
+                <img src="../bobateau/yellow-hat.png" style="max-width: 100px; float:right; padding: 10px">
+                <p>You can see what people customize their drinks with -- sweetness, ice level, and other adjustments -- with similar tastes. In addition, getting boba is already a social thing that many people, especially high school and college students, enjoy. With BobaTeaU, it'll grow even more as people can connect and share their opinions, find more information, and match their favorite drinks with others online.</p>
+            </div>
+            <div class="section">
+                <h2>Wireframe & Design</h2>
+                <h3 class="bobateau-font">Sitemap Visualization</h3>
+                <p>After the initial research, the next milestone to work toward was getting a sitemap of the website and creating a wireframe based off of that. Based on my idea, I created a sitemap of what the flow of the website would look like:</p>
+                <img src="../bobateau/bobateau-sitemap.png">
+                <h3 class="bobateau-font">Wireframes</h3>
+                <p>I then sketched out competitor wireframes to gain insight on how they laid out their websites:</p>
+                <img src="../bobateau/bobateau-lo-fi-competitors.jpg">
+                <p>Because this project was website-only and not an app, I only used the competitors that operated via browser. That consisted of Yelp, Google Maps, and Trip Advisor. There were three concepts that stood out to me via the homepage of these competitors:</p>
+                <ul>
+                    <li>Search bar</li>
+                    <li>Featured places</li>
+                    <li>Featured reviews</li>
+                </ul>
+                <p>I also wanted to integrate Google Maps since it was ideal for a directory website. Besides, why reinvent the wheel?</p>
+                <p>Using my references, I created wireframes for the homepage, submit review page, results page, and business page on Adobe XD based on my competitor research and how my sitemap was laid out.</p>
+                <img src="../bobateau/bobateau-mid-fi-compilation.jpg">
+                <h3 class="bobateau-font">Visual Design</h3>
+                <img src="../bobateau/bobateau-visual-scheme.png" style="max-width: 700px">
+                <p>Because black milk tea is a common drink offered at all boba tea places, I incorporated a “black milk tea” color scheme onto my website. On the right are some of my initial logo designs before I settled on a white logo. I used the “U” part of the logo for the website’s favicon.</p>
+            </div>
+            <div class="section">
+                <h2>Website Implementation</h2>
+                <p>I used a custom theme called "Illdy" to implement my design onto WordPress. I chose this theme because of the simplicity it offered and because it looked most like my wireframes. I also used several plugins to create a contact form, implement directory pages, and integrate Google Maps to each location page.</p>
+                <h3 class="bobateau-font">Design Concerns</h3>
+                <p>Since it was difficult to implement the diary page using the plugins I could find, I decided to remove this option and designed BobaTeaU solely as a boba tea shop directory and review site.</p>
+                <p>Ideally, users can post reviews onto the respective shop’s page with suggestions like “Tell your boba buddies how you customize your drink!” as a placeholder in the review box. Quality reviews of the most popular drinks would idealy be put into the testimonial section or “Find Your Perfect Drink” page where new or curious users can find the backlink to the shop it came from to decide whether they would like to order that for the day.</p>
+                <h3 class="bobateau-font">Key Features</h3>
+                <h4>1. Find Your Perfect Drink</h4>
+                <img src="../bobateau/bobateau-preview.png">
+                <p>I was unable to find a way to implement the search bar above the fold on the homepage with this WordPress theme. Therefore, I decided to remove the search page and allow users to see popular drink options via the “Find Your Perfect Drink” button. This page would ideally lead to another page that gathered the most popular items from user reviews.</p>
+                <h4>2. What's Featured</h4>
+                <div class="container-flex">
+                    <div class="row">
+                        <div class="col-sm-6"><img src="../bobateau/bobateau-featured.jpg"></div>
+                        <div class="col-sm-6"><img src="../bobateau/bobateau-trending.jpg"></div>
+                    </div>
+                </div>
+                <p>The homepage was the area where I made the most changes. I added in a "Featured Reviews" section that would show users landing onto the page what people were saying about their drinks and how the reviews were formatted. There was also a "Trending" area where users could see what drinks were popular among other members.</p>
+                <h4>3. Drink Menus</h4>
+                <img src="../bobateau/bobateau-drink-menu.jpg">
+                <p>Full drink menus were added for all of the stores, plus topping and customization options. This way, users could see the full menu without distortion on the page before ordering.</p>
+                <h3 class="bobateau-font">User Testing & Feedback</h3>
+                <p>As I was creating the final design of the website, I explained the concept of my website to three other students in my classroom, requested them to explore the website, and asked them their thoughts about it.</p>
+                <p>They liked the overall color scheme and font choices for the site, as well as the concept of the “Find your perfect drink” button. The addition of the integrated Google maps and contact info under each location stood out to them. One of them compared it to a more niche version of Yelp. They also liked the “Other Boba Tea Shops” portion for recommendations.</p>
+                <p>Unfortunately, the “Find Your Perfect Drink” page was severely empty without many drinks added. There was also a button that redirected back to the homepage which seemed meaningless. One suggested to use this space to promote the top drinks across all locations of boba places to have a section for the less educated boba drinkers to look and read more reviews. This would additionally aid with the overall flow of this page and complete the search page.</p>
+                <p>Furthermore, the design didn’t have a reviews section since my idea consisted of a diary page that users could record their personal drinks in. However, it was difficult to implement that page. Therefore, my classmates suggested to add a public reviews section.</p>
+                <img src="../bobateau/bobateau-reviews.jpg">
+            </div>
+            <div class="section">
+                <h2>Reflection + Next Steps</h2>
+                <p>Although I am familiar with WordPress, this was a challenging project because I was designing my own product. Because of this, I had to research which plugins would work with my website idea and what the limitations of implementing and hosting a webpage WordPress were. Research played a crucial part in my design process and set the foundations for my ideas.</p>
+                <p>If time constraints were not an issue and if I had more knowledge on how to manipulate a WordPress design from the backend, I would have liked to implement the diary option so users could easily track their favorite boba tea customization options and other users could use those as references. In addition, I would have also liked to implement the “Top 3 Drinks” idea I had on my wireframe on a locations page.</p>
+                <p><strong class="bobateau-font">[Update 01/19]</strong> After presenting this project to the class, I received feedback and have decided to further my design and go back to redesign some aspects of the website into an app. I also wanted to do more research to further figure out what my target audience would be and what they would expect from this product. Bobateau Version 2.0 is coming in app form, so please stay tuned!</p>
             </div>
         </div>
-        <!--
-        <div class="section">
-            <h3>Research</h3>
-            <h4 class="bobateau-font">User Personas</h4>
-            <p>After conducting a survey target audience consists of:</p>
-            <ul>
-                <li>High school and college students</li>
-                <li>13 - 25 years old</li>
-                <li>Has a part-time job paying $7 - $15 an hour</li>
-                <li>Studying is important to them</li>
-                <li>Wants a comfortable environment to study in with minimal to moderate levels of noise</li>
-                <li>Likes to watch Netflix, hang out with friends, and play video games during their free time</li>
-                <li>Difficult to find time to exercise while keeping up with school assignments, or they're just lazy</li>
-                <li>Time management is key to surviving</li>
-                <li>Never gets enough hydration</li>
-            </ul>
-            <h4 style="text-align:center">Students Interested in Boba Tea (Primary)</h4>
-            <img src="../bobateau/bobateau-persona.jpg">
-            <h4 class="bobateau-font">Competitors</h4>
-            <ul>
-                <li><a href="https://www.yelp.com/nearme/boba" target="_blank" rel="noopener noreferrer">Yelp:</a> The closest desktop-based competitor. A business directory website and crowd-sourced review forum that integrates Google Maps. Users can find a variety of businesses and services, price points, waitlist, amenities, Q&A section, photo reviews, business hours, suggested businesses, and more.
-                <li><a href="https://www.google.com/maps/search/boba/" target="_blank" rel="noopener noreferrer">Google Maps:</a> The largest directory platform. Its main focus is the full-page map. Has satellite imagery, aerial photography, street maps, 360° panoramic views of streets, real-time traffic conditions, and route planning. </li>
-                <li><a href="https://www.tripadvisor.com/" target="_blank" rel="noopener noreferrer">Trip Advisor:</a> Travel-focused directory platform. Essentially contains the same information and has a similar concept as Yelp.</li>
-                <li><a href="https://play.google.com/store/apps/details?id=com.DennisaurCo.BobaNow&hl=en_US" target="_blank" rel="noopener noreferrer">Boba Now! (App):</a> Contains information such as business hours, sort by, distance, tea flavor options, and Yelp reviews are shown. Uses Google Maps and Yelp reviews integration.</li>
-                <li><a href="https://play.google.com/store/apps/details?id=com.projectfurball.teaaddict.android&hl=en_US" target="_blank" rel="noopener noreferrer">Tea Addict (App):</a> Enables users to find boba and bubble tea nearby at home or overseas with Google Maps integration. Users can submit edits, new, and missing stores in-app. Information such as store business hours, distance, user ratings, and user shares are shown.</li>
-            </ul>
-            <h4 class="bobateau-font">Using The Six Thinking Hats Methodology</h4>
-            <p>As defined by The de Bono Group, the <a href="http://www.debonogroup.com/six_thinking_hats.php" target="_blank" rel="noopener noreferrer">six thinking hats methodology</a> is a simple, yet effective parallel thinking process that helps people be more productive, focused, and mindfully involved. This methodology separates thinking into six clear functions and roles. I summarized and split each hat into sections under the two hats I thought correlated most with each other.</p>
-            <h4>White hat & Blue hat</h4>
-            <p>With BobaTeaU, users can look up boba tea places to see where they're located, directions on how to get there, along with reviews about the location itself and reviews about individual drinks. Users can keep track of drink flavors and customization options they like and don't like via their reviews that other users can see. Its primary audience is for high school and college students who like going to places off-campus, like boba tea shops, and who tend to study and hang out with their friends. The boba tea industry is currently booming with shops constantly opening all over UTD; therefore, having this website will be perfect for boba tea lovers. The success of this website will be measured by the amount of people who sign up and use BobaTeaU.</p>
-            <h4>Black hat & Green hat</h4>
-            <p>The most difficult part about getting this website to come together is the aggregation of data. For example, how would I accumulate all the information about the different drink options if each store menu varies? And, how much user input and menu data can I store on my web hosting server? This should be solved by keeping the initial implementation small and focused around the UTD area. There are also concerns about what counts as a "boba tea shop" as many places, like <a href="https://www.yelp.com/biz/taiwan-cafe-plano">Taiwan Cafe</a>, offer food and boba tea. I will solve this issue by only including shops that primarily market themselves as "boba tea shops."</p>
-            <h4>Red hat & Yellow hat</h4>
-            <p>This website's competitors are Yelp and Google. However, its niche is boba-focused. The main attraction is the diary option and ratings for individual drinks, as Yelp and Google don't offer those specific options. There's no need to ask for recommendations from people who don't share similar tastes with you. You can see what people customize their drinks with -- sweetness, ice level, and other adjustments -- with similar tastes. In addition, getting boba is already a social thing that many people, especially high school and college students, enjoy. With BobaTeaU, it'll grow even more as people can connect and share their opinions, find more information, and match their favorite drinks with others online.</p>
-        </div>
-        <div class="section">
-            <h2>Website Design & Implementation</h2>
-            <h3>Sitemap Visualization</h3>
-            <img src="../bobateau/bobateau-sitemap.png" class="large-img">
-            <figcaption>This is my initial sitemap design for my website.</figcaption>
-            <h3>Sketched Low-Fidelity Wireframes</h3>
-            <img src="../bobateau/bobateau-lo-fi-compilation.jpg">
-            <figcaption>I designed low-fi wireframes of the website using pencil and paper.</figcaption>
-            <img src="../bobateau/bobateau-competitors-lo-fi-compilation.jpg">
-            <figcaption>Competitor wireframes were also taken into consideration.</figcaption>
-            <h3>Mid-Fidelity Wireframes</h3>
-            <img src="../bobateau/bobateau-mid-fi-compilation.jpg">
-            <figcaption>These mid-fi wireframes were designed in Adobe XD.</figcaption>
-            <h3>Visual Design</h3>
-            <img src="../bobateau/bobateau-visual-scheme.png">
-            <figcaption>I incorporated a “black milk tea” color scheme onto my website. On the right are some of my initial logo designs before I settled on a white logo. I used the “U” part of the logo for the website’s favicon.</figcaption>
-            <p>As I was creating the final design of the website, I explained the concept of my website to three other students in my classroom, requested them to explore the website, and asked them their thoughts about it. They liked the overall color scheme and font choices for the site, as well as the concept of the “Find your perfect drink” button. The addition of the integrated Google maps and contact info under each location stood out to them. One of them compared it to a more niche version of Yelp. They also liked the “Other Boba Tea Shops” portion for recommendations.</p>
-            <p>Unfortunately, the “Find Your Perfect Drink” page was severely empty without many drinks added. There was also a button that redirected back to the homepage which seemed meaningless. One suggested to use this space to promote the top drinks across all locations of boba places to have a section for the less educated boba drinkers to look and read more reviews. This would additionally aid with the overall flow of this page and complete the search page.</p>
-            <p>Furthermore, the design didn’t have a reviews section since my idea consisted of a diary page that users could record their personal drinks in. However, it was difficult to implement that page. Therefore, my classmates suggested to add a public reviews section.
-            </p>
-        </div>
-        <div class="section">
-            <h3>Live On WordPress</h3>
-            <img src="../bobateau/bobateau-preview.png">
-            <img src="../bobateau/bobateau-wp-compilation.jpg">
-            <p>This was originally done in WordPress. However, I have since taken the site down as of December 2019. You may view the prototype I have done on Adobe XD.</p>
-<a class="button center" href="https://xd.adobe.com/view/ebec66b7-472b-43e8-6e1d-d2ca46abfa92-9ddd/?fullscreen" role="button">VIEW MY SCREENSHOTS</a>
-            <p>I used a <a href="https://wordpress.org/themes/illdy/">custom theme called Illdy</a> to implement my design onto WordPress. I chose this theme because of the simplicity it offered and because it looked most like my wireframes. I also used several plugins to create a contact form, implement directory pages, and integrate Google Maps to each location page.</p>
-            <p>I was unable to find a way to implement the search bar above the fold on the homepage with this WordPress theme. Therefore, I decided to remove the search page and allow users to see popular drink options via the “Find Your Perfect Drink” button. This page would ideally lead to another page that gathered the most popular items from user reviews.</p>
-            <p>Since it was difficult to implement the diary page using the plugins I could find, I decided to remove this option and designed BobaTeaU solely as a boba tea shop directory and review site. Ideally, users can post reviews onto the respective shop’s page with suggestions like “Tell your boba buddies how you customize your drink!” as a placeholder in the review box. A site admin will take quality reviews of the most popular drinks, put them into the testimonial section or “Find Your Perfect Drink” page where new or curious users can find the backlink to the shop it came from to decide whether they would like to order that for the day.</p>
-        </div>
-        <div class="section">
-            <h2>Reflection</h2>
-            <p>Although I have used WordPress in the past, this was a challenging project because I was designing my own product. Because of this, I had to research which plugins would work with my website idea and what the limitations of implementing and hosting a webpage WordPress were. Research played a crucial part in my design process and set the foundations for my ideas.</p>
-            <p>If time constraints were not an issue and if I had more knowledge on how to manipulate a WordPress design from the backend, I would have liked to implement the diary option so users could easily track their favorite boba tea customization options and other users could use those as references. In addition, I would have also liked to implement the “Top 3 Drinks” idea I had on my wireframe on a locations page.</p>
-        </div>
--->
     </div>
-
     <!-- responsive nav -->
     <script>
         function myFunction() {
