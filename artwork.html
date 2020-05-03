@@ -1,27 +1,145 @@
+<!doctype html>
 
-    <div class="art">
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+
+    <title>Artwork | Alexandria Lo</title>
+    <meta name="description" content="I'm Alexandria Lo. I graduated from the University of Texas at Dallas with a B.S. in Cognitive Science. View my UX Design portfolio here.">
+
+    <link rel="canonical" href="https://alexandrialo.com/" />
+    <!-- Jquery for Bootstrap -->
+    <script async src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <link rel="icon" href="images/favicon.ico">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Montserrat:300,400" rel="stylesheet">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script src="https://www.googletagmanager.com/gtag/js?id=UA-148686804-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-148686804-1');
+
+    </script>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- BootstrapCDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script async src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <!-- animation on scroll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- hamburger menu -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KJVJS6B" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <header>
+        <a href="#home" id="home"><img class="logo center" src="images/name.jpg"></a>
+    </header>
+    <nav class="mynav" id="nav">
+        <ul>
+            <li id="o"><a href="index.html">Home</a></li>
+            <li id="o"><a href="#work">Work</a></li>
+            <li id="o"><a href="about.html">About</a></li>
+        </ul>
+        <!-- hamburger-kun -->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()"><img src="images/arrow.jpg"></a>
+    </nav>
+    <div class="art container">
         <div class="home-text">
             <h2>Artwork</h2>
+            <p>Illustrating & graphic design are also a huge hobby of mine. Currently, I freelance on the side and create self-indulgent art whenever time permits!</p>
+            <p>Please feel free to check out some of my artwork.</p>
         </div>
-        <div class="art-container">
-            <div class="row" data-aos="fade-up" data-aos-duration="1000">
-                <div class="col-md-4">
-                    <img class="rs" src="images/ig-cat-painting.jpg">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="false">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="images/ig-devil-no-4.jpg">
                 </div>
-                <div class="col-md-4">
-                    <img class="rs" src="images/ig-pony-project.jpg">
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="images/ig-cat-painting.jpg">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="images/ig-pony-project.jpg">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="images/ig-slime-sticker.jpg">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="images/ig-mariko-chibi-doodle.jpg">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="images/ig-renae-doodle.jpg">
                 </div>
             </div>
-            <div class="row" data-aos="fade-up" data-aos-duration="1000">
-                <div class="col-md-4">
-                    <img class="rs" src="images/ig-slime-sticker.jpg">
-                </div>
-                <div class="col-md-4">
-                    <img class="rs" src="images/ig-mariko-chibi-doodle.jpg">
-                </div>
-                <div class="col-md-4">
-                    <img class="rs" src="images/ig-renae-doodle.jpg">
-                </div>
-            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
         </div>
     </div>
+
+    <!-- find horizontal scroll -->
+    <script>
+        var docWidth = document.documentElement.offsetWidth;
+
+        [].forEach.call(
+            document.querySelectorAll('*'),
+            function(el) {
+                if (el.offsetWidth > docWidth) {
+                    console.log(el);
+                }
+            }
+        );
+
+    </script>
+
+    <!-- responsive nav -->
+    <script>
+        function myFunction() {
+            var x = document.getElementById("nav");
+            if (x.className === "mynav") {
+                x.className += " responsive";
+            } else {
+                x.className = "mynav";
+            }
+        }
+
+    </script>
+
+    <footer class="footer">
+        <div class="footer-text">
+            <center>Website designed and coded &copy 2020 Alexandria Lo</center>
+            <p><a href="mailto:thanksalox@gmail.com"><img class="socialmedia" src="images/gmail.jpg"></a>
+                <a href="https://www.linkedin.com/in/alexandrialo/" target="_blank" rel="noopener noreferrer"><img class="socialmedia" src="images/linkedin.jpg"></a>
+                <a href="https://www.instagram.com/aaaliku" target="_blank" rel="noopener noreferrer"><img class="socialmedia" src="images/instagram.jpg"></a></p>
+        </div>
+    </footer>
+</body>
+
+</html>

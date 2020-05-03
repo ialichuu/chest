@@ -569,7 +569,8 @@ img {
 .art {
     background-color: white;
     padding: 2%;
-    margin: 2%;
+    margin: auto;
+    max-width: 700px;
 }
 
 .art-container {
