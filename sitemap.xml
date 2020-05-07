@@ -2,42 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
     <url>
-        <loc>https://alexandrialo.com/</loc>
+        <loc>https://alexandrialo.com</loc>
         <lastmod>2020-04-22T02:54:21+00:00</lastmod>
         <priority>1.00</priority>
     </url>
     <url>
-        <loc>https://alexandrialo.com/about/</loc>
+        <loc>https://alexandrialo.com/about</loc>
         <lastmod>2020-04-22T02:54:21+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>https://alexandrialo.com/project/statwax/</loc>
+        <loc>https://alexandrialo.com/project/statwax</loc>
         <lastmod>2020-04-22T02:54:21+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>https://alexandrialo.com/project/aliexpress/</loc>
+        <loc>https://alexandrialo.com/project/aliexpress</loc>
         <lastmod>2020-04-22T02:54:21+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>https://alexandrialo.com/project/bobateau/</loc>
+        <loc>https://alexandrialo.com/project/bobateau</loc>
         <lastmod>2020-04-22T02:54:21+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>https://alexandrialo.com/project/csaatutd/</loc>
+        <loc>https://alexandrialo.com/project/csaatutd</loc>
         <lastmod>2020-04-22T02:54:21+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>https://alexandrialo.com/project/bobasaurus/</loc>
+        <loc>https://alexandrialo.com/project/bobasaurus</loc>
         <lastmod>2020-05-02T02:54:21+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>https://alexandrialo.com/artwork/</loc>
+        <loc>https://alexandrialo.com/artwork</loc>
         <lastmod>2020-05-07T02:54:21+00:00</lastmod>
         <priority>0.80</priority>
     </url>
