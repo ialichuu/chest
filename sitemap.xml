@@ -49,6 +49,7 @@
     </url>
 -->
 
+    <!--
     <url>
         <loc>https://alexandrialo.com/index.html</loc>
         <lastmod>2020-05-07T02:54:21+00:00</lastmod>
@@ -89,7 +90,6 @@
         <lastmod>2020-05-07T02:54:21+00:00</lastmod>
         <priority>0.80</priority>
     </url>
-    <!--
     <url>
         <loc>https://alexandrialo.com/project/stitcher.html</loc>
         <lastmod>2020-05-07T02:54:21+00:00</lastmod>
