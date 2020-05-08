@@ -661,7 +661,7 @@ figcaption {
 }
 
 .case-content h3 {
-    margin-top: 50px;
+    margin-top: 25px;
 }
 
 .logo-image {
@@ -718,13 +718,32 @@ h5 {
 
 .content-process img {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 3%;
+    margin: 20px auto;
 }
 
 .heading-section p {
     text-align: center;
+}
+
+summary {
+    font-weight: 600;
+    border: 2px solid transparent;
+    transition-duration: 0.4s;
+    margin: 16px auto;
+    padding: 16px;
+    background-color: white;
+    color: gray;
+    outline: none;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+summary:hover {
+    background-color: #fc7978;
+    border: 2px solid transparent;
+    color: white;
+    text-decoration: none;
 }
 
 /************************* unique project content *************************/
@@ -808,12 +827,7 @@ h5 {
     margin: auto;
     text-align: left;
     height: 100%;
-    margin-top: 100px;
-}
-
-.section img {
-    margin: auto;
-    margin-bottom: 1%;
+    margin-top: 50px;
 }
 
 .section h4 {
@@ -831,8 +845,11 @@ h5 {
     margin: auto;
 }
 
+.in-progress {
+    margin: 0 20%;
+}
+
 .in-progress h3 {
-    margin: auto;
     padding: 10px;
 }
 
