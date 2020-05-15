@@ -13,7 +13,7 @@
     <script async src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
     <link rel="icon" href="../images/favicon.ico">
-    <link href="https://fonts.googleapis.com/css?family=Roboto|Montserrat:300,400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap|Montserrat&display=swap" rel="stylesheet">
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-148686804-1"></script>
@@ -58,7 +58,7 @@
         <a href="javascript:void(0);" class="icon" onclick="myFunction()"><img src="../images/arrow.jpg"></a>
     </nav>
 
-    <div class="background">
+    <div class="background" id="top">
         <img src="../bobasaurus/bobasaurus-bg.png">
     </div>
     <div class="case-content">
@@ -181,16 +181,16 @@
                         </div>
                     </div>
                     <p>By thinking through Aadesh's journey, I was able to factor in his determination to find new drinks and his endeavor to save money. As a result, I was able to find some features to add into the app that could benefit him. I did the same with Sen and Sarah. Sen had a similar journey as Aadesh, but he's not conscious of his spending since he's going less often, but he's interested in savings opportunities. As someone who already has a preferred shop, Sarah would use the product less. However, if she's interested in a change of scenery, I thought of some benefits for her as well.</p>
-                    <!--
-                    <h3 class="bobasaurus-font">Sketching & Wireframing</h3>
-                    <p>To cater to the demographic of users who would be interested in using Bobasaurus, simplicity was the first priority. My user flow was built to ensure intuitive actions and straight forward accessibility.</p>
-
-                    <p>Taking the data gathered from my competitor analysis, specific features that would have high impact to the application were highlighted and added in order to create a more fluid user flow. Features such as Google Maps integration and an option to favorite were a must-have for the final prototype.</p>
--->
+                    <img src="../bobasaurus/bobasaurus-ideation.jpg" style="max-width: 700px">
+                    <p>I put all the possible details that I wanted to incorporate in my design and the path that the demographic could take. Then, I narrowed it down as I started creating the wireframe and interviewing target users.</p>
+                    <p>Taking the data gathered from my competitor analysis, specific features that would have high impact to the application were highlighted and added in order to create a more fluid user flow. Features such as Google Maps integration, the spending statistics, and an option to favorite were a must-have for the final design.</p>
+                    <h3 class="bobasaurus-font">Wireframes</h3>
+                    <p>While designing the lo-fi wireframe, I talked to three target users about what they would expect the app to do and how they'd interact with it. I wanted to simplify the whole process as much as possible and to ensure intuitive actions because the target demographic has other things to do with their time. With each suggestion, I changed the design accordingly to address their pain points.</p>
+                    <img src="../bobasaurus/bobasaurus-lo-fi-comp.png">
                 </div>
             </div>
             <div class="section">
-                <h1>NEXT STEP: <span class="bobasaurus-font">Creating Wireframes & Prototyping</span>.</h1>
+                <h1>NEXT STEP: <span class="bobasaurus-font">Creating Hi-Fi Wireframes & Prototyping</span>.</h1>
                 <div class="in-progress">
                     <h3>This project is still <span style="color:#ed595c">in progress</span>! Please <span style="color:#ed595c">contact me to find more details</span> or come back when it's complete.</h3>
                     <h3 span style="text-align:right">Thank you for your patience!</h3>
@@ -198,27 +198,40 @@
                 </div>
             </div>
         </div>
-        <!-- responsive nav -->
-        <script>
-            function myFunction() {
-                var x = document.getElementById("nav");
-                if (x.className === "mynav") {
-                    x.className += " responsive";
-                } else {
-                    x.className = "mynav";
-                }
+        <a href="#top" onclick="scrollToTop(); return false"><img src="../images/back-to-top.png" class="btt"></a>
+    </div>
+    <!-- responsive nav -->
+    <script>
+        function myFunction() {
+            var x = document.getElementById("nav");
+            if (x.className === "mynav") {
+                x.className += " responsive";
+            } else {
+                x.className = "mynav";
             }
+        }
 
-        </script>
+    </script>
 
-        <footer class="footer">
-            <div class="footer-text">
-                <center>Website designed and coded &copy 2020 Alexandria Lo</center>
-                <p><a href="mailto:thanksalox@gmail.com"><img class="socialmedia" src="../images/gmail.jpg"></a>
-                    <a href="https://www.linkedin.com/in/alexandrialo/" target="_blank" rel="noopener noreferrer"><img class="socialmedia" src="../images/linkedin.jpg"></a>
-                    <a href="https://www.instagram.com/aaaliku" target="_blank" rel="noopener noreferrer"><img class="socialmedia" src="../images/instagram.jpg"></a></p>
-            </div>
-        </footer>
+    <!-- scroll to top -->
+    <script>
+        function scrollToTop() {
+            var position = document.body.scrollTop || document.documentElement.scrollTop;
+            if (position) {
+                window.scrollBy(0, -Math.max(10, Math.floor(position / 10)));
+                scrollAnimation = setTimeout('scrollToTop()', 10);
+            } else clearTimeout(scrollAnimation);
+        }
+
+    </script>
+    <footer class="footer">
+        <div class="footer-text">
+            <center>Website designed and coded &copy 2020 Alexandria Lo</center>
+            <p><a href="mailto:thanksalox@gmail.com"><img class="socialmedia" src="../images/gmail.jpg"></a>
+                <a href="https://www.linkedin.com/in/alexandrialo/" target="_blank" rel="noopener noreferrer"><img class="socialmedia" src="../images/linkedin.jpg"></a>
+                <a href="https://www.instagram.com/aaaliku" target="_blank" rel="noopener noreferrer"><img class="socialmedia" src="../images/instagram.jpg"></a></p>
+        </div>
+    </footer>
 </body>
 
 </html>

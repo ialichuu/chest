@@ -8,12 +8,12 @@
 
     <title>AliExpress UX Design Case Study | Alexandria Lo</title>
     <meta name="description" content="A UX case study about AliExpress' website layout, focusing on increasing the visibility of online user shopping cart items.">
-<!--    <link rel="canonical" href="https://alexandrialo.com/project/aliexpress" />-->
+    <!--    <link rel="canonical" href="https://alexandrialo.com/project/aliexpress" />-->
     <!-- Jquery for Bootstrap -->
     <script async src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
     <link rel="icon" href="../images/favicon.ico">
-    <link href="https://fonts.googleapis.com/css?family=Roboto|Montserrat:300,400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap|Montserrat&display=swap" rel="stylesheet">
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-148686804-1"></script>
@@ -52,7 +52,7 @@
         <a href="javascript:void(0);" class="icon" onclick="myFunction()"><img src="../images/arrow.jpg"></a>
     </nav>
 
-    <div class="background">
+    <div class="background" id="top">
         <img src="../aliexpress/aliexpress-bg.png">
     </div>
     <div class="case-content">
@@ -228,6 +228,7 @@
                 <p>I will work on this project again in the near future because there are a lot of things I could fill in. I would interview frequent online shoppers to identify their pain points and create user personas, create a user journey map for the purchasing process, and create a high-fidelity design to solidify the shopping cart feature based off of those factors.</p>
             </div>
         </div>
+        <a href="#top" onclick="scrollToTop(); return false"><img src="../images/back-to-top.png" class="btt"></a>
     </div>
 
     <!-- responsive nav -->
@@ -239,6 +240,18 @@
             } else {
                 x.className = "mynav";
             }
+        }
+
+    </script>
+
+    <!-- scroll to top -->
+    <script>
+        function scrollToTop() {
+            var position = document.body.scrollTop || document.documentElement.scrollTop;
+            if (position) {
+                window.scrollBy(0, -Math.max(10, Math.floor(position / 10)));
+                scrollAnimation = setTimeout('scrollToTop()', 10);
+            } else clearTimeout(scrollAnimation);
         }
 
     </script>

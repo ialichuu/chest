@@ -8,12 +8,12 @@
 
     <title>Statwax Dallas Logo Project | Alexandria Lo</title>
     <meta name="description" content="My design of the Statwax logo for the Dallas regional headquarters in Adobe Photoshop and Adobe Illustrator while keeping the overall 'Statwax' vibe.">
-<!--    <link rel="canonical" href="https://alexandrialo.com/project/statwax" />-->
+    <!--    <link rel="canonical" href="https://alexandrialo.com/project/statwax" />-->
     <!-- Jquery for Bootstrap -->
     <script async src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
     <link rel="icon" href="../images/favicon.ico">
-    <link href="https://fonts.googleapis.com/css?family=Roboto|Montserrat:300,400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap|Montserrat&display=swap" rel="stylesheet">
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-148686804-1"></script>
@@ -28,8 +28,8 @@
         gtag('config', 'UA-148686804-1');
 
     </script>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- BootstrapCDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script async src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
@@ -52,7 +52,7 @@
         <a href="javascript:void(0);" class="icon" onclick="myFunction()"><img src="../images/arrow.jpg"></a>
     </nav>
 
-    <div class="background">
+    <div class="background" id="top">
         <img src=" ../statwax/statwax-bg.png">
     </div>
     <div class="case-content">
@@ -140,6 +140,7 @@
             <p>Overall, this project was a pleasant learning experience for me, as it was my first logo design project for a company. I was able to work alongside my coworkers and get opinions from them and people outside of the company. If I were to do this project again, I would have done the designs in Adobe Illustrator instead of Adobe Photoshop to make it fully vectorized. I should have also focused on solidifying the design first then go in with the colors rather than playing around the colors while I was creating different variations of it. Nonetheless, this is my design on the entrance to our office. As of March 2020, we have moved to a new office location.</p>
             <img src="../statwax/statwax-dallas-office-plaque.jpeg" class="center" style="max-width:600px; margin:auto;">
         </div>
+        <a href="#top" onclick="scrollToTop(); return false"><img src="../images/back-to-top.png" class="btt"></a>
     </div>
 
     <!-- Slideshow -->
@@ -179,6 +180,18 @@
             } else {
                 x.className = "mynav";
             }
+        }
+
+    </script>
+
+    <!-- scroll to top -->
+    <script>
+        function scrollToTop() {
+            var position = document.body.scrollTop || document.documentElement.scrollTop;
+            if (position) {
+                window.scrollBy(0, -Math.max(10, Math.floor(position / 10)));
+                scrollAnimation = setTimeout('scrollToTop()', 10);
+            } else clearTimeout(scrollAnimation);
         }
 
     </script>

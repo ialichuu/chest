@@ -13,7 +13,7 @@
     <script async src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
     <link rel="icon" href="../images/favicon.ico">
-    <link href="https://fonts.googleapis.com/css?family=Roboto|Montserrat:300,400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap|Montserrat&display=swap" rel="stylesheet">
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-148686804-1"></script>
@@ -52,7 +52,7 @@
         <a href="javascript:void(0);" class="icon" onclick="myFunction()"><img src="../images/arrow.jpg"></a>
     </nav>
 
-    <div class="background">
+    <div class="background" id="top">
         <img src="../csaatutd/csa-bg.jpg">
     </div>
     <div class="case-content">
@@ -176,6 +176,7 @@
                 <p>Unfortunately, I couldn't find many related images for me to work with. Therefore, some of the hero images are out of focus. However, I am working with the webmaster to implement this design on WordPress. If I were to continue working with CSA, I would like to do user testing for interested students who want to join the Chemistry Student Association and conduct surveys to see how they like interacting with the website. Then, I would make changes as necessary with the research I collect.</p>
             </div>
         </div>
+        <a href="#top" onclick="scrollToTop(); return false"><img src="../images/back-to-top.png" class="btt"></a>
     </div>
 
     <!-- responsive nav -->
@@ -190,6 +191,19 @@
         }
 
     </script>
+
+    <!-- scroll to top -->
+    <script>
+        function scrollToTop() {
+            var position = document.body.scrollTop || document.documentElement.scrollTop;
+            if (position) {
+                window.scrollBy(0, -Math.max(10, Math.floor(position / 10)));
+                scrollAnimation = setTimeout('scrollToTop()', 10);
+            } else clearTimeout(scrollAnimation);
+        }
+
+    </script>
+
     <footer class="footer">
         <div class="footer-text">
             <center>Website designed and coded &copy 2020 Alexandria Lo</center>

@@ -167,7 +167,8 @@ h1 {
     margin: 0;
     text-align: center;
     margin: 1% 0 2% 0;
-    font-weight: 600;
+    font-weight: 500;
+
 }
 
 h2 {
@@ -177,7 +178,7 @@ h2 {
     font-size: 33px;
     text-align: center;
     margin: 2% 0 1% 0;
-    font-weight: bold;
+    font-weight: 500;
 }
 
 h3 {
@@ -186,7 +187,7 @@ h3 {
     font-size: 28px;
     text-align: center;
     margin: 1% 0 2% 0;
-    font-weight: bold;
+    font-weight: 500;
 }
 
 h4 {
@@ -194,14 +195,14 @@ h4 {
     font-display: swap;
     font-size: 23px;
     margin: 2% 0 1% 0;
-    font-weight: bold;
+    font-weight: 500;
 }
 
 h5 {
     font-family: "Montserrat", sans-serif;
     font-display: swap;
     color: #fc7978;
-    font-weight: bold;
+    font-weight: 500;
     font-size: 19px;
     margin: 1% 0 2% 0;
 }
@@ -215,7 +216,7 @@ p {
 
 a {
     color: #fc7978;
-    font-weight: bold;
+    font-weight: 500;
 }
 
 a:active {
@@ -269,7 +270,7 @@ header {
         align-items: center;
         justify-content: center;
         overflow: hidden;
-        font-weight: bold;
+        font-weight: 500;
     }
 
     nav li,
@@ -282,7 +283,7 @@ header {
         color: black;
         text-transform: uppercase;
         letter-spacing: 3px;
-        font-weight: bold;
+        font-weight: 500;
     }
 
     nav a:hover {
@@ -345,7 +346,7 @@ header {
         font-family: "Montserrat", sans-serif;
         color: black;
         text-transform: uppercase;
-        font-weight: bold;
+        font-weight: 500;
         margin: 20px;
         font-display: swap;
     }
@@ -539,7 +540,7 @@ header {
     box-shadow: 0 2px 5px 0 rgba(211, 218, 227, 100);
 */
     border: 2px solid gray;
-    font-weight: bold;
+    font-weight: 500;
     text-decoration: none;
 }
 
@@ -617,17 +618,7 @@ img {
 }
 
 
-figcaption {
-    /*
-    padding-top: 10px;
-    text-align: center;
-    font-family: "Montserrat", sans-serif;
-    font-display: swap;
-    font-weight: 300;
-    font-size: 14px;
-    margin-bottom: 3%;
-*/
-}
+figcaption {}
 
 /************************* project content *************************/
 
@@ -690,7 +681,7 @@ figcaption {
 .content-heading p {
     text-align: center;
     margin: 0;
-    font-weight: bold;
+    font-weight: 500;
 }
 
 .subtitle {
@@ -699,7 +690,7 @@ figcaption {
 }
 
 .overview-title {
-    font-weight: bold;
+    font-weight: 500;
     text-transform: uppercase;
 }
 
@@ -726,7 +717,7 @@ h5 {
 }
 
 summary {
-    font-weight: 600;
+    font-weight: 500;
     border: 2px solid transparent;
     transition-duration: 0.4s;
     margin: 16px auto;
@@ -734,7 +725,6 @@ summary {
     background-color: white;
     color: gray;
     outline: none;
-    font-weight: bold;
     text-decoration: none;
 }
 
@@ -919,7 +909,7 @@ body {
     padding: 16px;
     margin-top: -22px;
     color: white;
-    font-weight: bold;
+    font-weight: 500;
     font-size: 16px;
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
@@ -953,4 +943,62 @@ body {
 .active,
 .dot:hover {
     background-color: #717171;
+}
+
+/* other work hover */
+
+.block {
+    box-shadow: none;
+    opacity: 1;
+    transition: box-shadow 200ms ease, color 200ms ease;
+    color: transparent;
+    text-decoration: none;
+}
+
+.overlay {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.overlay h3,
+.overlay p {
+    text-align: center;
+    color: black;
+}
+
+.image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.container:hover .image {
+    opacity: 0.3;
+}
+
+.container:hover .overlay {
+    opacity: 1;
+}
+
+/* back to top */
+.btt {
+    max-width: 100px;
+    z-index: 99;
+    position: fixed;
+    bottom: 30px;
+    right: 10px;
+    opacity: 0.5;
+}
+
+.btt:hover {
+    opacity: 1;
+    transition: .5s ease;
 }

@@ -13,7 +13,7 @@
     <script async src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
     <link rel="icon" href="../images/favicon.ico">
-    <link href="https://fonts.googleapis.com/css?family=Roboto|Montserrat:300,400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap|Montserrat&display=swap" rel="stylesheet">
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-148686804-1"></script>
@@ -52,7 +52,7 @@
         <a href="javascript:void(0);" class="icon" onclick="myFunction()"><img src="../images/arrow.jpg"></a>
     </nav>
 
-    <div class="background">
+    <div class="background" id="top">
         <img src="../bobateau/bobateau-bg.jpg">
     </div>
     <div class="case-content">
@@ -210,6 +210,7 @@
                 <p><strong class="bobateau-font">[Update 01/19]</strong> After presenting this project to the class, I received feedback and have decided to further my design and go back to redesign some aspects of the website into an app. I also wanted to do more research to further figure out what my target audience would be and what they would expect from this product. Bobateau Version 2.0 is coming in app form, so please stay tuned!</p>
             </div>
         </div>
+        <a href="#top" onclick="scrollToTop(); return false"><img src="../images/back-to-top.png" class="btt"></a>
     </div>
     <!-- responsive nav -->
     <script>
@@ -220,6 +221,18 @@
             } else {
                 x.className = "mynav";
             }
+        }
+
+    </script>
+
+    <!-- scroll to top -->
+    <script>
+        function scrollToTop() {
+            var position = document.body.scrollTop || document.documentElement.scrollTop;
+            if (position) {
+                window.scrollBy(0, -Math.max(10, Math.floor(position / 10)));
+                scrollAnimation = setTimeout('scrollToTop()', 10);
+            } else clearTimeout(scrollAnimation);
         }
 
     </script>
