@@ -6,8 +6,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
 
-    <title>Bobasaurus App | Alexandria Lo</title>
-    <meta name="description" content="A UI/UX Design project for an app that features local boba tea shops and finding new favorite drink combinations. This is an iOS app redesign of my website, BobaTeaU.">
+    <title>Bobasaurus App Design | Alexandria Lo</title>
+    <meta name="description" content="A UI/UX design project for a boba directory app that allows users to find and rate their favorite drink combinations. This is an iOS app redesign of my website, BobaTeaU.">
     <!--    <link rel="canonical" href="https://alexandrialo.com/project/bobasaurus" />-->
     <!-- Jquery for Bootstrap -->
     <script async src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -72,7 +72,7 @@
                     <div class="problem col-sm-8">
                         <h2>Problem</h2>
                         <p>If you've ever been in the Dallas area, you've probably seen at least one or two boba tea shops around here. From Kung Fu Tea, Feng Cha, Boba Latte, and many, many others, the boba tea business is booming. </p>
-                        <p>I, a self-proclaimed boba connoisseur, and many other of my fellow boba connoisseurs, can't try out every shop and remember what drinks I like at all of them. Therefore, I wanted to create a platform to compile them in one place.</p>
+                        <p>I, a self-proclaimed boba connoisseur, and many other of my fellow boba connoisseurs, can't try out every shop and remember what drinks I like at all of them. Therefore, I created a platform to compile them in one place.</p>
                         <div class="bobasaurus goal">
                             <h3>Goal</h3>
                             <p>Create a platform for users to discover, record, and keep up with their boba tea drinks rather than struggling to memorize all their favorite combinations.</p>
@@ -169,9 +169,9 @@
             <div class="section">
                 <h2>Ideation</h2>
                 <h3 class="bobasaurus-font">User Flow</h3>
-                <p>Taking all of my research and personas into consideration, I wanted to map out how each primary user would interact with Bobasaurus.</p>
+                <p>Taking all of my research and personas into consideration, I mapped out how each primary user would interact with Bobasaurus.</p>
                 <img src="../bobasaurus/flow-avid.jpg">
-                <div class="container-flex">
+                <div class="container">
                     <div class="row">
                         <div class="col-md-6">
                             <img src="../bobasaurus/flow-social.jpg">
@@ -182,11 +182,11 @@
                     </div>
                     <p>By thinking through Aadesh's journey, I was able to factor in his determination to find new drinks and his endeavor to save money. As a result, I was able to find some features to add into the app that could benefit him. I did the same with Sen and Sarah. Sen had a similar journey as Aadesh, but he's not conscious of his spending since he's going less often, but he's interested in savings opportunities. As someone who already has a preferred shop, Sarah would use the product less. However, if she's interested in a change of scenery, I thought of some benefits for her as well.</p>
                     <img src="../bobasaurus/bobasaurus-ideation.jpg" style="max-width: 700px">
-                    <p>I put all the possible details that I wanted to incorporate in my design and the path that the demographic could take. Then, I narrowed it down as I started creating the wireframe and interviewing target users.</p>
+                    <p>I incorporated all the possible details that users would take into consideration in my design and the path that the demographic could take. Then, I narrowed it down as I started creating the wireframe and interviewing target users.</p>
                     <p>Taking the data gathered from my competitor analysis, specific features that would have high impact to the application were highlighted and added in order to create a more fluid user flow. Features such as Google Maps integration, the spending statistics, and an option to favorite were a must-have for the final design.</p>
                     <h3 class="bobasaurus-font">Wireframes</h3>
                     <p>While designing the lo-fi wireframe, I talked to three target users about what they would expect the app to do and how they'd interact with it. I wanted to simplify the whole process as much as possible and to ensure intuitive actions because the target demographic has other things to do with their time. With each suggestion, I changed the design accordingly to address their pain points.</p>
-                    <div class="container-flex">
+                    <div class="container">
                         <div class="row">
                             <div class="col-md-6">
                                 <h4>Lo-Fi Wireframes</h4>
@@ -210,38 +210,39 @@
             </div>
             <a href="#top" onclick="scrollToTop(); return false"><img src="../images/back-to-top.png" class="btt"></a>
         </div>
-        <!-- responsive nav -->
-        <script>
-            function myFunction() {
-                var x = document.getElementById("nav");
-                if (x.className === "mynav") {
-                    x.className += " responsive";
-                } else {
-                    x.className = "mynav";
-                }
+    </div>
+    <!-- responsive nav -->
+    <script>
+        function myFunction() {
+            var x = document.getElementById("nav");
+            if (x.className === "mynav") {
+                x.className += " responsive";
+            } else {
+                x.className = "mynav";
             }
+        }
 
-        </script>
+    </script>
 
-        <!-- scroll to top -->
-        <script>
-            function scrollToTop() {
-                var position = document.body.scrollTop || document.documentElement.scrollTop;
-                if (position) {
-                    window.scrollBy(0, -Math.max(10, Math.floor(position / 10)));
-                    scrollAnimation = setTimeout('scrollToTop()', 10);
-                } else clearTimeout(scrollAnimation);
-            }
+    <!-- scroll to top -->
+    <script>
+        function scrollToTop() {
+            var position = document.body.scrollTop || document.documentElement.scrollTop;
+            if (position) {
+                window.scrollBy(0, -Math.max(10, Math.floor(position / 10)));
+                scrollAnimation = setTimeout('scrollToTop()', 10);
+            } else clearTimeout(scrollAnimation);
+        }
 
-        </script>
-        <footer class="footer">
-            <div class="footer-text">
-                <center>Website designed and coded &copy 2020 Alexandria Lo</center>
-                <p><a href="mailto:thanksalox@gmail.com"><img class="socialmedia" src="../images/gmail.jpg"></a>
-                    <a href="https://www.linkedin.com/in/alexandrialo/" target="_blank" rel="noopener noreferrer"><img class="socialmedia" src="../images/linkedin.jpg"></a>
-                    <a href="https://www.instagram.com/aaaliku" target="_blank" rel="noopener noreferrer"><img class="socialmedia" src="../images/instagram.jpg"></a></p>
-            </div>
-        </footer>
+    </script>
+    <footer class="footer">
+        <div class="footer-text">
+            <center>Website designed and coded &copy 2020 Alexandria Lo</center>
+            <p><a href="mailto:thanksalox@gmail.com"><img class="socialmedia" src="../images/gmail.jpg"></a>
+                <a href="https://www.linkedin.com/in/alexandrialo/" target="_blank" rel="noopener noreferrer"><img class="socialmedia" src="../images/linkedin.jpg"></a>
+                <a href="https://www.instagram.com/aaaliku" target="_blank" rel="noopener noreferrer"><img class="socialmedia" src="../images/instagram.jpg"></a></p>
+        </div>
+    </footer>
 </body>
 
 </html>

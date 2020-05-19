@@ -980,11 +980,11 @@ body {
     backface-visibility: hidden;
 }
 
-.container:hover .image {
+.block:hover .image {
     opacity: 0.3;
 }
 
-.container:hover .overlay {
+.block:hover .overlay {
     opacity: 1;
 }
 
