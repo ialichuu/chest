@@ -474,6 +474,7 @@ header {
 
 .home-text h2 {
     text-align: center;
+    margin-bottom: 4%;
 }
 
 .home-text p {
@@ -836,10 +837,10 @@ summary:hover {
 }
 
 .in-progress {
-    margin: 0 20%;
+    margin: 0 10%;
 }
 
-.in-progress h3 {
+.in-progress h4 {
     padding: 10px;
 }
 
@@ -978,6 +979,8 @@ body {
     height: auto;
     transition: .5s ease;
     backface-visibility: hidden;
+    margin: auto;
+    max-width: 400px;
 }
 
 .block:hover .image {
