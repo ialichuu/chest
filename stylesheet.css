@@ -422,8 +422,8 @@ header {
 /************************* home hero *************************/
 .hero {
     background-color: white;
-    height: 500px;
-    background-size: cover;
+    width: 70vw;
+    height: 70vh;
     padding: 0;
     margin: 0;
     min-width: 100%;
