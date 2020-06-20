@@ -168,6 +168,7 @@ h1 {
     text-align: center;
     margin: 1% 0 2% 0;
     font-weight: 500;
+    color: #132743;
 
 }
 
@@ -179,6 +180,7 @@ h2 {
     text-align: center;
     margin: 2% 0 1% 0;
     font-weight: 500;
+    color: #132743;
 }
 
 h3 {
@@ -188,6 +190,7 @@ h3 {
     text-align: center;
     margin: 1% 0 2% 0;
     font-weight: 500;
+    color: #132743;
 }
 
 h4 {
@@ -196,12 +199,13 @@ h4 {
     font-size: 23px;
     margin: 2% 0 1% 0;
     font-weight: 500;
+    color: #132743;
 }
 
 h5 {
     font-family: "Montserrat", sans-serif;
     font-display: swap;
-    color: #fc7978;
+    color: #1d365c;
     font-weight: 500;
     font-size: 19px;
     margin: 1% 0 2% 0;
@@ -212,6 +216,8 @@ p {
     font-display: swap;
     font-size: 16px;
     padding: 0 0 20px 0;
+    line-height: 1.69;
+    color: #132743;
 }
 
 a {
@@ -299,7 +305,7 @@ header {
         border-radius: 0;
         margin: 0;
         padding: 15px;
-        box-shadow: 0px 10px 20px -10px rgba(211, 218, 227, 0.1);
+        box-shadow: 0px 20px 20px 0px rgba(19, 39, 67, .1);
         outline: none;
     }
 
@@ -373,7 +379,8 @@ header {
         z-index: 1;
         left: 10px;
         right: 10px;
-        box-shadow: 0px 10px 20px -10px rgba(211, 218, 227, 0.1);
+        box-shadow: 0px 20px 20px 0px rgba(19, 39, 67, .1);
+        ;
         outline: none;
     }
 
@@ -413,24 +420,34 @@ header {
 }
 
 /************************* home hero *************************/
-.hero-image {
+.hero {
     background-color: white;
-    /*background: url(images/cloudstars-bg.svg);*/
-    /*height: 100vh;*/
-    height: 60vh;
+    height: 500px;
     background-size: cover;
-    /*
-    background-attachment: fixed;
-    background-blend-mode: overlay;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: relative;
-*/
     padding: 0;
     margin: 0;
     min-width: 100%;
     overflow: hidden;
 }
+
+.hero-image {
+    display: block;
+    width: 300px;
+    max-width: 35%;
+    margin: 8% auto 10px;
+    object-fit: fill;
+}
+
+/*
+.parallax {
+    background-color: white;
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+*/
 
 .hero-text {
     align-content: center;
@@ -440,24 +457,18 @@ header {
 
 .hero-text h1 {
     color: black;
-    text-align: left;
-    margin: 8% 0 8px 0;
-    padding-top: 5%;
+    text-align: center;
     vertical-align: baseline;
-    background: 0 0;
     display: block;
 }
 
-.hero-text h4 {
-    text-align: left;
-    margin: 0 0 8px 0;
+.subtext {
+    text-align: center;
+    margin-top: 2%;
     padding: 0;
-
 }
 
-.hero-text p {
-    text-align: left;
-    margin: 0;
+.subtext p {
     padding: 0;
 }
 
@@ -533,57 +544,28 @@ header {
     width: 250px;
     font-size: 20px;
     padding: 10px 0;
-    color: white;
-    background-color: #fc7978;
-    outline: none;
-/*
-    box-shadow: inset 0 -3px #d16463;
-    box-shadow: 0 2px 5px 0 rgba(211, 218, 227, 100);
-*/
-    border: 2px solid transparent;
     font-weight: 500;
+    text-decoration: none;
+    background-color: white;
+    border: 2px solid #fc7978;
+    color: #fc7978;
     text-decoration: none;
 }
 
 
 .button:hover {
-    background-color: white;
-/*
-    box-shadow: inset 0 -3px #d16463;
-    box-shadow: 0 2px 5px 0 rgba(211, 218, 227, 100);
-*/
-    border: 2px solid #fc7978;
-     color: #fc7978;
-    text-decoration: none;
-}
-
-/*
-.button1:hover {
-    background-color: gray;
-    border: 2px solid transparent;
     color: white;
+    background-color: #fc7978;
+    outline: none;
+    border: 2px solid transparent;
     text-decoration: none;
 }
-*/
 
 img {
     width: 100%;
 }
 
-/************************* home art *************************/
-.art {
-    background-color: white;
-    padding: 2%;
-    margin: auto;
-    max-width: 700px;
-}
-
-.art-container {
-    background-color: white;
-    position: relative;
-    align-items: center;
-    justify-content: space-between;
-}
+/************************* art *************************/
 
 .row {
     margin: 0;
@@ -593,29 +575,36 @@ img {
 
 .column {
     flex: 33.33%;
-    padding: 5px;
+    padding: 5px 10px;
     margin: 0;
 }
 
-/************************* home about *************************/
-.about {
+/************************* about *************************/
+.about,
+.art {
     background-color: white;
-    /*
-    padding: 2%;
-    margin: 2%;
-    justify-content: left;
-*/
-    padding: 2em 0 2em 0;
+    padding: 2% 0;
+    margin: 2% auto;
+    max-width: 900px;
 }
 
-.about-img-div {
-    padding: 2em 0 0 0;
-    width: 100%;
+.about h2,
+.art h2 {
+    text-align: center;
 }
 
 .about-img {
-    border-radius: 50%;
+    height: 100%;
+    max-width: 350px;
+    /*    border-radius: 50%;*/
+    margin: 10px auto;
+    padding: 0;
+}
 
+.about-text {
+    padding: 0;
+    margin: 10px auto;
+    max-width: 90%;
 }
 
 
@@ -769,13 +758,13 @@ summary:hover {
 }
 
 .aliexpress {
-    background-color: #A42116;
+    background-color: #f1a033;
     color: white;
     padding: 16px;
 }
 
 .aliexpress-font {
-    color: #A42116;
+    color: #f1a033;
 }
 
 .stitcher {
@@ -804,6 +793,10 @@ summary:hover {
     padding: 10px;
 }
 
+.goal p {
+    color: #eef5ff;
+}
+
 .csa h3,
 .bobateau h3,
 .bobasaurus h3,
@@ -811,6 +804,7 @@ summary:hover {
 .stitcher h3,
 .statwax h3 {
     margin-top: .5em !important;
+    color: #eef5ff;
 }
 
 /************************* sections *************************/
@@ -852,11 +846,22 @@ summary:hover {
 
 /************************* footer *************************/
 footer {
+
     position: relative;
     background-color: white;
     color: black;
     text-align: center;
     margin-top: 50px;
+
+    /*
+    position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: red;
+   color: white;
+   text-align: center;
+*/
 }
 
 .footer-text {
@@ -868,7 +873,7 @@ footer {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 50%;
+    width: 98%;
     font-size: 14px;
 }
 
@@ -938,7 +943,7 @@ body {
     background-color: #bbb;
     border-radius: 50%;
     display: inline-block;
-    transition: background-color 0.6s ease;
+    transition: 0.6s ease;
 }
 
 .active,
@@ -951,7 +956,7 @@ body {
 .block {
     box-shadow: none;
     opacity: 1;
-    transition: box-shadow 200ms ease, color 200ms ease;
+    transition: 200ms ease, color 200ms ease;
     color: transparent;
     text-decoration: none;
 }
@@ -969,7 +974,7 @@ body {
 .overlay h3,
 .overlay p {
     text-align: center;
-    color: black;
+    color: #1e365c;
 }
 
 .image {
@@ -984,11 +989,12 @@ body {
 }
 
 .block:hover .image {
-    opacity: 0.3;
+    opacity: 0.2;
 }
 
 .block:hover .overlay {
     opacity: 1;
+
 }
 
 /* back to top */
