@@ -39,19 +39,18 @@
 </head>
 
 <body>
-    <header>
-        <a href="../index.html" id="home"><img class="logo center" src="../images/name.jpg"></a>
-    </header>
-    <nav class="mynav" id="nav">
-        <ul>
-            <li id="o"><a href="../index.html">Home</a></li>
-            <li id="o"><a href="../index.html#work">Work</a></li>
-            <li id="o"><a href="../about.html">About</a></li>
-        </ul>
-        <!-- hamburger-kun -->
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()"><img src="../images/arrow.jpg"></a>
+    <nav id="nav">
+        <div class="menu">
+            <a href="../index.html"><img class="logo" src="../images/name-1.png"></a>
+            <ul id="nav">
+                <li id="o"><a href="../index.html#work">Work</a></li>
+                <li id="o"><a href="../about.html">About</a></li>
+                <li id="o"><a href="../contact.html">Contact</a></li>
+            </ul>
+            <!-- hamburger-kun -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()"><img src="../images/arrow.jpg"></a>
+        </div>
     </nav>
-
     <div class="background" id="top">
         <img src="../aliexpress/aliexpress-bg.jpg">
     </div>
@@ -109,65 +108,65 @@
                 <h3 class="aliexpress-font">Nielsen Heuristic Evaluation</h3>
                 <p>I decided to pick the task of adding items to the shopping cart during the purchasing process: <span class="aliexpress-font">buyer task 1: search for items on AliExpress</span>. I used Nielsen's Usability Heuristics and focused on five heuristics.</p>
                 <h4>1. Visibility of System Status</h4>
-                <img src="../aliexpress/aliexpress-shopping-cart.png" align="right" style="max-width: 100px">
+                <img src="../aliexpress/aliexpress-shopping-cart.png" align="right" style="width: 100px">
                 <p>The shopping cart icon shows the number of items in a buyer’s cart. Unfortunately, when hovering over the cart icon, users cannot quickly preview the items inside of their cart. Instead, they have to click on the cart, going into the page to see what they have. This can be an issue, as users may want to quickly compare prices and items between sellers since many sellers on AliExpress list the same products at different price points. Also, users cannot check what they already have without opening a new page.</p>
 
                 <p><span class="aliexpress-font" style="font-weight:bold">SEVERITY OF ISSUE:</span> Medium. Many users anticipate what they have in their shopping carts and would like to preview their items. However, it is not a website-breaking issue. </p>
                 <p><span class="aliexpress-font" style="font-weight:bold">PROPOSED SOLUTION:</span> Add a hover function to the shopping cart, similar to how AliExpress already has a hover option for categories in the hamburger menu next to the logo. As an example, Hollister allows a user to hover over the shopping cart to quickly preview a picture of a product, its name, and the price of it.</p>
                 <div class="container-flex">
                     <div class="row">
-                        <div class="col-sm-6"><img src="../aliexpress/aliexpress-categories-hover.jpg" style="max-width: 200px"></div>
-                        <div class="col-sm-6"><img src="../aliexpress/holister-shopping-bag.jpg" style="max-width: 300px"></div>
+                        <div class="col-sm-6"><img src="../aliexpress/aliexpress-categories-hover.jpg" style="width: 200px"></div>
+                        <div class="col-sm-6"><img src="../aliexpress/holister-shopping-bag.jpg" style="width: 300px"></div>
                     </div>
                 </div>
                 <h4>2. Match Between System & The Real World</h4>
                 <p>When clicking and scrolling down to the bottom of a listing, users will come across a section that contains a “Related Searches” section with categories, such as “Wholesale,” “Popular,” “Price,” and more. Two of the categories – “Related Searches” and “Popular” – are familiar terms users will generally find on an online store. The rest, however, don’t make a lot of sense (categorically and gramatically) and backlink to unnecessary pages on AliExpress.</p>
-                <img src="../aliexpress/aliexpress-related-searches.jpg" style="max-width: 450px">
+                <img src="../aliexpress/aliexpress-related-searches.jpg" style="width: 450px">
                 <p>For instance, clicking on “gold black iphone phone case” (URL: /price/gold-black-iphone-phone-case_price.html) leads to which doesn’t display information any differently aside from adding the subfolder /price. It’s just a search result of the phrase. Searching for just the folder (URL: /price) leads to a 404 page, which also doesn’t give users any information about what the category is for.</p>
                 <p><span class="aliexpress-font" style="font-weight:bold">SEVERITY OF ISSUE:</span> Low. It doesn’t affect much of the user experience as most users don’t scroll down far enough to reach the bottom of a page. Design-wise and SEO-wise, this is a mess and could be cleaned up to have a shorter page and preserve link equity.</p>
                 <p><span class="aliexpress-font" style="font-weight:bold">PROPOSED SOLUTION:</span> Much of this can be deleted and be replaced with a simple “Related Products” section with a few user searches that aren’t pulled from user input. </p>
                 <h4>3. Consistency & Standards</h4>
-                <p>AliExpress is generally known for its cheap prices in return for slow shipping speeds. Some items I have previously received took up to 3 months to arrive. To combat that, AliExpress has this option users can check called “Fast Shipping” in the search result pages. </p> <img src="../aliexpress/aliexpress-search-options.jpg" style="max-width: 450px">
+                <p>AliExpress is generally known for its cheap prices in return for slow shipping speeds. Some items I have previously received took up to 3 months to arrive. To combat that, AliExpress has this option users can check called “Fast Shipping” in the search result pages. </p> <img src="../aliexpress/aliexpress-search-options.jpg" style="width: 450px">
                 <p>However, unlike the notorious Amazon Prime free 2-day shipping plastered all over Amazon’s website, the phrase “fast shipping” on AliExpress is vague. Does this mean the product will arrive within 1-2 days? Within a week? Or within a month? Upon clicking on a few of the search results with “Fast Shipping,” not all of the products have a consistent mention of when they’ll arrive, as seen in the screenshots below. In addition, it depends on where the product will be shipped from. </p>
 
                 <div class="container-flex">
                     <div class="row">
-                        <div class="col-md-6"><img src="../aliexpress/aliexpress-ships-from-1.jpg" style="max-width: 200px"></div>
-                        <div class="col-md-6"><img src="../aliexpress/aliexpress-ships-from-2.jpg" style="max-width: 200px"></div>
+                        <div class="col-md-6"><img src="../aliexpress/aliexpress-ships-from-1.jpg" style="width: 200px"></div>
+                        <div class="col-md-6"><img src="../aliexpress/aliexpress-ships-from-2.jpg" style="width: 200px"></div>
                     </div>
                 </div>
 
                 <p>For some products, it’s even more vague. This one in particular guarantees delivery before January 17th and has a “Fast Shipping” label on it. However, the other shipping options seem to guarantee it even faster and don’t have a “Fast Shipping” label on them.</p>
-                <img src="../aliexpress/aliexpress-shipping-method.jpg" style="max-width: 500px">
+                <img src="../aliexpress/aliexpress-shipping-method.jpg" style="width: 500px">
                 <p><span class="aliexpress-font" style="font-weight:bold">SEVERITY OF ISSUE:</span> Medium. Many consumers who use AliExpress understand that AliExpress shipping isn’t like Amazon Prime shipping where items arrive in 2 days. That’s one of the reasons as to why their products are usually so cheap. Therefore, users are willing to sacrifice shipping time for lower prices. In addition, this issue isn’t detrimental as users can still check the listing page for shipping information.</p>
                 <p><span class="aliexpress-font" style="font-weight:bold">PROPOSED SOLUTION:</span> Mention how long the shortest shipping speed with the “Fast Shipping” label will be in the search results page or have a page explaining what “Fast Shipping” means and guarantees.</p>
 
                 <h4>4. Error Prevention</h4>
                 <p>AliExpress does not have a “Did you mean ____?” function when users mistype the product they’re looking for. If a user misspells only one word, >\AliExpress does take that misspelled word out in their “Results for” section on the same page. </p>
-                <img src="../aliexpress/aliexpress-mistyped-results.jpg" style="max-width: 500px">
+                <img src="../aliexpress/aliexpress-mistyped-results.jpg" style="width: 500px">
                 <p>However, this feature doesn’t apply when a user searches one word. As a result, users are left with a blank page.</p>
-                <img src="../aliexpress/aliexpress-no-results.jpg" style="max-width: 500px">
+                <img src="../aliexpress/aliexpress-no-results.jpg" style="width: 500px">
 
                 <p><span class="aliexpress-font" style="font-weight:bold">SEVERITY OF ISSUE:</span> Medium. If users know what they’re looking for and realize they’ve misspelt something, they will go back to the search bar above and retype it. However, it’s easier for the user to see what the website suggests, as some users may not realize they are spelling the word(s) incorrectly. Therefore, it would be helpful to provide this option.</p>
                 <p><span class="aliexpress-font" style="font-weight:bold">PROPOSED SOLUTION:</span> Add a “Did you mean ____?” backlink to the correct input or automatically correct the user’s input, similar to how Amazon or Google does it. And, if the user does mean what they typed, they can revert back to that option simply by clicking on it.</p>
-                <img src="../aliexpress/amazon-new-results.jpg" style="max-width: 500px">
+                <img src="../aliexpress/amazon-new-results.jpg" style="width: 500px">
 
                 <h4>5. Aesthetic & Minimalist Design</h4>
                 <p>When a user lands on AliExpress, they are welcomed with many moving items: a bouncing circle, a quick moving slider, flipping icons and banners. Right away, the site is very flamboyant, and it is hard to know which item to pay attention to. In addition, the site layout is cluttered with repeat categories shown on the left column and the right sidebar.</p>
 
                 <div class="container-flex">
                     <div class="row">
-                        <div class="col-md-6"><img src="../aliexpress/aliexpress-homepage.jpg" style="max-width: 500px"></div>
-                        <div class="col-md-6"><img src="../aliexpress/aliexpress-right-sidebar.jpg" style="max-width: 200px"></div>
+                        <div class="col-md-6"><img src="../aliexpress/aliexpress-homepage.jpg" style="width: 500px"></div>
+                        <div class="col-md-6"><img src="../aliexpress/aliexpress-right-sidebar.jpg" style="width: 200px"></div>
                     </div>
                 </div>
                 <p> Upon further inspection, their mobile website is missing the sidebar. While still having flashing banners and promotions, the layout is much better than the desktop website.</p>
-                <img src="../aliexpress/aliexpress-mobile.png" style="max-width: 200px">
+                <img src="../aliexpress/aliexpress-mobile.png" style="width: 200px">
                 <p><span class="aliexpress-font" style="font-weight:bold">SEVERITY OF ISSUE:</span> High. There are too many things that divert the user’s attention. More links on a page means more competition for visibility and clicks for the others around it. Showing many items at once on the homepage also gives the user too many options, which often leads to lower sales. Users navigate better with simplicity and less choices. With a layout like this, load time can be considerably slower, leading to increased bounce rates, as users tend to navigate away from a page after it fails to load after 15 seconds or more.</p>
                 <p><span class="aliexpress-font" style="font-weight:bold">PROPOSED SOLUTION:</span> Remove the extra promotional sidebar on the homepage and put it in another page, such as the clickable logo with the on-going promotion. Or, have just one clickable banner with the promotion showing instead of having four different areas above the fold showing the same promotion.</p>
                 <h2>Wireframe</h2>
                 <h3 class="aliexpress-font">Low-Fidelity Wireframe Design</h3>
-                <img src="../aliexpress/aliexpress-redesign.gif" style="max-width: 700px">
+                <img src="../aliexpress/aliexpress-redesign.gif" style="width: 700px">
                 <p>The goal for this redesign was to allow users to quickly preview what was in their cart without going to a new page. A hover function would be added to the shopping cart, similar to how AliExpress already has a hover option for categories in the hamburger menu next to the logo.</p>
                 <p>The most important pieces of information to include in this redesign would be the product picture, name, prices, number of items to be purchased, and the total cost of the products. A big call-to-action button on the bottom would lead to the shopping cart page where users can make changes like adding more pieces or deleting an item from their cart. </p>
 
@@ -190,7 +189,7 @@
             </div>
             <div class="section">
                 <h3 class="aliexpress-font">Scenario & Task</h3>
-                <p><span class="aliexpress-font">TO THE MODERATOR:</span></p>
+                <p><span span class="aliexpress-font" style="font-weight:bold">TO THE MODERATOR:</span></p>
                 <p>Welcome the participant and get him or her situated in the testing environment. Make sure the participant is okay with being interviewed and having his or her mouse movements recorded on the screen.</p>
                 <p>Two user testing groups will be used to perform an A/B test:</p>
                 <ol>
@@ -212,7 +211,7 @@
                     <li>Is there anything you would like to see be improved about the site?</li>
                     <li>Do you like the option of previewing your shopping cart items on the same page or on a different page? Why or why not?</li>
                 </ul>
-                <p><span class="aliexpress-font">TO THE USER:</span></p>
+                <p><span span class="aliexpress-font" style="font-weight:bold">TO THE USER:</span></p>
                 <p>You just received a new iPhone XS and Apple Airpods as a birthday present from your rich uncle-in-law living in Alaska. You plan to purchase three items for your newly acquired Apple devices to protect them from damage:</p>
                 <ul>
                     <li>iPhone XS case</li>

@@ -163,10 +163,11 @@ section {
 h1 {
     font-family: "Montserrat", sans-serif;
     font-display: swap;
-    font-size: 40px;
+    font-size: 48.83px;
+    line-height: 73.245px;
     margin: 0;
-    text-align: center;
-    margin: 1% 0 2% 0;
+    text-align: left;
+    margin-top: 2%;
     font-weight: 500;
     color: #132743;
 
@@ -175,10 +176,10 @@ h1 {
 h2 {
     font-family: "Montserrat", sans-serif;
     font-display: swap;
-    text-transform: uppercase;
-    font-size: 33px;
-    text-align: center;
-    margin: 2% 0 1% 0;
+    font-size: 39.06px;
+    line-height: 58.59px;
+    text-align: left;
+    margin: 2% 0;
     font-weight: 500;
     color: #132743;
 }
@@ -186,9 +187,10 @@ h2 {
 h3 {
     font-family: "Montserrat", sans-serif;
     font-display: swap;
-    font-size: 28px;
-    text-align: center;
-    margin: 1% 0 2% 0;
+    font-size: 31.25px;
+    line-height: 46.875px;
+    text-align: left;
+    margin: 2% 0;
     font-weight: 500;
     color: #132743;
 }
@@ -196,8 +198,9 @@ h3 {
 h4 {
     font-family: "Montserrat", sans-serif;
     font-display: swap;
-    font-size: 23px;
-    margin: 2% 0 1% 0;
+    font-size: 25px;
+    line-height: 37.5px;
+    margin: 2% 0;
     font-weight: 500;
     color: #132743;
 }
@@ -207,16 +210,17 @@ h5 {
     font-display: swap;
     color: #1d365c;
     font-weight: 500;
-    font-size: 19px;
-    margin: 1% 0 2% 0;
+    font-size: 20px;
+    line-height: 30px;
+    margin: 2% auto;
 }
 
 p {
     font-family: "Roboto", sans-serif;
     font-display: swap;
-    font-size: 16px;
-    padding: 0 0 20px 0;
-    line-height: 1.69;
+    font-size: 18px;
+    padding: 0 0 26px 0;
+    line-height: 27px;
     color: #132743;
 }
 
@@ -225,10 +229,12 @@ a {
     font-weight: 500;
 }
 
+/*
 a:active {
     color: #fc7978;
     text-decoration: underline;
 }
+*/
 
 hr {
     margin: auto;
@@ -239,10 +245,13 @@ ul,
 ol {
     font-family: "Roboto", sans-serif;
     font-display: swap;
-    font-size: 16px;
+    font-size: 18px;
+    line-height: 27px;
+    color: #132743;
 }
 
 /************************* navigation bar *************************/
+/*
 header {
     height: 10%;
     background-color: white;
@@ -254,46 +263,61 @@ header {
     align-items: center;
     justify-content: center;
 }
+*/
 
 .logo {
-    width: 300px;
-    height: auto;
+    width: 175px;
+    float: left;
+    position: relative;
+    margin-right: 50px;
 }
 
 /************************* desktop config *************************/
 @media only screen and (min-width: 601px) {
 
+    /*
+    header {
+        position: fixed;
+        margin: 10px 15px 15px 10px;
+        left: 0;
+        display: inline;
+    }
+*/
+
     nav {
+        overflow: hidden;
         height: 2%;
         background-color: white;
         width: 100%;
-        padding: 0;
-        text-align: center;
-        margin: 0;
         display: flex;
         top: 0px;
         z-index: 1;
-        align-items: center;
-        justify-content: center;
-        overflow: hidden;
-        font-weight: 500;
+        text-decoration: none;
+    }
+
+    nav ul {
+        float: right;
+        list-style-type: none;
+        display: block;
+        margin: 0;
+        padding: 0;
     }
 
     nav li,
     nav a {
-        display: inline;
-        padding: 10px;
+        display: inline-block;
+        padding: 10px 10px 0 10px;
         text-decoration: none;
         font-family: "Montserrat", sans-serif;
         font-display: swap;
-        color: black;
+        color: #132743;
         text-transform: uppercase;
-        letter-spacing: 3px;
         font-weight: 500;
     }
 
     nav a:hover {
         color: #fc7978;
+        text-decoration: none;
     }
 
     html:not([data-scroll='0']) nav {
@@ -305,73 +329,74 @@ header {
         border-radius: 0;
         margin: 0;
         padding: 15px;
-        box-shadow: 0px 20px 20px 0px rgba(19, 39, 67, .1);
+        box-shadow: 0px 10px 10px 0px rgba(19, 39, 67, .05);
         outline: none;
     }
 
+    .menu {
+        display: flex;
+        flex-basis: auto;
+        flex-grow: 1;
+        flex-shrink: 1;
+        justify-content: space-between;
+        background: white;
+        margin: 0 50px;
+    }
 }
 
-.mynav .icon {
+nav .icon {
     display: none;
     width: 20px;
     margin-top: 20px;
     margin-right: 10px;
     background-color: white;
-
 }
 
 /************************* mobile config *************************/
 @media only screen and (max-width: 600px) {
 
-    h1 {
-        margin-bottom: 5%;
+    .logo {
+        width: 200px;
+        float: none;
+        margin: auto;
+        /*        position: relative;*/
     }
 
-    h2,
-    h3,
-    h4 {
-        text-align: left;
-        margin: 5% 0 5% 0;
-    }
-
-    .mynav {
+    nav {
         overflow: hidden;
         background-color: white;
         width: 100%;
     }
 
-    .mynav ul {
-        margin: 5px;
-        padding: 0;
-    }
+    nav ul {}
 
-    .mynav li,
-    .mynav a {
-        display: block;
+    nav li,
+    nav a {
+        display: inline-block;
+        padding: 5px;
         text-decoration: none;
         font-family: "Montserrat", sans-serif;
-        color: black;
+        font-display: swap;
+        color: #132743;
         text-transform: uppercase;
         font-weight: 500;
-        margin: 20px;
-        font-display: swap;
     }
 
     /* hide all links except for first (home) */
-    .mynav a,
-    .mynav li:not(:first-child) {
+    nav a,
+    nav li:not(:first-child) {
         display: none;
     }
 
     /* show links in topnav (.icon) */
-    .mynav a.icon,
-    .mynav li.icon {
+    nav a.icon,
+    nav li.icon {
         width: 40px;
         display: block;
-        margin: 10px auto;
+        margin: auto;
     }
 
-    html:not([data-scroll='0']) .mynav {
+    html:not([data-scroll='0']) nav {
         position: sticky;
         top: 0px;
         border: none;
@@ -379,8 +404,7 @@ header {
         z-index: 1;
         left: 10px;
         right: 10px;
-        box-shadow: 0px 20px 20px 0px rgba(19, 39, 67, .1);
-        ;
+        box-shadow: 0px 10px 10px 0px rgba(19, 39, 67, .05);
         outline: none;
     }
 
@@ -398,10 +422,10 @@ header {
 @media only screen and (max-width: 600px) {
 
     /* for topnav with JS when clicking the icon */
-    .mynav.responsive {}
+    nav.responsive {}
 
-    .mynav.responsive a.icon,
-    .mynav.responsive li.icon {
+    nav.responsive a.icon,
+    nav.responsive li.icon {
         position: relative;
         margin-left: auto;
         margin-right: auto;
@@ -409,10 +433,16 @@ header {
     }
 
     /* displays links vertically for mobile */
-    .mynav.responsive ul {}
+    nav.responsive ul {}
 
-    .mynav.responsive li,
-    .mynav.responsive a {
+    nav.responsive li,
+    nav.responsive a {
+        font-family: "Montserrat", sans-serif;
+        font-display: swap;
+        color: #132743;
+        text-transform: uppercase;
+        font-weight: 500;
+        text-decoration: none;
         float: none;
         display: block;
         text-align: center;
@@ -422,20 +452,16 @@ header {
 /************************* home hero *************************/
 .hero {
     background-color: white;
-    width: 70vw;
-    height: 70vh;
-    padding: 0;
-    margin: 0;
-    min-width: 100%;
     overflow: hidden;
+    padding: 10px;
 }
 
 .hero-image {
     display: block;
-    width: 300px;
-    max-width: 35%;
-    margin: 8% auto 10px;
     object-fit: fill;
+    border-radius: 50%;
+    margin-top: 2em;
+    padding: 0 15%;
 }
 
 /*
@@ -450,20 +476,16 @@ header {
 */
 
 .hero-text {
-    align-content: center;
-    width: 80%;
-    margin: auto;
+    display: block;
+    margin-top: 15%;
 }
 
 .hero-text h1 {
-    color: black;
-    text-align: center;
     vertical-align: baseline;
     display: block;
 }
 
 .subtext {
-    text-align: center;
     margin-top: 2%;
     padding: 0;
 }
@@ -473,19 +495,11 @@ header {
 }
 
 .home-text {
-    color: black;
     position: relative;
     height: 100%;
     margin: auto;
-}
-
-.home-text h1 {
-    margin-bottom: 4%;
-}
-
-.home-text h2 {
-    text-align: center;
-    margin-bottom: 4%;
+    text-align: left;
+    padding: 0 15px;
 }
 
 .home-text p {
@@ -493,19 +507,19 @@ header {
 }
 
 /************************* home portfolio *************************/
-.portfolio {
-    padding: 3%;
-    margin: 3%;
+.portfolio,
+.about,
+.art,
+.contact {
     background-color: white;
-    background-position: center;
-    background-repeat: repeat;
-    position: relative;
+    padding: 2% 0;
+    margin: 2% auto;
+    max-width: 90%;
 }
 
 .portfolio-boxes {
-    margin: auto;
-    width: 100%;
     flex-grow: 1;
+    margin: 20px 0;
 }
 
 .center {
@@ -515,35 +529,34 @@ header {
     text-decoration: none;
 }
 
-.container {}
 
 .mywork {
     height: 100%;
-    margin-bottom: 50px;
+    margin: auto;
+}
+
+.mywork p {
+    padding-bottom: 1em;
 }
 
 .parent {
     display: flex;
+    /*
     align-items: center;
     justify-content: center;
+*/
     flex-direction: column;
 }
 
-.col-md-6 parent {
-    position: relative;
-    min-height: 1px;
-    padding: 0;
-    margin-bottom: 3%;
-}
-
 .button {
-    border-radius: 20px;
+    border-radius: 100px;
+    font-family: "Roboto", sans-serif;
     text-align: center;
     transition-duration: 0.4s;
-    margin: 2% auto;
+    margin: 1em auto;
     width: 250px;
-    font-size: 20px;
-    padding: 10px 0;
+    font-size: 18px;
+    padding: 12px;
     font-weight: 500;
     text-decoration: none;
     background-color: white;
@@ -562,14 +575,14 @@ header {
 }
 
 img {
-    width: 100%;
+    max-width: 100%;
 }
 
 /************************* art *************************/
 
 .row {
-    margin: 0;
-    padding: 0;
+    margin: 20px auto;
+    /*    padding: auto;*/
     width: 100%;
 }
 
@@ -580,25 +593,10 @@ img {
 }
 
 /************************* about *************************/
-.about,
-.art {
-    background-color: white;
-    padding: 2% 0;
-    margin: 2% auto;
-    max-width: 900px;
-}
-
-.about h2,
-.art h2 {
-    text-align: center;
-}
-
 .about-img {
-    height: 100%;
-    max-width: 350px;
+    /*    max-width: 350px;*/
     /*    border-radius: 50%;*/
     margin: 10px auto;
-    padding: 0;
 }
 
 .about-text {
@@ -621,6 +619,7 @@ figcaption {}
 .snippet {
     text-align: left;
     height: 100%;
+    padding-left: 20px;
 }
 
 .snippet h4 {
@@ -641,16 +640,6 @@ figcaption {}
     display: block;
 }
 
-.case-content h3 {
-    margin-top: 25px;
-}
-
-.logo-image {
-    margin: 25px auto;
-    width: 300px;
-    display: block;
-}
-
 /* main title */
 
 .background {
@@ -659,19 +648,7 @@ figcaption {}
 
 .content-heading {
     position: relative;
-    /*    padding-top: 2em;*/
-    /*    top: -4em;*/
-    /*    border-radius: 1.2em 1em 0 0;*/
-    background: #fff;
     padding-top: 1em;
-    margin: 0 auto;
-}
-
-.content-heading h1,
-.content-heading p {
-    text-align: center;
-    margin: 0;
-    font-weight: 500;
 }
 
 .subtitle {
@@ -681,20 +658,11 @@ figcaption {}
 
 .overview-title {
     font-weight: 500;
-    text-transform: uppercase;
+    text-transform: capitalize;
 }
 
 .content-process {
-    margin: 0 0 2% 0;
     position: relative;
-}
-
-.content-process h1,
-h2,
-h3,
-h4,
-h5 {
-    text-align: left;
 }
 
 .content-process img {
@@ -730,7 +698,7 @@ summary:hover {
 .csa {
     background-color: #49b1ed;
     color: white;
-    padding: 16px;
+    padding: 30px;
 }
 
 .csa-font {
@@ -740,17 +708,18 @@ summary:hover {
 .bobateau {
     background-color: #E2AA87;
     color: white;
-    padding: 16px;
+    padding: 30px;
 }
 
 .bobateau-font {
     color: #E2AA87;
 }
 
-.bobasaurus {
+.bobasaurus,
+.bobasaurus ul {
     background-color: #7EBDB4;
     color: white;
-    padding: 16px;
+    padding: 30px;
 }
 
 .bobasaurus-font {
@@ -759,38 +728,26 @@ summary:hover {
 
 .aliexpress {
     background-color: #f1a033;
-    color: white;
-    padding: 16px;
+    color: black;
+    padding: 30px;
 }
 
 .aliexpress-font {
     color: #f1a033;
 }
 
-.stitcher {
-    background-color: #522d5b;
-    color: white;
-    padding: 16px;
-}
-
-.stitcher-font {
-    color: #522d5b;
-}
-
 .statwax {
     background-color: #00b1aa;
     color: white;
-    padding: 16px;
+    padding: 30px;
 }
 
 .statwax-font {
     color: #00b1aa;
 }
 
-
 .goal {
-    margin-top: 20px;
-    padding: 10px;
+    padding: 30px;
 }
 
 .goal p {
@@ -801,7 +758,6 @@ summary:hover {
 .bobateau h3,
 .bobasaurus h3,
 .aliexpress h3,
-.stitcher h3,
 .statwax h3 {
     margin-top: .5em !important;
     color: #eef5ff;
@@ -812,7 +768,6 @@ summary:hover {
     margin: auto;
     text-align: left;
     height: 100%;
-    margin-top: 50px;
 }
 
 .section h4 {
@@ -830,18 +785,15 @@ summary:hover {
     margin: auto;
 }
 
-.in-progress {
-    margin: 0 10%;
-}
-
-.in-progress h4 {
-    padding: 10px;
-}
-
 .survey {
     width: 40%;
     float: right;
     margin-left: 10px
+}
+
+.six-hats img {
+    width: 80px;
+    margin: 1em;
 }
 
 /************************* footer *************************/
@@ -849,7 +801,6 @@ footer {
 
     position: relative;
     background-color: white;
-    color: black;
     text-align: center;
     margin-top: 50px;
 
@@ -916,7 +867,7 @@ body {
     margin-top: -22px;
     color: white;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 18px;
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;

@@ -44,120 +44,110 @@
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KJVJS6B" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
-    <header>
-        <a href="#home" id="home"><img class="logo center" src="images/name.jpg"></a>
-    </header>
-    <nav class="mynav" id="nav">
-        <ul>
-            <li id="o"><a href="index.html">Home</a></li>
-            <li id="o"><a href="#work">Work</a></li>
-            <li id="o"><a href="about.html">About</a></li>
-        </ul>
-        <!-- hamburger-kun -->
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()"><img src="images/arrow.jpg"></a>
+
+    <nav id="nav">
+        <div class="menu">
+            <a href="index.html"><img class="logo" src="images/name-1.png"></a>
+            <ul id="nav">
+                <li id="o"><a href="#work">Work</a></li>
+                <li id="o"><a href="about.html">About</a></li>
+                <li id="o"><a href="contact.html">Contact</a></li>
+            </ul>
+            <!-- hamburger-kun -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()"><img src="images/arrow.jpg"></a>
+        </div>
     </nav>
-    <div class="hero">
-        <img src=" images/cloud-stars.png" class="hero-image">
-        <div class="hero-text">
-            <h1>Hello! I'm <b style="color:#ffb5b5">Alexandria</b>.</h1>
-            <div class="subtext">
-                <p>ALEXANDRIA /ˌalig'zandrēə/ <i>User Experience Designer</i></p>
-                <p><b>1.</b> Self-motivated designer; constantly looking for new learning opportunties; based in the Dallas-Fort Worth Metroplex</p>
+    <div class="hero container">
+        <div class="row">
+            <div class="col-sm-6 order-sm-12">
+                <img src="images/IMG_1002.jpeg" class="hero-image">
+            </div>
+            <div class="col-sm-6 order-sm-1">
+                <div class="hero-text">
+                    <h1>Hello! I'm <b style="color:#ffb5b5">Alexandria</b>.</h1>
+                    <div class="subtext">
+                        <p>ALEXANDRIA /ˌalig'zandrēə/ <i>User Experience Designer</i></p>
+                        <p><b>1.</b> Self-motivated designer; constantly looking for new learning opportunties; based in the Dallas-Fort Worth Metroplex</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
     <hr id="work">
     <div class="portfolio">
-        <div class="home-text">
-            <h2>My Work</h2>
-        </div>
         <div class="mywork container">
-            <div class="row portfolio-boxes">
+            <h2 class="home-text">My Work</h2>
+            <div class="portfolio-boxes row">
                 <div class="col-md-6" data-aos="fade-right" data-aos-duration="1000">
                     <img src="bobasaurus/bobasaurus-cover.jpg">
                 </div>
                 <div class="col-md-6 parent">
                     <h3 class="portfolio-title">Bobasaurus</h3>
-                    <h5>UX | UI</h5>
-                    <p style="text-align:center">Creating a new way to track people's favorite boba tea combinations.</p>
+                    <p>UX | UI</p>
+                    <p>Creating a new way to track people's favorite boba tea combinations.</p>
                     <a href="project/bobasaurus.html"><button class="button">WORK IN PROGRESS</button></a>
                 </div>
             </div>
         </div>
         <div class="mywork container">
-            <div class="row portfolio-boxes">
+            <div class="portfolio-boxes row">
                 <div class="col-md-6" data-aos="fade-right" data-aos-duration="1000">
                     <img src="csaatutd/csa-cover.jpg">
                 </div>
                 <div class="col-md-6 parent">
                     <h3 class="portfolio-title">CSA at UTD</h3>
-                    <h5>UX | UI</h5>
-                    <p style="text-align:center">Improving the user experience for the website to increase membership and promote lab equipment sales.</p>
+                    <p>UX | UI</p>
+                    <p>Improving the user experience for the website to increase membership and promote lab equipment sales.</p>
                     <a href="project/csaatutd.html"><button class="button">TAKE A LOOK</button></a>
                 </div>
             </div>
         </div>
-        <!--
         <div class="mywork container">
-            <div class="row portfolio-boxes">
-                <div class="col-md-6" data-aos="fade-right" data-aos-duration="1000">
-                    <img src="stitcher/stitcher-logo.jpg">
-                </div>
-                <div class="col-md-6 parent">
-                    <h3 class="portfolio-title">Stitcher</h3>
-                    <h5>UX | UI</h5>
-                    <p style="text-align:center">Redesigning an almost daily used podcast app into being one of the best part of someone’s day.</p>
-                    <a href="project/stitcher.html"><button class="button">IN PROGRESS</button></a>
-                </div>
-            </div>
-        </div>
--->
-        <div class="mywork container">
-            <div class="row portfolio-boxes">
+            <div class="portfolio-boxes row">
                 <div class="col-md-6" data-aos="fade-right" data-aos-duration="1000">
                     <img src="bobateau/bobateau-cover.jpg">
                 </div>
                 <div class="col-md-6 parent">
                     <h3 class="portfolio-title">BobaTeaU</h3>
-                    <h5>Web Dev</h5>
-                    <p style="text-align:center">Helping local boba addicts find their favorite boba shops and drinks near campus.</p>
+                    <p>Web Dev</p>
+                    <p>Helping local boba addicts find their favorite boba shops and drinks near campus.</p>
                     <a href="project/bobateau.html"><button class="button">TAKE A LOOK</button></a>
                 </div>
             </div>
         </div>
-    </div>
-    <div>
-        <div class="home-text">
-            <h2>Other Design Work</h2>
-        </div>
-        <div class="mywork container">
-            <div class="row">
-                <div class="col-md-4">
-                    <a href="project/aliexpress.html" class="block">
-                        <div class="overlay">
-                            <h3>AliExpress</h3>
-                            <p>Using heuristics to improve the visibility of shopping cart items</p>
-                        </div>
-                        <img class="image" src="aliexpress/aliexpress-cover.jpg">
-                    </a>
-                </div>
-                <div class="col-md-4">
-                    <a href="project/statwax.html" class="block">
-                        <div class="overlay">
-                            <h3>Statwax</h3>
-                            <p>Designing the regional company logo</p>
-                        </div>
-                        <img class="image" src="statwax/statwax-cover.jpg">
-                    </a>
-                </div>
-                <div class="col-md-4">
-                    <a href="artwork.html" class="block">
-                        <div class="overlay">
-                            <h3>Artwork</h3>
-                            <p>A small collection of my favorite pieces</p>
-                        </div>
-                        <img class="image" src="images/ig-devil-no-4.jpg">
-                    </a>
+        <div>
+            <div class="home-text">
+                <h2>Other Design Work</h2>
+            </div>
+            <div class="mywork container">
+                <div class="row">
+                    <div class="col-md">
+                        <a href="project/aliexpress.html" class="block">
+                            <div class="overlay">
+                                <h3>AliExpress</h3>
+                                <p>Using heuristics to improve the visibility of shopping cart items</p>
+                            </div>
+                            <img class="image" src="aliexpress/aliexpress-cover.jpg">
+                        </a>
+                    </div>
+                    <div class="col-md">
+                        <a href="project/statwax.html" class="block">
+                            <div class="overlay">
+                                <h3>Statwax</h3>
+                                <p>Designing the regional company logo</p>
+                            </div>
+                            <img class="image" src="statwax/statwax-cover.jpg">
+                        </a>
+                    </div>
+                    <div class="col-md">
+                        <a href="artwork.html" class="block">
+                            <div class="overlay">
+                                <h3>Artwork</h3>
+                                <p>A small collection of my favorite pieces</p>
+                            </div>
+                            <img class="image" src="images/ig-devil-no-4.jpg">
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -221,10 +211,10 @@
     <script>
         function myFunction() {
             var x = document.getElementById("nav");
-            if (x.className === "mynav") {
+            if (x.className === "menu") {
                 x.className += " responsive";
             } else {
-                x.className = "mynav";
+                x.className = "menu";
             }
         }
 
