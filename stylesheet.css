@@ -229,12 +229,11 @@ a {
     font-weight: 500;
 }
 
-/*
-a:active {
-    color: #fc7978;
-    text-decoration: underline;
+
+a:hover {
+    color: #1E365C;
+    text-decoration: none;
 }
-*/
 
 hr {
     margin: auto;
@@ -311,7 +310,7 @@ header {
         font-family: "Montserrat", sans-serif;
         font-display: swap;
         color: #132743;
-        text-transform: uppercase;
+        text-transform: capitalize;
         font-weight: 500;
     }
 
@@ -456,12 +455,13 @@ nav .icon {
     padding: 10px;
 }
 
+
 .hero-image {
     display: block;
     object-fit: fill;
     border-radius: 50%;
     margin-top: 2em;
-    padding: 0 15%;
+    padding: 0 10%;
 }
 
 /*
@@ -478,6 +478,7 @@ nav .icon {
 .hero-text {
     display: block;
     margin-top: 15%;
+    padding: 0 10%;
 }
 
 .hero-text h1 {
@@ -554,23 +555,48 @@ nav .icon {
     text-align: center;
     transition-duration: 0.4s;
     margin: 1em auto;
-    width: 250px;
+    width: 200px;
     font-size: 18px;
     padding: 12px;
     font-weight: 500;
     text-decoration: none;
-    background-color: white;
-    border: 2px solid #fc7978;
-    color: #fc7978;
+    background-color: #fc7978;
+    border: 2px solid transparent;
+    color: white;
     text-decoration: none;
 }
 
 
 .button:hover {
+    background-color: white;
+    border: 2px solid #fc7978;
+    outline: none;
+    color: #fc7978;
+    text-decoration: none;
+}
+
+.button-cs {
+    border-radius: 100px;
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    transition-duration: 0.4s;
+    margin: 1em 0;
+    width: 200px;
+    font-size: 18px;
+    padding: 12px;
+    font-weight: 500;
+    text-decoration: none;
     color: white;
-    background-color: #fc7978;
+    background-color: gray;
     outline: none;
     border: 2px solid transparent;
+    text-decoration: none;
+}
+
+.button-cs:hover {
+    background-color: white;
+    border: 2px solid gray;
+    color: gray;
     text-decoration: none;
 }
 
@@ -633,7 +659,7 @@ figcaption {}
 .problem {}
 
 .case-content {
-    width: 80vw;
+    width: 90vw;
     min-width: 310px;
     padding-bottom: 3%;
     margin: 0 auto;
@@ -674,41 +700,25 @@ figcaption {}
     text-align: center;
 }
 
-summary {
-    font-weight: 500;
-    border: 2px solid transparent;
-    transition-duration: 0.4s;
-    margin: 16px auto;
-    padding: 16px;
-    background-color: white;
-    color: gray;
-    outline: none;
-    text-decoration: none;
-}
-
-
-summary:hover {
-    background-color: #fc7978;
-    border: 2px solid transparent;
-    color: white;
-    text-decoration: none;
-}
+summary {}
 
 /************************* unique project content *************************/
 .csa {
-    background-color: #49b1ed;
+    background-color: #49bfed;
     color: white;
     padding: 30px;
+    border-radius: 8px;
 }
 
 .csa-font {
-    color: #49b1ed;
+    color: #49bfed;
 }
 
 .bobateau {
     background-color: #E2AA87;
     color: white;
     padding: 30px;
+    border-radius: 8px;
 }
 
 .bobateau-font {
@@ -717,29 +727,31 @@ summary:hover {
 
 .bobasaurus,
 .bobasaurus ul {
-    background-color: #7EBDB4;
-    color: white;
+    background-color: skyblue;
+    color: #132743;
     padding: 30px;
+    border-radius: 8px;
 }
 
 .bobasaurus-font {
-    color: #7EBDB4;
+    color: skyblue;
 }
 
 .aliexpress {
-    background-color: #f1a033;
-    color: black;
+    background-color: #f4b663;
     padding: 30px;
+    border-radius: 8px;
 }
 
 .aliexpress-font {
-    color: #f1a033;
+    color: #f4b663;
 }
 
 .statwax {
     background-color: #00b1aa;
     color: white;
     padding: 30px;
+    border-radius: 8px;
 }
 
 .statwax-font {
@@ -748,20 +760,14 @@ summary:hover {
 
 .goal {
     padding: 30px;
+    border-radius: 8px;
 }
 
+/*
 .goal p {
     color: #eef5ff;
 }
-
-.csa h3,
-.bobateau h3,
-.bobasaurus h3,
-.aliexpress h3,
-.statwax h3 {
-    margin-top: .5em !important;
-    color: #eef5ff;
-}
+*/
 
 /************************* sections *************************/
 .section {
