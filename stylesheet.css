@@ -274,14 +274,9 @@ header {
 /************************* desktop config *************************/
 @media only screen and (min-width: 601px) {
 
-    /*
-    header {
-        position: fixed;
-        margin: 10px 15px 15px 10px;
-        left: 0;
-        display: inline;
+    .hero {
+        padding: 50px;
     }
-*/
 
     nav {
         overflow: hidden;
@@ -452,7 +447,6 @@ nav .icon {
 .hero {
     background-color: white;
     overflow: hidden;
-    padding: 50px;
 }
 
 
