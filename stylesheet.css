@@ -171,14 +171,15 @@ h6 {
     font-display: swap;
     color: #333;
     font-weight: bold;
-    margin-bottom: 2%;
+    margin-bottom: 3%;
 }
 
 p {
     font-family: "Poppins", "Roboto", sans-serif;
     font-display: swap;
     color: #333;
-    margin-bottom: 2%;
+    margin-bottom: 3%;
+    line-height: 1.75em;
 }
 
 a {
@@ -202,7 +203,8 @@ ol {
     font-family: "Poppins", "Roboto", sans-serif;
     font-display: swap;
     color: #333;
-    margin-bottom: 2%;
+    margin-bottom: 3%;
+    line-height: 1.75em;
 }
 
 li {
@@ -210,7 +212,8 @@ li {
 }
 
 img {
-    max-width: 100%;
+    width: 100%;
+    max-height: 100%;
 }
 
 /************************* navbar *************************/
@@ -458,6 +461,11 @@ img {
 }
 
 /************************* footer *************************/
+
+footer {
+    margin-top: 2em;
+}
+
 .footer-text {
     padding-bottom: 16px;
 }
