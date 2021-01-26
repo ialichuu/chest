@@ -213,7 +213,6 @@ li {
 
 img {
     width: 100%;
-    max-height: 100%;
 }
 
 /************************* navbar *************************/
@@ -253,6 +252,7 @@ img {
     .row {
         margin-left: 15%;
         margin-right: 15%;
+
     }
 
     .active,
@@ -380,6 +380,10 @@ img {
 .wrap {
     background-color: #FFF1F1;
     display: block;
+}
+
+.row {
+    align-items: flex-start;
 }
 
 /************************* iphone mockup *************************/
