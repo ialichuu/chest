@@ -377,6 +377,12 @@ img {
     padding: 1rem 2rem;
 }
 
+.figure-caption {
+    margin: auto;
+    text-align: center;
+    padding-bottom: 3%;
+}
+
 .wrap {
     background-color: #FFF1F1;
     display: block;
