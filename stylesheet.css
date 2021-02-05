@@ -182,6 +182,11 @@ p {
     line-height: 1.75em;
 }
 
+b,
+.figure-caption {
+    font-family: "Poppins", "Roboto", sans-serif;
+}
+
 a {
     font-family: "Poppins", "Roboto", sans-serif;
     color: #fc7978;
@@ -207,10 +212,6 @@ ol {
     line-height: 1.75em;
 }
 
-li {
-    padding: 0 20px !important;
-}
-
 img {
     width: 100%;
 }
@@ -230,6 +231,10 @@ img {
 .navbar-light .navbar-nav .show > .nav-link {
     color: #fc7978;
 
+}
+
+li.nav-item {
+    padding-right: 1em;
 }
 
 .nav-link {
@@ -292,6 +297,15 @@ img {
 .portfolio,
 .portfolio-container {
     margin-bottom: 24px;
+}
+
+.portfolio-container img {
+    border-radius: 3px;
+}
+
+.about-img {
+    max-width: 500px;
+    border-radius: 16px;
 }
 
 .disabled {
@@ -390,6 +404,10 @@ img {
 
 .row {
     align-items: flex-start;
+}
+
+.user-stories h5 {
+    color: gray;
 }
 
 /************************* iphone mockup *************************/
