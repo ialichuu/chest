@@ -388,7 +388,7 @@ li.nav-item {
 }
 
 .card-body {
-    padding: 1rem 2rem;
+    /*    padding: 1rem 2rem;*/
 }
 
 .figure-caption {
@@ -408,6 +408,14 @@ li.nav-item {
 
 .user-stories h5 {
     color: gray;
+}
+
+.container-sm a {
+    color: #4D98F1;
+}
+
+.container-sm a:hover {
+    color: #333;
 }
 
 /************************* iphone mockup *************************/
