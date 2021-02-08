@@ -185,6 +185,7 @@ p {
 b,
 .figure-caption {
     font-family: "Poppins", "Roboto", sans-serif;
+    margin-bottom: 2%;
 }
 
 a {
@@ -195,6 +196,7 @@ a {
 
 a:hover {
     color: #fc7978;
+    transition-duration: 0.4s;
     text-decoration: none;
 }
 
@@ -299,16 +301,160 @@ li.nav-item {
 }
 
 .portfolio-container img {
-    border-radius: 3px;
+    border-radius: 6px;
 }
 
 .about-img {
-    max-width: 500px;
-    border-radius: 16px;
+    border-radius: 6px;
 }
 
 .disabled {
     opacity: 0.5;
+}
+
+/************************* project content *************************/
+.overview {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin: 0;
+}
+
+.final-design img {
+    border-radius: 16px;
+}
+
+.content h3 {
+    margin-top: 6%
+}
+
+.content p,
+.about p {
+    margin-bottom: 3%;
+}
+
+.content img {
+
+    padding: 3% 0;
+    width: 100%;
+}
+
+.card,
+.carousel {
+    margin-bottom: 2%;
+}
+
+.card-body {
+    /*    padding: 1rem 2rem;*/
+}
+
+.figure-caption {
+    margin: auto;
+    text-align: center;
+    padding-bottom: 3%;
+    font-size: 16px;
+}
+
+.wrap {
+    background-color: #FFF1F1;
+    display: block;
+    padding: 2% 0;
+    margin: 1% 0 2% 0;
+}
+
+.row {
+    align-items: flex-start;
+}
+
+.content a,
+.about a {
+    color: #4D98F1;
+}
+
+.content a:hover,
+.about a:hover {
+    color: #fc7978;
+    transition-duration: 0.4s;
+}
+
+.facts li {
+    list-style-image: url(images/sakura-emoji.png);
+    line-height: 1.75em;
+}
+
+/************************* iphone mockup *************************/
+#main {
+    /*    min-height: 100vh;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#iphone-x {
+    position: relative;
+    margin: 40px auto;
+    width: 250px;
+    height: 541px;
+    border-radius: 20px;
+    background-color: #1f1f1f;
+    box-shadow: 0px 0px 0px 11px #1f1f1f, 0px 0px 0px 13px #191919, 0px 0px 0px 13.33px #111, 8px 8px 26.66px #000;
+    overflow: hidden;
+}
+
+#iphone-x:before,
+#iphone-x:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#iphone-x:before {
+    top: 0px;
+    width: 56%;
+    height: 20px;
+    background-color: #1f1f1f;
+    border-radius: 0px 0px 12px 12px;
+}
+
+#iphone-x #speaker {
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    z-index: 2;
+    transform: translate(-50%, 6px);
+    height: 5.33px;
+    width: 15%;
+    background-color: #101010;
+    border-radius: 5.33px;
+    box-shadow: inset 0px -3px 3px 0px rgba(256, 256, 256, 0.2);
+}
+
+#iphone-x #camera {
+    position: absolute;
+    left: 10%;
+    top: 0px;
+    z-index: 3;
+    transform: translate(125px, 4px);
+    width: 8px;
+    height: 8px;
+    background-color: #101010;
+    border-radius: 8px;
+    box-shadow: inset 0px -3px 2px 0px rgba(256, 256, 256, 0.2);
+}
+
+#iphone-x #camera:after {
+    content: '';
+    position: absolute;
+    background-color: #2d4d76;
+    width: 4px;
+    height: 4px;
+    top: 2px;
+    left: 2px;
+    top: 3px;
+    left: 3px;
+    display: block;
+    border-radius: 4px;
+    box-shadow: inset 0px -2px 2px rgba(0, 0, 0, 0.5);
 }
 
 /************************* buttons *************************/
@@ -374,126 +520,6 @@ li.nav-item {
     color: white;
 }
 
-/************************* project content *************************/
-.overview {
-    padding-top: 2%;
-    padding-bottom: 2%;
-    margin: 0;
-}
-
-.card,
-.carousel {
-    margin-bottom: 2%;
-}
-
-.card-body {
-    /*    padding: 1rem 2rem;*/
-}
-
-.figure-caption {
-    margin: auto;
-    text-align: center;
-    padding-bottom: 3%;
-}
-
-.wrap {
-    background-color: #FFF1F1;
-    display: block;
-}
-
-.row {
-    align-items: flex-start;
-}
-
-.user-stories h5 {
-    color: gray;
-}
-
-.container-sm a {
-    color: #4D98F1;
-}
-
-.container-sm a:hover {
-    color: #333;
-}
-
-/************************* iphone mockup *************************/
-#main {
-    /*    min-height: 100vh;*/
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#iphone-x {
-    position: relative;
-    margin: 40px auto;
-    width: 250px;
-    height: 541px;
-    border-radius: 26.66px;
-    background-color: #1f1f1f;
-    box-shadow: 0px 0px 0px 11px #1f1f1f, 0px 0px 0px 13px #191919, 0px 0px 0px 13.33px #111, 8px 8px 26.66px #000;
-    overflow: hidden;
-
-    &:before,
-    &:after {
-        content: '';
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-
-
-    &:before {
-        top: 0px;
-        width: 56%;
-        height: 30px;
-        background-color: #1f1f1f;
-        border-radius: 0px 0px 26.66px 26.66px;
-    }
-
-    #speaker {
-        position: absolute;
-        top: 0px;
-        left: 50%;
-        z-index: 2;
-        transform: translate(-50%, 6px);
-        height: 5.33px;
-        width: 15%;
-        background-color: #101010;
-        border-radius: 5.33px;
-        box-shadow: inset 0px -3px 3px 0px rgba(256, 256, 256, 0.2);
-    }
-
-    #camera {
-        position: absolute;
-        left: 10%;
-        top: 0px;
-        z-index: 3;
-        transform: translate(180px, 4px);
-        width: 8px;
-        height: 8px;
-        background-color: #101010;
-        border-radius: 8px;
-        box-shadow: inset 0px -3px 2px 0px rgba(256, 256, 256, 0.2);
-
-        &:after {
-            content: '';
-            position: absolute;
-            background-color: #2d4d76;
-            width: 4px;
-            height: 4px;
-            top: 2px;
-            left: 2px;
-            top: 3px;
-            left: 3px;
-            display: block;
-            border-radius: 4px;
-            box-shadow: inset 0px -2px 2px rgba(0, 0, 0, 0.5);
-        }
-    }
-
-}
 
 /************************* footer *************************/
 

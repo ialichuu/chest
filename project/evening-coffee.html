@@ -65,16 +65,16 @@
             </div>
         </div>
     </nav>
-    <div class="container-sm" style="padding-top: 2%">
+    <div class="container-md" style="padding-top: 2%">
         <center>
             <h1>Evening Coffee</h1>
             <p class="subtitle">A Social Meetup App</p>
         </center>
     </div>
-    <div class="wrap">
+    <div class="wrap" style="padding: 0">
         <img src="../evening-coffee/ec-banner.png">
         <div class="overview">
-            <div class="container-sm">
+            <div class="container-md">
                 <div class="row">
                     <div class="col-md-8">
                         <b>Background</b>
@@ -100,48 +100,44 @@
             </div>
         </div>
     </div>
-    <div class="container-sm" style="margin-top: 3%">
+    <div class="container-md final-design">
         <div class="row">
             <h3>Design & Solution Overview</h3>
             <div class="col-md-4">
-                <center><img src="../evening-coffee/p1.gif"></center>
+                <img src="../evening-coffee/p1.gif">
             </div>
-            <div class="col-md-1"></div>
             <div class="col-md-7 justify-content-center align-self-center">
-                <b style="margin-bottom: 3%">User onboarding</b>
+                <p><b>User onboarding</b></p>
                 <p>First time users go through a short onboarding to learn how using Evening Coffee benefits them. Plus, if they reach the end, they will get a little reward they can use for their first ticket purchase.</p>
             </div>
         </div>
         <hr>
         <div class="row">
-            <div class="col-md-4 order-last">
-                <center><img src="../evening-coffee/p2.gif"></center>
+            <div class="col-md-4 order-md-1">
+                <img src="../evening-coffee/p2.gif">
             </div>
-            <div class="col-md-1"></div>
-            <div class="col-md-7 order-first justify-content-center align-self-center">
-                <b style="margin-bottom: 3%">Earning & redeeming a reward</b>
+            <div class="col-md-7 order-md-12 justify-content-center align-self-center">
+                <p><b>Earning & redeeming a reward</b></p>
                 <p>For every event they attend, users will earn points. Free events will also earn points. Location must be enabled. To prevent rewards abuse for free events, users need to fill out a survey which I did not have enough time allocated to design for.</p>
             </div>
         </div>
         <hr>
         <div class="row">
             <div class="col-md-4">
-                <center><img src="../evening-coffee/p3.gif"></center>
+                <img src="../evening-coffee/p3.gif">
             </div>
-            <div class="col-md-1"></div>
             <div class="col-md-7 justify-content-center align-self-center">
-                <b style="margin-bottom: 3%">Registering for an event</b>
+                <p><b>Registering for an event</b></p>
                 <p>The checkout process is simple and transparent. Users will see their Evening Coffee rewards at checkout and can apply them without leaving the screen or copying and pasting a code.</p>
             </div>
         </div>
         <hr>
         <div class="row">
-            <div class="col-md-4 order-last">
+            <div class="col-md-4 order-md-1">
                 <center><img src="../evening-coffee/p4.gif"></center>
             </div>
-            <div class="col-md-1"></div>
-            <div class="col-md-7 order-first justify-content-center align-self-center">
-                <b style="margin-bottom: 3%">Enabling notifications</b>
+            <div class="col-md-7 order-12 justify-content-center align-self-center">
+                <p><b>Enabling notifications</b></p>
                 <p>During my user interviews, I discovered that more than half of people were hesitant to enable notifications, even if there were significant benefits to do so. To make a compelling case, I created a simple, non-intrusive page that quickly highlighted the additional value notifications can provide in a scanable format. Users during the testing phase liked this and were more eager to opt into notifications.</p>
             </div>
         </div>
@@ -150,16 +146,17 @@
             <div class="col-md-4">
                 <center><img src="../evening-coffee/p5.gif"></center>
             </div>
-            <div class="col-md-1"></div>
             <div class="col-md-7 justify-content-center align-self-center">
-                <b style="margin-bottom: 3%">Attending an event</b>
+                <p><b>Attending an event</b></p>
                 <p>Once users registered for an event, the corresponding event ticket would show up within the app so users wouldn’t have to search for their ticket using multiple apps (e.g. email or Apple Wallet). During testing, about half of my users went through their event in “Attending” while the other half went through “Tickets” to pull up their ticket. Therefore, I opted to keep both options in.</p>
             </div>
         </div>
         <hr>
+    </div>
+    <div class="container-md content">
         <div class="row">
             <h3>Research</h3>
-            <b style="margin-bottom: 3%">What’s already out there?</b>
+            <b>What’s already out there?</b>
             <p>To learn from success, I first mapped out the basic features and functions of popular apps using competitor analysis. I looked at three different industry leaders -- Eventbrite, Facebook, and Meetup -- to understand how they solved a similar issue I was dealing with, and how I could stand out from the competition.</p>
             <p><button class="btn btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#deliverable" aria-expanded="false" aria-controls="deliverable">
                     View competitive analysis
@@ -170,14 +167,14 @@
                 </div>
             </div>
             <p>I discovered that all three were similar when it came to the information each event provided and how a user registered for an event. This helped me stage the route from search to checkout. Aside from small differences, however, none of them had a rewards system to incentivise users to show up to events. This gave me an idea to incorporate a form of gamification to improve attendance rates in Evening Coffee.</p>
-            <b style="margin-bottom: 3%">What are users saying?</b>
+            <b>What are users saying?</b>
             <p>To learn how people find events to attend, what motivated them to go to events, and what pain points they experienced while using event apps, I also interviewed five target users.</p>
         </div>
     </div>
     <div class="wrap">
-        <div class="container-sm">
-            <div class="row" style="padding-top: 3%">
-                <b style="margin-bottom: 3%">Interview insights:</b>
+        <div class="container-md content">
+            <div class="row">
+                <b>Interview insights:</b>
                 <ol>
                     <li>Unless it is a paid event, users do not feel obligated to attend even if they indicate they will on the event page</li>
                     <li>Most users at this age range work full-time jobs in the daytime or have school-age children, which means they will use event apps most frequently the weekends or in the evenings</li>
@@ -186,11 +183,11 @@
             </div>
         </div>
     </div>
-    <div class="container-sm">
+    <div class="container-md content">
         <div class="row">
-            <p style="margin-top: 3%">Some things to focus on in the design phase are to determine what sort of gamification I could use and how to organize the homepage and search page. I’ve always been a fan of the Starbucks rewards system: after purchasing a certain amount of drinks, customers can redeem a free one. For Evening Coffee, users could get points from attending events. After a certain amount of points, they could receive a discount or some other reward for their next ticket.</p>
+            <p>Some things to focus on in the design phase are to determine what sort of gamification I could use and how to organize the homepage and search page. I’ve always been a fan of the Starbucks rewards system: after purchasing a certain amount of drinks, customers can redeem a free one. For Evening Coffee, users could get points from attending events. After a certain amount of points, they could receive a discount or some other reward for their next ticket.</p>
             <h3>Sketches & Design</h3>
-            <b style="margin-bottom: 3%">How did the early design look?</b>
+            <b>How did the early design look?</b>
             <p>For the low-fidelity design, I focused on creating a seamless flow from search to checkout and providing the information users would seek for when clicking on an event. I adopted corresponding features from the three industry leaders, mapped out the user flows, then sketched and created digital wireframes to organize the main details.</p>
             <div id="carouselDark" class="carousel carousel-dark slide">
                 <ol class="carousel-indicators">
@@ -230,7 +227,7 @@
             <h3>Product Testing</h3>
             <b style="margin-bottom: 3%">Does it work?</b>
             <p>To see if my design was functional, I tested the primary routes users would take in the app. This included:</p>
-            <img src="../evening-coffee/ec-testing.png">
+            <img src="../evening-coffee/user-testing.png">
             <p>I conducted five guerrilla tests over video calls with my digital low-fidelity prototype. I received great feedback on how to improve the flow, features, and the user interface. I organized the feedback through affinity mapping and noted common pain points.
             </p>
             <p><button class="btn btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#deliverable1" aria-expanded="false" aria-controls="deliverable1">
@@ -249,7 +246,7 @@
                 <li>Add a confirmation in the rewards screen to reduce accidental reward redemption</li>
                 <li>Provide two ways to allow the user to access a ticket: the attending events tab and the tickets tab</li>
             </ul>
-            <img style="margin-bottom: 3%" src="../evening-coffee/ec-iterations.png">
+            <img style="margin-bottom: 3%" src="../evening-coffee/iterations.png">
             <b>How about a round two?</b>
             <p>After redesigning it with the data I gathered, I tested it a second time with a different set of target users using the same routes. However, I changed the final primary route to “confirming the user is at an event via notification.” Again, I arranged my data into an affinity map.</p>
             <p><button class="btn btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#deliverable2" aria-expanded="false" aria-controls="deliverable2">
@@ -260,7 +257,7 @@
                     <img src="../evening-coffee/ec-hi-fi-affinity.png">
                 </div>
             </div>
-            <b style="margin-bottom: 3%">And in the end?</b>
+            <b>Final changes.</b>
             <p>I initially intended to design the app purely in light mode, which did not affect my users during testing. However, after discussing the design with my mentor, I realized dark mode would be fitting for an app named “Evening Coffee.” Plus, it would most likely be primarily used in the evening when users are done with their daytime activities. Therefore, I committed to redesign it in dark mode.
             </p>
             <div id="main">
@@ -272,11 +269,11 @@
             </div>
             <figcaption class="figure-caption">Feel free to play with the prototype!</figcaption>
             <h3>Reflections</h3>
-            <b style="margin-bottom: 3%">What did I learn?</b>
+            <b>What did I learn?</b>
             <p>Overall, this project was fun to create during the three weeks I worked on it. I learned to consider the use cases for an app, such as the time of day users will tend to use an app, and how it could impact the user interface. In this case, the fact that this app would mostly be used in the evening prompted me to redesign the light color scheme to a dark one while making sure to maintain contrast, text, and readability.</p>
             <p>In addition, many users don’t like to enable notifications. To work around that, I needed to limit my notifications to where each of them count. I also created an easy to read screen to inform the purpose of each notification.
             </p>
-            <b style="margin-bottom: 3%">What could I have done better?</b>
+            <b>What could I have done better?</b>
             <p>If I were to work on this project again, I should have thought more consciously about the color scheme earlier in the process. My initial high-fidelity iteration was not great in terms of contrast.</p>
             <p>I would also work on creating a flow for how free events would play out and create ways to redeem points if users decline receiving notifications.</p>
             <p>From a business standpoint, I should redetermine the amount of points users earn per paid event (and per free event).
