@@ -11,7 +11,7 @@
     <link rel="canonical" href="https://alexandrialo.com/" />
 
     <!-- Jquery for Bootstrap -->
-    <script async src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script async src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
     <link rel="icon" href="../images/favicon.ico">
     <link href="https://fonts.googleapis.com/css?family=Poppins|Roboto|Montserrat&display=swap" rel="stylesheet">
 
@@ -32,8 +32,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
     <!-- FA icons -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
     <link rel="stylesheet" href="../stylesheet.css">
@@ -88,16 +90,13 @@
                     </div>
                     <div class="details col-md-4">
                         <b>Team</b>
-                        <p><strong>Product Designers:</strong></p>
-                        <p>Alexandria Lo</p>
-                        <p>Akhila Bashaboina</p>
-                        <p>Xavier Underwood</p>
-                        <p>Emma Petersen</p>
+                        <p><strong>Product Designers</strong></p>
+                        <p>Alexandria Lo, Akhila Bashaboina, Emma Petersen</p>
                         <br>
-                        <p><strong>Design Consultant:</strong></p>
+                        <p><strong>Design Consultant</strong></p>
                         <p>Maddie Golbaz</p>
                         <br>
-                        <p><strong>Co-founder:</strong></p>
+                        <p><strong>Co-founder</strong></p>
                         <p>Michael Olorunninwo</p>
                         <br>
                         <b>Duration</b>
@@ -116,7 +115,22 @@
             <p>Y-Labs brings all the applications students use into one place so students don’t have to use multiple programs to keep track of their work. Furthermore, it improves the overall learning experience to adapt to the pitfalls of online learning, such as distractions and lack of personal connections between students and teachers.</p>
             <div class="col-md-12">
                 <p><b>Live Classroom (This portion was done by Emma!)</b></p>
-                <img src="../y-labs/hi-fi-classroom.gif">
+                <a href="../y-labs/hi-fi-classroom.gif" data-bs-toggle="modal" data-bs-target="#classroomModal">
+                    <img src="../y-labs/hi-fi-classroom.gif">
+                </a>
+                <div class="modal fade" id="classroomModal" tabindex="-1" aria-labelledby="classroomLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-xl">
+                        <div class="modal-content">
+                            <div class="modal-header" style="border-bottom: none">
+                                <h5 class="modal-title" id="classroomLabel">Live Classroom</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="../y-labs/hi-fi-classroom.gif" style="margin-bottom: 0">
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <p>Like standard video chatting, students and teachers will be able to see the teacher and each other. Along with the option to chat, students can take notes while the lecture is ongoing. Notes can be popped out, resized, and moved around the page at the student’s convenience. They are automatically saved into the Y-Labs Library, but students can also manually save them as a local document or in a select folder in Y-Labs.</p>
                 <p>During class, Notifications and the Community tab are disabled to minimize distractions. If the student navigates to another page, the screen pops out in picture-in-picture mode.
                 </p>
@@ -126,13 +140,58 @@
         <div class="row">
             <div class="col-md-12">
                 <p><b>Community (This portion was done by me!)</b></p>
-                <img src="../y-labs/hi-fi-teacher.gif">
+                <a href="../y-labs/hi-fi-teacher.gif" data-bs-toggle="modal" data-bs-target="#teacherModal">
+                    <img src="../y-labs/hi-fi-teacher.gif">
+                </a>
+                <div class="modal fade" id="teacherModal" tabindex="-1" aria-labelledby="teacherLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-xl">
+                        <div class="modal-content">
+                            <div class="modal-header" style="border-bottom: none">
+                                <h5 class="modal-title" id="teacherLabel">Community: Teacher</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="../y-labs/hi-fi-teacher.gif" style="margin-bottom: 0">
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <p>If, for any reason, a student misses their regular teacher’s office hours or they want to get another teacher’s feedback, they can schedule a meeting with teachers who also teach the subject.</p>
-                <img src="../y-labs/hi-fi-lounge.gif">
+                <a href="../y-labs/hi-fi-lounge.gif" data-bs-toggle="modal" data-bs-target="#loungeModal">
+                    <img src="../y-labs/hi-fi-lounge.gif">
+                </a>
+                <div class="modal fade" id="loungeModal" tabindex="-1" aria-labelledby="loungeLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-xl">
+                        <div class="modal-content">
+                            <div class="modal-header" style="border-bottom: none">
+                                <h5 class="modal-title" id="loungeLabel">Community: Student Lounge</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="../y-labs/hi-fi-lounge.gif" style="margin-bottom: 0">
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <p>In the Student Lounge, students can join or create a room where they can chat with each other, voice, or video call. Bonding opportunities and fun are created through options to play suggested games, watch videos, or listen to music together.</p>
                 <p>Study Groups function similarly to the Lounge but without the bonding options. This way, students can minimize distractions and focus more on their studies.</p>
                 <p>Both the Student Lounge and Study Groups encourage students to invite each other but limit the amount of users who can join.</p>
-                <img src="../y-labs/hi-fi-events.gif">
+                <a href="../y-labs/hi-fi-events.gif" data-bs-toggle="modal" data-bs-target="#eventsModal">
+                    <img src="../y-labs/hi-fi-events.gif">
+                </a>
+                <div class="modal fade" id="eventsModal" tabindex="-1" aria-labelledby="eventsLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-xl">
+                        <div class="modal-content">
+                            <div class="modal-header" style="border-bottom: none">
+                                <h5 class="modal-title" id="eventsLabel">Community: Student Events</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="../y-labs/hi-fi-events.gif" style="margin-bottom: 0">
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <p>Students can also bond by creating and participating in events. Because of current affairs, students can only create online events at this moment.</p>
             </div>
         </div>
@@ -141,7 +200,22 @@
             <div class="col-md-12">
                 <p><b>Library (This portion was done by Akhila!)</b></p>
                 <p>The library is the place where students can find their books, add documents, and view recorded lectures.</p>
-                <img src="../y-labs/hi-fi-library.gif">
+                <a href="../y-labs/hi-fi-library.gif" data-bs-toggle="modal" data-bs-target="#libraryModal">
+                    <img src="../y-labs/hi-fi-library.gif">
+                </a>
+                <div class="modal fade" id="libraryModal" tabindex="-1" aria-labelledby="libraryLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-xl">
+                        <div class="modal-content">
+                            <div class="modal-header" style="border-bottom: none">
+                                <h5 class="modal-title" id="libraryLabel">Library</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="../y-labs/hi-fi-library.gif" style="margin-bottom: 0">
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <p>While viewing recorded lectures, students can take notes like they would in Live Classroom and send a message to the teacher if they need clarification. The “Clip” feature allows students to precisely select segments of the lecture they want to highlight and send to the teacher to review.</p>
             </div>
         </div>
@@ -149,7 +223,22 @@
         <div class="row">
             <div class="col-md-12">
                 <p><b>Calendar (This portion was done by Emma!)</b></p>
-                <img src="../y-labs/hi-fi-calendar.gif">
+                <a href="../y-labs/hi-fi-calendar.gif" data-bs-toggle="modal" data-bs-target="#calendarModal">
+                    <img src="../y-labs/hi-fi-calendar.gif">
+                </a>
+                <div class="modal fade" id="calendarModal" tabindex="-1" aria-labelledby="calendarLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-xl">
+                        <div class="modal-content">
+                            <div class="modal-header" style="border-bottom: none">
+                                <h5 class="modal-title" id="calendarLabel">Calendar</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="../y-labs/hi-fi-calendar.gif" style="margin-bottom: 0">
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <p>Class times, invited and registered events, and scheduled teacher meetings are all shown in the Calendar tab. Students can add in their own personal events, such as timed study sessions, reminders, and appointments.</p>
             </div>
         </div>
@@ -238,28 +327,166 @@
                 </ol>
                 <div class="carousel-inner" style=" width:100%; height: 600px !important;">
                     <div class="carousel-item active">
-                        <img src="../y-labs/sketch-dashboard.png" class="d-block w-100">
+                        <a href="../y-labs/sketch-dashboard.png" data-bs-toggle="modal" data-bs-target="#sketch-dashboardModal">
+                            <img src="../y-labs/sketch-dashboard.png" class="d-block w-100">
+                        </a>
+                        <div class="modal fade" id="sketch-dashboardModal" tabindex="-1" aria-labelledby="sketch-dashboardLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-xl">
+                                <div class="modal-content">
+                                    <div class="modal-header" style="border-bottom: none">
+                                        <h5 class="modal-title" id="sketch-dashboardLabel">Dashboard: Sketch vs. Final Screen</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="../y-labs/sketch-dashboard.png" style="margin-bottom: 0">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="../y-labs/sketch-classroom.gif" class="d-block w-100">
+                        <a href="../y-labs/sketch-classroom.gif" data-bs-toggle="modal" data-bs-target="#sketch-classroomModal">
+                            <img src="../y-labs/sketch-classroom.gif" class="d-block w-100">
+                        </a>
+                        <div class="modal fade" id="sketch-classroomModal" tabindex="-1" aria-labelledby="sketch-classroomLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-xl">
+                                <div class="modal-content">
+                                    <div class="modal-header" style="border-bottom: none">
+                                        <h5 class="modal-title" id="sketch-classroomLabel">Classroom: Sketch Only</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="../y-labs/sketch-classroom.gif" style="margin-bottom: 0">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="../y-labs/sketch-calendar.gif" class="d-block w-100">
+                        <a href="../y-labs/sketch-calendar.gif" data-bs-toggle="modal" data-bs-target="#sketch-calendarModal">
+                            <img src="../y-labs/sketch-calendar.gif" class="d-block w-100">
+                        </a>
+                        <div class="modal fade" id="sketch-calendarModal" tabindex="-1" aria-labelledby="sketch-calendarLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-xl">
+                                <div class="modal-content">
+                                    <div class="modal-header" style="border-bottom: none">
+                                        <h5 class="modal-title" id="sketch-calendarLabel">Calendar: Sketch vs. Final Screen</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="../y-labs/sketch-calendar.gif" style="margin-bottom: 0">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="../y-labs/sketch-programs.png" class="d-block w-100">
+                        <a href="../y-labs/sketch-programs.png" data-bs-toggle="modal" data-bs-target="#sketch-programsModal">
+                            <img src="../y-labs/sketch-programs.png" class="d-block w-100">
+                        </a>
+                        <div class="modal fade" id="sketch-programsModal" tabindex="-1" aria-labelledby="sketch-programsLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-xl">
+                                <div class="modal-content">
+                                    <div class="modal-header" style="border-bottom: none">
+                                        <h5 class="modal-title" id="sketch-programsLabel">Programs: Sketch Only</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="../y-labs/sketch-programs.png" style="margin-bottom: 0">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="../y-labs/sketch-teacher.gif" class="d-block w-100">
+                        <a href="../y-labs/sketch-teacher.gif" data-bs-toggle="modal" data-bs-target="#sketch-teacherModal">
+                            <img src="../y-labs/sketch-teacher.gif" class="d-block w-100">
+                        </a>
+                        <div class="modal fade" id="sketch-teacherModal" tabindex="-1" aria-labelledby="sketch-teacherLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-xl">
+                                <div class="modal-content">
+                                    <div class="modal-header" style="border-bottom: none">
+                                        <h5 class="modal-title" id="sketch-teacherLabel">Community: Teacher: Sketch vs. Final Screen</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="../y-labs/sketch-teacher.gif" style="margin-bottom: 0">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="../y-labs/sketch-lounge.gif" class="d-block w-100">
+                        <a href="../y-labs/sketch-lounge.gif" data-bs-toggle="modal" data-bs-target="#sketch-loungeModal">
+                            <img src="../y-labs/sketch-lounge.gif" class="d-block w-100">
+                        </a>
+                        <div class="modal fade" id="sketch-loungeModal" tabindex="-1" aria-labelledby="sketch-loungeLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-xl">
+                                <div class="modal-content">
+                                    <div class="modal-header" style="border-bottom: none">
+                                        <h5 class="modal-title" id="sketch-loungeLabel">Community: Lounge: Sketch vs. Final Screen</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="../y-labs/sketch-lounge.gif" style="margin-bottom: 0">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--
+                    <a href="../y-labs/sketch-events.gif" data-bs-toggle="modal" data-bs-target="#sketch-eventsModal">
+                        <img src="../y-labs/sketch-events.gif" class="d-block w-100">
+                    </a>
+                    <div class="modal fade" id="sketch-eventsModal" tabindex="-1" aria-labelledby="sketch-eventsLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-xl">
+                            <div class="modal-content">
+                                <div class="modal-header" style="border-bottom: none">
+                                    <h5 class="modal-title" id="sketch-eventsLabel">Community: Events: Sketch vs. Final Screen</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="../y-labs/sketch-events.gif" style="margin-bottom: 0">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+-->
+                    <div class="carousel-item">
+                        <a href="../y-labs/sketch-library.gif" data-bs-toggle="modal" data-bs-target="#sketch-libraryModal">
+                            <img src="../y-labs/sketch-library.gif" class="d-block w-100">
+                        </a>
+                        <div class="modal fade" id="sketch-libraryModal" tabindex="-1" aria-labelledby="sketch-libraryLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-xl">
+                                <div class="modal-content">
+                                    <div class="modal-header" style="border-bottom: none">
+                                        <h5 class="modal-title" id="sketch-libraryLabel">Library: Sketch vs. Final Screen</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="../y-labs/sketch-library.gif" style="margin-bottom: 0">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="../y-labs/sketch-library.gif" class="d-block w-100">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="../y-labs/sketch-profile.gif" class="d-block w-100">
+                        <a href="../y-labs/sketch-profile.gif" data-bs-toggle="modal" data-bs-target="#sketch-profileModal">
+                            <img src="../y-labs/sketch-profile.gif" class="d-block w-100">
+                        </a>
+                        <div class="modal fade" id="sketch-profileModal" tabindex="-1" aria-labelledby="sketch-profileLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-xl">
+                                <div class="modal-content">
+                                    <div class="modal-header" style="border-bottom: none">
+                                        <h5 class="modal-title" id="sketch-profileLabel">Student Profile: Sketch vs. Final Screen</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="../y-labs/sketch-profile.gif" style="margin-bottom: 0">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <a class="carousel-control-prev" href="#carouselDark" role="button" data-bs-slide="prev">
@@ -275,14 +502,44 @@
             <h3>User Testing</h3>
             <p>To evaluate the new platform on Y-Labs, we conducted a usability test with a current student. This allowed us to test what we designed before we left to see if it fit at least one user’s needs.</p>
             <p>Our test user gave us great feedback on small changes that would have the most impact on their experience, such as limiting the amount of people in a chatroom in the Community page, and consolidating all classroom material (e.g. school-provided textbooks and student-purchased textbooks) into the Library page. Overall, the user enjoyed the platform!</p>
-            <img src="../y-labs/y-labs-user-testing.png">
+            <a href="../y-labs/y-labs-user-testing.png" data-bs-toggle="modal" data-bs-target="#y-labs-user-testingModal">
+                <img src="../y-labs/y-labs-user-testing.png">
+            </a>
+            <div class="modal fade" id="y-labs-user-testingModal" tabindex="-1" aria-labelledby="y-labs-user-testingLabel" aria-hidden="true">
+                <div class="modal-dialog modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-header" style="border-bottom: none">
+                            <h5 class="modal-title" id="y-labs-user-testingLabel">User Testing</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="../y-labs/y-labs-user-testing.png" style="margin-bottom: 0">
+                        </div>
+                    </div>
+                </div>
+            </div>
             <figcaption class="figure-caption">“I really liked the features. I think having all the apps in one platform is a really good idea, and I would use [Y-Labs], especially right now.” - A.L.</figcaption>
 
             <p>Taking what information we had from that user, and looking back on our research, we made adjustments on our wireframes.</p>
             <h3>Final Adjustments</h3>
             <p>As we shared the information with the rest of the team, our finishing touch was aesthetic: improving the color palette.</p>
             <p>Overall, we thought the monochromatic purple colors the previous designer had was bland and did not fit into the message Y-Labs was trying to convey: remote learning doesn’t have to be boring. So, we played around with the idea of a playful rainbow palette, where every page would have a different color to evoke different types of emotion.</p>
-            <img src="../y-labs/y-labs-color-palette.png">
+            <a href="../y-labs/y-labs-color-palette.png" data-bs-toggle="modal" data-bs-target="#y-labs-color-paletteModal">
+                <img src="../y-labs/y-labs-color-palette.png">
+            </a>
+            <div class="modal fade" id="y-labs-color-paletteModal" tabindex="-1" aria-labelledby="y-labs-color-paletteLabel" aria-hidden="true">
+                <div class="modal-dialog modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-header" style="border-bottom: none">
+                            <h5 class="modal-title" id="y-labs-color-paletteLabel">Color Palette</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="../y-labs/y-labs-color-palette.png" style="margin-bottom: 0">
+                        </div>
+                    </div>
+                </div>
+            </div>
             <p>We presented this concept on our last day, which was met with mostly positive feedback. If we were to work on this project further, we would change the sidebar to a more neutral color to pull the platform together.</p>
             <p>Because this platform has not been released yet, I am unable to host a public prototype.</p>
             <h3>Reflections</h3>
@@ -294,20 +551,6 @@
             <p>Now, it’s in the hands of Y-Labs and their designers to continue the project. I can’t wait to see the final product!</p>
         </div>
     </div>
-    <!-- find horizontal scroll -->
-    <script>
-        var docWidth = document.documentElement.offsetWidth;
-
-        [].forEach.call(
-            document.querySelectorAll('*'),
-            function(el) {
-                if (el.offsetWidth > docWidth) {
-                    console.log(el);
-                }
-            }
-        );
-
-    </script>
 
     <footer>
         <center class="footer-text">

@@ -178,7 +178,7 @@ p {
     font-family: "Poppins", "Roboto", sans-serif;
     font-display: swap;
     color: #333;
-    margin-bottom: 3%;
+    margin: 2% 0;
     line-height: 1.75em;
 }
 
@@ -271,6 +271,14 @@ li.nav-item {
 /************************* mobile config *************************/
 @media only screen and (max-width: 850px) {
 
+    .container-md {
+        max-width: 90%;
+    }
+
+    .overview {
+        margin-bottom: 6%;
+    }
+
     .hero-img-fluid {
         max-width: 250px !important;
     }
@@ -322,18 +330,21 @@ li.nav-item {
 
 /************************* project content *************************/
 .overview {
-    padding-top: 2%;
-    padding-bottom: 2%;
-    margin: 0;
+    padding: 2% 0;
 }
 
 .final-design img {
     border-radius: 16px;
 }
 
+.final-design,
+.final-design-dsk {
+    margin-top: 3%;
+}
+
 .final-design-dsk img {
     border-radius: 8px;
-    margin-bottom: 24px;
+    margin: 2% 0;
 }
 
 .content h3 {
@@ -342,7 +353,7 @@ li.nav-item {
 
 .content p,
 .about p {
-    margin-bottom: 3%;
+    margin: 2% 0;
 }
 
 .content img {
@@ -371,7 +382,7 @@ li.nav-item {
     background-color: #FFF1F1;
     display: block;
     padding: 2% 0;
-    margin: 1% 0 2% 0;
+    margin: 2% 0;
 }
 
 .row {
@@ -521,7 +532,7 @@ li.nav-item {
     font-family: "Poppins", "Roboto", sans-serif;
     text-align: center;
     transition-duration: 0.4s;
-    margin: 1em auto;
+/*    margin: 1em auto;*/
     display: inline-block;
     font-weight: 500;
     text-decoration: none;
@@ -553,7 +564,7 @@ li.nav-item {
     font-family: "Poppins", "Roboto", sans-serif;
     text-align: center;
     transition-duration: 0.4s;
-    margin: 1em auto;
+/*    margin: 1em auto;*/
     display: inline-block;
     font-weight: 500;
     background-color: white;
